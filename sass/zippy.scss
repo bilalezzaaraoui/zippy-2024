@@ -1,0 +1,61 @@
+@import "./font";
+
+body {
+  font-family: "HelveticaNeue", sans-serif !important;
+}
+
+.utility-bar {
+  .announcement-bar {
+    .announcement-bar__message {
+      padding: 0.5rem 0;
+      min-height: auto;
+      letter-spacing: normal;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.header {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+
+  .header__inline-menu {
+    font-weight: bold;
+
+    .header__menu-item {
+      span {
+        text-underline-offset: 10px;
+      }
+      &[aria-current="page"] {
+        background-color: #15433d;
+        border-radius: 25px;
+        padding: 8px 15px;
+        margin-top: 5px;
+
+        span {
+          color: #fff7e5;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .header__heading {
+    padding-right: 1rem;
+    img {
+      max-width: 105px !important;
+    }
+  }
+
+  .header__icons {
+    #cart-icon-bubble {
+      margin-left: -0.8rem;
+    }
+    svg {
+      height: 30px;
+    }
+  }
+}

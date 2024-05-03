@@ -116,6 +116,9 @@
     "checkout_logo_image": "shopify:\/\/shop_images\/image-logo.svg",
     "checkout_logo_size": "medium",
     "checkout_body_background_color": "#fff7e5",
+    "checkout_sidebar_background_color": "#fff7e5",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",

@@ -51,7 +51,7 @@
     "custom_liquid_8CQAAg": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"section-media\">\n  <div class=\"container\">\n    <h2>“On parle de nous“<\/h2>\n    <div class=\"logo-layout\">\n      <img src=\"\" alt=\"\"\/>\n      <img src=\"\" alt=\"\"\/>\n      <img src=\"\" alt=\"\"\/>\n      <img src=\"\" alt=\"\"\/>\n    <\/div>\n  <\/div>\n<\/div>",
+        "custom_liquid": "{% assign img_thumb = 'Voleur.png' | asset_url %}\n<div class=\"section-media\">\n  <div class=\"container\">\n    <h2>“On parle de nous“<\/h2>\n    <div class=\"logo-layout\">\n      <img src={{ img_thumb }} alt=\"\"\/>\n      <img src=\"\" alt=\"\"\/>\n      <img src=\"\" alt=\"\"\/>\n      <img src=\"\" alt=\"\"\/>\n    <\/div>\n  <\/div>\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52

@@ -1,0 +1,63 @@
+
+{% schema %}
+{
+  "name": "Media Kit",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "media_kit_image",
+      "label": "Media Kit Image",
+      "info": "Upload an image for your media kit."
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our Media Kit"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Describe your media kit here.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Media Kit",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+    .media-kit {
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .media-kit img {
+        margin-bottom: 20px;
+      }
+</style>
+
+<script>
+    // Passer les variables Liquid à JavaScript
+    var section = {{ section | json }};
+    
+    console.log("Section:", section);
+    console.log("On est là");
+</script>
+
+<div class="media-kit">
+  <h2>{{ section.settings.heading }}1dsfs</h2>
+  {% if section.settings.media_kit_image %}
+    <img src="{{ section.settings.image | image_url: width: 3200
+      | image_tag:
+        widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
+        sizes: sizes,
+        class: 'multicolumn-card__image'}}" alt="{{ section.settings.heading }}">
+  {% endif %}
+  <div>{{ section.settings.description | richtext }}</div>
+</div>

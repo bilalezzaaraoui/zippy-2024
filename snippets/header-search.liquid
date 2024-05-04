@@ -1,0 +1,110 @@
+{% comment %}
+  Renders a header search modal. Should be used with 'header.liquid'
+
+  Accepts:
+  - input_id: {String} Id for the search input element (required)
+
+  Usage:
+  {% render 'header-search', input_id: 'My-Id'%}
+{% endcomment %}
+
+<details-modal class="header__search">
+  <details>
+    <summary
+      class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle"
+      aria-haspopup="dialog"
+      aria-label="{{ 'general.search.search' | t }}"
+    >
+      <span>
+        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.69034 9.19041C7.8545 10.0262 7.19148 11.0185 6.73913 12.1106C6.28678 13.2027 6.05396 14.3732 6.05396 15.5552C6.05396 16.7373 6.28678 17.9077 6.73913 18.9998C7.19148 20.0919 7.8545 21.0842 8.69034 21.92C9.52618 22.7558 10.5185 23.4189 11.6105 23.8712C12.7026 24.3236 13.8731 24.5564 15.0551 24.5564C16.2372 24.5564 17.4077 24.3236 18.4997 23.8712C19.5918 23.4189 20.5841 22.7558 21.4199 21.92C23.0594 20.2226 23.9665 17.9492 23.946 15.5894C23.9255 13.2296 22.979 10.9723 21.3103 9.30364C19.6416 7.63497 17.3843 6.68845 15.0246 6.66794C12.6648 6.64744 10.3914 7.55459 8.69394 9.19401M20.1491 20.6492C19.4833 21.33 18.689 21.872 17.8122 22.2437C16.9355 22.6154 15.9937 22.8095 15.0414 22.8148C14.0891 22.82 13.1453 22.6363 12.2645 22.2743C11.3837 21.9122 10.5835 21.379 9.91014 20.7056C9.23683 20.0322 8.70379 19.2318 8.34191 18.351C7.98002 17.4701 7.79647 16.5262 7.80188 15.574C7.80729 14.6217 8.00156 13.6799 8.37344 12.8032C8.74532 11.9266 9.28741 11.1323 9.96834 10.4666C11.3238 9.14142 13.1471 8.40422 15.0427 8.415C16.9383 8.42577 18.7531 9.18365 20.0934 10.5242C21.4337 11.8647 22.1912 13.6797 22.2017 15.5752C22.2121 17.4708 21.4746 19.294 20.1491 20.6492Z" fill="#15433D"/>
+          <path d="M20.1455 23.2286C19.808 22.8909 19.6185 22.4329 19.6187 21.9554C19.6188 21.4779 19.8087 21.02 20.1464 20.6825C20.4842 20.345 20.9422 20.1555 21.4197 20.1556C21.8971 20.1558 22.355 20.3457 22.6925 20.6834L27.7829 25.7756C27.9548 25.9416 28.092 26.1403 28.1863 26.3599C28.2806 26.5795 28.3303 26.8157 28.3324 27.0547C28.3344 27.2937 28.2889 27.5307 28.1984 27.7519C28.1079 27.9731 27.9742 28.1741 27.8052 28.3431C27.6362 28.5121 27.4352 28.6458 27.214 28.7363C26.9928 28.8268 26.7558 28.8723 26.5168 28.8703C26.2778 28.8682 26.0416 28.8185 25.822 28.7242C25.6024 28.6299 25.4038 28.4927 25.2377 28.3208L20.1455 23.2286Z" fill="#15433D"/>
+          </svg>
+        <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false">
+          <use href="#icon-close">
+        </svg>
+      </span>
+    </summary>
+    <div
+      class="search-modal modal__content gradient"
+      role="dialog"
+      aria-modal="true"
+      aria-label="{{ 'general.search.search' | t }}"
+    >
+      <div class="modal-overlay"></div>
+      <div
+        class="search-modal__content{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} search-modal__content-top{% else %} search-modal__content-bottom{% endif %}"
+        tabindex="-1"
+      >
+        {%- if settings.predictive_search_enabled -%}
+          <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
+        {%- else -%}
+          <search-form class="search-modal__form">
+        {%- endif -%}
+        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+          <div class="field">
+            <input
+              class="search__input field__input"
+              id="{{ input_id }}"
+              type="search"
+              name="q"
+              value="{{ search.terms | escape }}"
+              placeholder="{{ 'general.search.search' | t }}"
+              {%- if settings.predictive_search_enabled -%}
+                role="combobox"
+                aria-expanded="false"
+                aria-owns="predictive-search-results"
+                aria-controls="predictive-search-results"
+                aria-haspopup="listbox"
+                aria-autocomplete="list"
+                autocorrect="off"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+              {%- endif -%}
+            >
+            <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
+            <input type="hidden" name="options[prefix]" value="last">
+            <button
+              type="reset"
+              class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
+              aria-label="{{ 'general.search.reset' | t }}"
+            >
+              <svg class="icon icon-close" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-reset">
+              </svg>
+            </button>
+            <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+              <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.69034 9.19041C7.8545 10.0262 7.19148 11.0185 6.73913 12.1106C6.28678 13.2027 6.05396 14.3732 6.05396 15.5552C6.05396 16.7373 6.28678 17.9077 6.73913 18.9998C7.19148 20.0919 7.8545 21.0842 8.69034 21.92C9.52618 22.7558 10.5185 23.4189 11.6105 23.8712C12.7026 24.3236 13.8731 24.5564 15.0551 24.5564C16.2372 24.5564 17.4077 24.3236 18.4997 23.8712C19.5918 23.4189 20.5841 22.7558 21.4199 21.92C23.0594 20.2226 23.9665 17.9492 23.946 15.5894C23.9255 13.2296 22.979 10.9723 21.3103 9.30364C19.6416 7.63497 17.3843 6.68845 15.0246 6.66794C12.6648 6.64744 10.3914 7.55459 8.69394 9.19401M20.1491 20.6492C19.4833 21.33 18.689 21.872 17.8122 22.2437C16.9355 22.6154 15.9937 22.8095 15.0414 22.8148C14.0891 22.82 13.1453 22.6363 12.2645 22.2743C11.3837 21.9122 10.5835 21.379 9.91014 20.7056C9.23683 20.0322 8.70379 19.2318 8.34191 18.351C7.98002 17.4701 7.79647 16.5262 7.80188 15.574C7.80729 14.6217 8.00156 13.6799 8.37344 12.8032C8.74532 11.9266 9.28741 11.1323 9.96834 10.4666C11.3238 9.14142 13.1471 8.40422 15.0427 8.415C16.9383 8.42577 18.7531 9.18365 20.0934 10.5242C21.4337 11.8647 22.1912 13.6797 22.2017 15.5752C22.2121 17.4708 21.4746 19.294 20.1491 20.6492Z" fill="#15433D"/>
+                <path d="M20.1455 23.2286C19.808 22.8909 19.6185 22.4329 19.6187 21.9554C19.6188 21.4779 19.8087 21.02 20.1464 20.6825C20.4842 20.345 20.9422 20.1555 21.4197 20.1556C21.8971 20.1558 22.355 20.3457 22.6925 20.6834L27.7829 25.7756C27.9548 25.9416 28.092 26.1403 28.1863 26.3599C28.2806 26.5795 28.3303 26.8157 28.3324 27.0547C28.3344 27.2937 28.2889 27.5307 28.1984 27.7519C28.1079 27.9731 27.9742 28.1741 27.8052 28.3431C27.6362 28.5121 27.4352 28.6458 27.214 28.7363C26.9928 28.8268 26.7558 28.8723 26.5168 28.8703C26.2778 28.8682 26.0416 28.8185 25.822 28.7242C25.6024 28.6299 25.4038 28.4927 25.2377 28.3208L20.1455 23.2286Z" fill="#15433D"/>
+                </svg>
+            </button>
+          </div>
+
+          {%- if settings.predictive_search_enabled -%}
+            <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+              {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
+            </div>
+
+            <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+          {%- endif -%}
+        </form>
+        {%- if settings.predictive_search_enabled -%}
+          </predictive-search>
+        {%- else -%}
+          </search-form>
+        {%- endif -%}
+        <button
+          type="button"
+          class="search-modal__close-button modal__close-button link link--text focus-inset"
+          aria-label="{{ 'accessibility.close' | t }}"
+        >
+          <svg class="icon icon-close" aria-hidden="true" focusable="false">
+            <use href="#icon-close">
+          </svg>
+        </button>
+      </div>
+    </div>
+  </details>
+</details-modal>

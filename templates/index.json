@@ -48,6 +48,14 @@
         "show_text_below": true
       }
     },
+    "media_kit_K4rkfp": {
+      "type": "media-kit",
+      "settings": {
+        "media_kit_image": "shopify:\/\/shop_images\/FullLogo.png",
+        "heading": "Our Media Kit",
+        "description": "<p>Describe your media kit here.<\/p>"
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -478,6 +486,7 @@
   },
   "order": [
     "image_banner",
+    "media_kit_K4rkfp",
     "rich_text",
     "rich_text_HLbPY7",
     "featured_collection",

@@ -48,6 +48,15 @@
         "show_text_below": true
       }
     },
+    "custom_liquid_8CQAAg": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"section-media\">\n  <div class=\"container\">\n    <h2>“On parle de nous“<\/h2>\n    <div class=\"logo-layout\">\n      <img src=\"\" alt=\"\"\/>\n      <img src=\"\" alt=\"\"\/>\n      <img src=\"\" alt=\"\"\/>\n      <img src=\"\" alt=\"\"\/>\n    <\/div>\n  <\/div>\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "media_kit_K4rkfp": {
       "type": "media-kit",
       "settings": {
@@ -486,6 +495,7 @@
   },
   "order": [
     "image_banner",
+    "custom_liquid_8CQAAg",
     "media_kit_K4rkfp",
     "rich_text",
     "rich_text_HLbPY7",

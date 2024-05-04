@@ -57,12 +57,66 @@
         "padding_bottom": 52
       }
     },
-    "media_kit_K4rkfp": {
+    "media_kit_RXiMVp": {
       "type": "media-kit",
       "settings": {
-        "media_kit_image": "shopify:\/\/shop_images\/FullLogo.png",
-        "heading": "Our Media Kit",
+        "media_kit_image": "shopify:\/\/shop_images\/IceRocksFull.png",
+        "heading": "Our Media Kitee",
         "description": "<p>Describe your media kit here.<\/p>"
+      }
+    },
+    "multicolumn_x7DJrA": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RE3Tax": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MoonrocksFull.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VPHhHR": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nHjQCc": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RE3Tax",
+        "column_VPHhHR",
+        "column_nHjQCc"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text": {
@@ -496,7 +550,8 @@
   "order": [
     "image_banner",
     "custom_liquid_8CQAAg",
-    "media_kit_K4rkfp",
+    "media_kit_RXiMVp",
+    "multicolumn_x7DJrA",
     "rich_text",
     "rich_text_HLbPY7",
     "featured_collection",

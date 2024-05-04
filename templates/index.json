@@ -51,7 +51,7 @@
     "custom_liquid_8CQAAg": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"section-media\">\n  <div class=\"container\">\n    <h2>“On parle de nous“<\/h2>\n    <div class=\"logo-layout\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0859\/9263\/6741\/files\/Voleur.png?v=1714650126\" alt=\"\"\/>\n    <\/div>\n  <\/div>\n<\/div>",
+        "custom_liquid": "<script>\n    \/\/ Passer les variables Liquid à JavaScript\n    var section = {{ section | json }};\n    \n    console.log(\"Section:\", section);\n    console.log(\"On est là\");\n<\/script>\n\n<div class=\"section-media\">\n  <div class=\"container\">\n    <h2>“On parle de nous“<\/h2>\n    <div class=\"logo-layout\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0859\/9263\/6741\/files\/Voleur.png?v=1714650126\" alt=\"\"\/>\n    <\/div>\n  <\/div>\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52

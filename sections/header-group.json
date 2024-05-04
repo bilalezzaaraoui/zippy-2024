@@ -28,6 +28,10 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".cart-count-bubble {width: 1.3rem; height: 1.3rem; background: #ffa56e; top: 3px; left: 25px;}",
+        ".cart-count-bubble span {color: #000; font-weight: bold;}"
+      ],
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",

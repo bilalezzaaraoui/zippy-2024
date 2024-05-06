@@ -30,63 +30,6 @@
       "settings": {
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_t4VD6B": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_6PNRAP": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_afnYhE": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_t4VD6B",
-        "text_6PNRAP",
-        "buttons_afnYhE"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Voleur.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "stack_images_on_mobile": false,
-        "show_text_below": true
-      }
-    },
-    "custom_liquid_8CQAAg": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<script>\n    \/\/ Passer les variables Liquid à JavaScript\n    var sectionJson = {{ section.settings. color_scheme | json }};\nconst section = JSON.parse(sectionJson);\n    \n    console.log(\"Section:\", section);\n    console.log(\"On est là\");\n<\/script>\n\n<div class=\"section-media\">\n  <div class=\"container\">\n    <h2>“On parle de nous“<\/h2>\n    <div class=\"logo-layout\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0859\/9263\/6741\/files\/Voleur.png?v=1714650126\" alt=\"\"\/>\n    <\/div>\n  <\/div>\n<\/div>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "media_kit_RXiMVp": {
       "type": "media-kit",
       "settings": {
@@ -582,8 +525,6 @@
   },
   "order": [
     "hp-carousel-zippy",
-    "image_banner",
-    "custom_liquid_8CQAAg",
     "media_kit_RXiMVp",
     "multicolumn_x7DJrA",
     "rich_text",

@@ -1,0 +1,59 @@
+<div class="zippy-container">
+    <h3>Du CBD pour chaque objectif : choisissez selon vos besoins.</h3>
+    <div class="layout">
+        {%- for block in section.blocks -%}
+            <script>
+                console.log({{ block | json }});
+            </script>
+                <a href="#">
+                    <div>
+                        <div>
+                            <img src="" />
+                        </div>
+                        <span></span>
+                    </div>
+                </a>
+        {%- endfor -%}
+    </div>
+</div>
+
+  
+
+
+  {% schema %}
+{
+  "name": "hp-thematique-zippy",
+  "class": "section-hp-thematique-zippy",
+  "tag": "section",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "name": "Button",
+      "type": "button",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Texte"
+        },
+        {
+            "type": "color",
+            "id": "background-color",
+            "label": "Background"
+          }
+      ]
+    }
+  ]
+}
+{% endschema %}

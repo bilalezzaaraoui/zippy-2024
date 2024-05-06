@@ -28,6 +28,9 @@
     "hp-media-zippy": {
       "type": "hp-media-zippy"
     },
+    "hp-thematique-zippy": {
+      "type": "hp-thematique-zippy"
+    },
     "media_kit_RXiMVp": {
       "type": "media-kit",
       "settings": {
@@ -493,6 +496,7 @@
   "order": [
     "hp-carousel-zippy",
     "hp-media-zippy",
+    "hp-thematique-zippy",
     "media_kit_RXiMVp",
     "multicolumn_x7DJrA",
     "rich_text",

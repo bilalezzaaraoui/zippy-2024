@@ -17,6 +17,26 @@ body {
   font-family: "HelveticaNeue", sans-serif !important;
 }
 
+h1 {
+  font-size: 70px !important;
+}
+
+h2 {
+  font-size: 60px !important;
+}
+
+h3 {
+  font-size: 48px !important;
+}
+
+h4 {
+  font-size: 42px !important;
+}
+
+h5 {
+  font-size: 36px !important;
+}
+
 .utility-bar .announcement-bar .announcement-bar__message {
   padding: 0.5rem 0;
   min-height: auto;
@@ -57,6 +77,30 @@ body {
 }
 .header .header__icons svg {
   height: 30px;
+}
+
+.section-hp-media-zippy {
+  background-color: #fafafa;
+}
+.section-hp-media-zippy .zippy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 3rem 1.5rem;
+}
+.section-hp-media-zippy .zippy-container h2 {
+  text-align: center;
+}
+.section-hp-media-zippy .zippy-container .layout {
+  display: flex;
+  justify-content: center;
+  column-gap: 6rem;
+}
+.section-hp-media-zippy .zippy-container .layout img {
+  height: 45px;
+  width: auto;
 }
 
 /*# sourceMappingURL=application.css.map */

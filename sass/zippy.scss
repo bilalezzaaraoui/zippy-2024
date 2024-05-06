@@ -4,6 +4,22 @@ body {
   font-family: "HelveticaNeue", sans-serif !important;
 }
 
+h1 {
+  font-size: 70px !important;
+}
+h2 {
+  font-size: 60px !important;
+}
+h3 {
+  font-size: 48px !important;
+}
+h4 {
+  font-size: 42px !important;
+}
+h5 {
+  font-size: 36px !important;
+}
+
 .utility-bar {
   .announcement-bar {
     .announcement-bar__message {
@@ -56,6 +72,33 @@ body {
     }
     svg {
       height: 30px;
+    }
+  }
+}
+
+.section-hp-media-zippy {
+  background-color: #fafafa;
+
+  .zippy-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 3rem 1.5rem;
+
+    h2 {
+      text-align: center;
+    }
+    .layout {
+      display: flex;
+      justify-content: center;
+      column-gap: 6rem;
+
+      img {
+        height: 45px;
+        width: auto;
+      }
     }
   }
 }

@@ -1,0 +1,36 @@
+<div class="zippy-container">
+    <h2>“On parle de nous“</h2>
+    <div class="layout">
+        {%- for block in section.blocks -%}
+                <img class="d-block" src="{{
+                    block.settings.image
+                    | image_url: width: 3200, height: 1000}}" />
+        {%- endfor -%}
+    </div>
+</div>
+
+  
+
+
+  {% schema %}
+{
+  "name": "hp-media-zippy",
+  "class": "section-hp-media-zippy",
+  "tag": "section",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "name": "Media",
+      "type": "media",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

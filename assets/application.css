@@ -103,4 +103,45 @@ h5 {
   width: auto;
 }
 
+.section-hp-thematique-zippy .zippy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 4rem 1.5rem;
+}
+.section-hp-thematique-zippy .zippy-container h5 {
+  text-align: center;
+}
+.section-hp-thematique-zippy .zippy-container .layout {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+.section-hp-thematique-zippy .zippy-container .layout .link {
+  text-decoration: none;
+}
+.section-hp-thematique-zippy .zippy-container .layout .link .link-container {
+  background-color: #c3e5fd;
+  display: flex;
+  align-items: center;
+  padding: 8px 4.5rem;
+  column-gap: 1rem;
+  border-radius: 35px;
+}
+.section-hp-thematique-zippy .zippy-container .layout .link .link-container .icon-container {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 5px;
+}
+.section-hp-thematique-zippy .zippy-container .layout .link .link-container .icon-container img {
+  max-height: 35px;
+}
+.section-hp-thematique-zippy .zippy-container .layout .link .link-container span {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
 /*# sourceMappingURL=application.css.map */

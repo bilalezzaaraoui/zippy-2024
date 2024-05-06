@@ -1,16 +1,16 @@
 <div class="zippy-container">
-    <h3>Du CBD pour chaque objectif : choisissez selon vos besoins.</h3>
+    <h5>Du CBD pour chaque objectif : choisissez selon vos besoins.</h5>
     <div class="layout">
         {%- for block in section.blocks -%}
             <script>
                 console.log({{ block | json }});
             </script>
-                <a href="#">
-                    <div>
-                        <div>
-                            <img src="" />
+                <a href="{{ block.settings.collection.url }}" class="link">
+                    <div class="link-container" style="background-color: {{ block.settings.background-color }} ">
+                        <div class="icon-container">
+                            <img src="{{ block.settings.image | image_url: width: 3200, height: 1000 }}" />
                         </div>
-                        <span></span>
+                        <span>{{ block.settings.text }}</span>
                     </div>
                 </a>
         {%- endfor -%}

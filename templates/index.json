@@ -1,5 +1,57 @@
 {
   "sections": {
+    "hp-carousel-zippy": {
+      "type": "hp-carousel-zippy"
+      // "blocks": {
+      //   "column1": {
+      //     "type": "column",
+      //     "settings": {
+      //       "image": "shopify://shop_images/IceRocksFull.png",
+      //       "title": "Column 1",
+      //       "text": "<p>The colum 1</p>",
+      //       "link_label": "",
+      //       "link": ""
+      //     }
+      //   },
+      //   "column2": {
+      //     "type": "column",
+      //     "settings": {
+      //       "image": "shopify://shop_images/BubblegumFull.png",
+      //       "title": "Column 2",
+      //       "text": "<p>The column 2</p>",
+      //       "link_label": "",
+      //       "link": ""
+      //     }
+      //   },
+      //   "column3": {
+      //     "type": "column",
+      //     "settings": {
+      //       "image": "shopify://shop_images/PinkLadyFull.png",
+      //       "title": "Column 3",
+      //       "text": "<p>The column 3</p>",
+      //       "link_label": "",
+      //       "link": ""
+      //     }
+      //   }
+      // },
+      // "block_order": ["column1", "column2", "column3"],
+      // "settings": {
+      //   "title": "",
+      //   "heading_size": "h1",
+      //   "image_width": "third",
+      //   "image_ratio": "adapt",
+      //   "columns_desktop": 3,
+      //   "column_alignment": "center",
+      //   "background_style": "none",
+      //   "button_label": "",
+      //   "button_link": "",
+      //   "color_scheme": "scheme-1",
+      //   "columns_mobile": "1",
+      //   "swipe_on_mobile": false,
+      //   "padding_top": 36,
+      //   "padding_bottom": 36
+      // }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -29,13 +81,9 @@
           }
         }
       },
-      "block_order": [
-        "heading_t4VD6B",
-        "text_6PNRAP",
-        "buttons_afnYhE"
-      ],
+      "block_order": ["heading_t4VD6B", "text_6PNRAP", "buttons_afnYhE"],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Voleur.png",
+        "image": "shopify://shop_images/Voleur.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-left",
@@ -51,7 +99,7 @@
     "custom_liquid_8CQAAg": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<script>\n    \/\/ Passer les variables Liquid à JavaScript\n    var sectionJson = {{ section.settings. color_scheme | json }};\nconst section = JSON.parse(sectionJson);\n    \n    console.log(\"Section:\", section);\n    console.log(\"On est là\");\n<\/script>\n\n<div class=\"section-media\">\n  <div class=\"container\">\n    <h2>“On parle de nous“<\/h2>\n    <div class=\"logo-layout\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0859\/9263\/6741\/files\/Voleur.png?v=1714650126\" alt=\"\"\/>\n    <\/div>\n  <\/div>\n<\/div>",
+        "custom_liquid": "<script>\n    // Passer les variables Liquid à JavaScript\n    var sectionJson = {{ section.settings. color_scheme | json }};\nconst section = JSON.parse(sectionJson);\n    \n    console.log(\"Section:\", section);\n    console.log(\"On est là\");\n</script>\n\n<div class=\"section-media\">\n  <div class=\"container\">\n    <h2>“On parle de nous“</h2>\n    <div class=\"logo-layout\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0859/9263/6741/files/Voleur.png?v=1714650126\" alt=\"\"/>\n    </div>\n  </div>\n</div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -60,9 +108,9 @@
     "media_kit_RXiMVp": {
       "type": "media-kit",
       "settings": {
-        "media_kit_image": "shopify:\/\/shop_images\/IceRocksFull.png",
+        "media_kit_image": "shopify://shop_images/IceRocksFull.png",
         "heading": "Our Media Kitee",
-        "description": "<p>Describe your media kit here.<\/p>"
+        "description": "<p>Describe your media kit here.</p>"
       }
     },
     "multicolumn_x7DJrA": {
@@ -71,9 +119,9 @@
         "column_RE3Tax": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MoonrocksFull.png",
+            "image": "shopify://shop_images/MoonrocksFull.png",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review</p>",
             "link_label": "",
             "link": ""
           }
@@ -82,7 +130,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -91,17 +139,13 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": [
-        "column_RE3Tax",
-        "column_VPHhHR",
-        "column_nHjQCc"
-      ],
+      "block_order": ["column_RE3Tax", "column_VPHhHR", "column_nHjQCc"],
       "settings": {
         "title": "Multicolumn",
         "heading_size": "h1",
@@ -132,14 +176,11 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         }
       },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+      "block_order": ["heading", "text"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -162,7 +203,7 @@
         "text_h6Yxn3": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
         "button_EjBNfn": {
@@ -177,11 +218,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_KEKwMB",
-        "text_h6Yxn3",
-        "button_EjBNfn"
-      ],
+      "block_order": ["heading_KEKwMB", "text_h6Yxn3", "button_EjBNfn"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -226,7 +263,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -235,7 +272,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -244,17 +281,13 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": [
-        "column_BeDMXi",
-        "column_tUdHim",
-        "column_KyXc7V"
-      ],
+      "block_order": ["column_BeDMXi", "column_tUdHim", "column_KyXc7V"],
       "settings": {
         "title": "Multicolumn",
         "heading_size": "h1",
@@ -285,7 +318,7 @@
         "text_U3ehTr": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body"
           }
         },
@@ -298,11 +331,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_y6YEtb",
-        "text_U3ehTr",
-        "button_MAeDgt"
-      ],
+      "block_order": ["heading_y6YEtb", "text_U3ehTr", "button_MAeDgt"],
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -331,7 +360,7 @@
         "text_FDj7Kf": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body"
           }
         },
@@ -344,11 +373,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_X6KzUa",
-        "text_FDj7Kf",
-        "button_dRW3DC"
-      ],
+      "block_order": ["heading_X6KzUa", "text_FDj7Kf", "button_dRW3DC"],
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -377,7 +402,7 @@
         "text_4RTEeU": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body"
           }
         },
@@ -390,11 +415,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_xKb69t",
-        "text_4RTEeU",
-        "button_GNQ3Hw"
-      ],
+      "block_order": ["heading_xKb69t", "text_4RTEeU", "button_GNQ3Hw"],
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -417,7 +438,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -426,7 +447,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -435,7 +456,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -444,7 +465,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -453,7 +474,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -462,7 +483,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -499,8 +520,9 @@
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify://shop_images/IceRocksFull.png",
+            "title": "Column 1",
+            "text": "<p>The colum 1</p>",
             "link_label": "",
             "link": ""
           }
@@ -508,8 +530,9 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify://shop_images/BubblegumFull.png",
+            "title": "Column 2",
+            "text": "<p>The column 2</p>",
             "link_label": "",
             "link": ""
           }
@@ -517,18 +540,15 @@
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify://shop_images/PinkLadyFull.png",
+            "title": "Column 3",
+            "text": "<p>The column 3</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
+      "block_order": ["column1", "column2", "column3"],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -548,6 +568,7 @@
     }
   },
   "order": [
+    "hp-carousel-zippy",
     "image_banner",
     "custom_liquid_8CQAAg",
     "media_kit_RXiMVp",

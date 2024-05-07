@@ -281,6 +281,19 @@
     },
     "hp-process-zippy": {
       "type": "hp-process-zippy",
+      "blocks": {
+        "card_d7Y7rJ": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        }
+      },
+      "block_order": [
+        "card_d7Y7rJ"
+      ],
       "settings": {
       }
     },

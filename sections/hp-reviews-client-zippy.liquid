@@ -1,0 +1,105 @@
+<div class="zippy-container">
+    <h2>Customers can’t stop raving about 
+    the zippy experience</h2>
+    <div class="layout">
+      <div class="container-one">
+        <div class="container-img">
+          <img src="{{ section.settings.image_1 | image_url: width: 3200, height: 1000 }}" />
+        </div>
+        <div class="container-img">
+          <img src="{{ section.settings.image_2 | image_url: width: 3200, height: 1000 }}" />
+        </div>
+        <div class="container-img">
+          <img src="{{ section.settings.image_3 | image_url: width: 3200, height: 1000 }}" />
+        </div>
+        <div class="container-img">
+          <img src="{{ section.settings.image_4 | image_url: width: 3200, height: 1000 }}" />
+        </div>
+      </div>
+      <div class="container-two">
+          <div class="layout-reviews">
+            {%- for block in section.blocks -%}
+              <div class="review-container">
+                <img src="{{ block.settings.image | image_url: width: 3200, height: 1000 }}" />
+                <p>{{ block.settings.message }}</p>
+                  <div class="layout-container">
+                    <span>{{ block.settings.author }}</span>
+                    <div>
+                      <img src="{{ block.settings.icon | image_url: width: 3200, height: 1000 }}" />
+                      <span>Acheteur vérifié</span>
+                    </div>
+                  </div>
+              </div>
+            {%- endfor -%}
+          </div>
+          <a href="{{ section.settings.collection.url }}" class="link">Commander maintenant !</a>
+      </div>
+    </div>
+</div>
+
+  
+
+
+  {% schema %}
+{
+  "name": "hp-reviews-client-zippy",
+  "class": "section-reviews-client-zippy",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image n°1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image n°2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image n°3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image n°4"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    }
+  ],
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "name": "Avis",
+      "type": "avis",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+            "type": "textarea",
+            "id": "message",
+            "label": "Message"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Auteur"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

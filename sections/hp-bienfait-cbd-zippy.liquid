@@ -1,18 +1,11 @@
 <div class="zippy-container">
-    <h5>Du CBD pour chaque objectif : choisissez selon vos besoins.</h5>
+    <h5>Quels sont les bienfaits du CBD ?</h5>
     <div class="layout">
         {%- for block in section.blocks -%}
-            <script>
-                console.log({{ block | json }});
-            </script>
-                <a href="{{ block.settings.collection.url }}" class="link">
-                    <div class="link-container" style="background-color: {{ block.settings.background-color }} ">
-                        <div class="icon-container">
-                            <img src="{{ block.settings.image | image_url: width: 3200, height: 1000 }}" />
-                        </div>
-                        <span>{{ block.settings.text }}</span>
-                    </div>
-                </a>
+          <div class="card-container">
+            <p>{{ block.settings.text }}</p>
+            <img src="{{ block.settings.image | image_url: width: 3200, height: 1000 }}" />
+          </div>
         {%- endfor -%}
     </div>
 </div>
@@ -22,36 +15,27 @@
 
   {% schema %}
 {
-  "name": "hp-thematique-zippy",
-  "class": "section-hp-thematique-zippy",
+  "name": "hp-bienfait-cbd-zippy",
+  "class": "section-hp-bienfait-cbd-zippy",
   "tag": "section",
   "settings": [
   ],
+  "max_blocks": 3,
   "blocks": [
     {
-      "name": "Button",
-      "type": "button",
+      "name": "Container",
+      "type": "container",
       "settings": [
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-            "type": "collection",
-            "id": "collection",
-            "label": "Collection"
-        },
-        {
-            "type": "text",
+            "type": "textarea",
             "id": "text",
             "label": "Texte"
         },
         {
-            "type": "color",
-            "id": "background-color",
-            "label": "Background"
-          }
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
       ]
     }
   ]

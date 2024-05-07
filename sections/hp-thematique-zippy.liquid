@@ -2,9 +2,6 @@
     <h5>Du CBD pour chaque objectif : choisissez selon vos besoins.</h5>
     <div class="layout">
         {%- for block in section.blocks -%}
-            <script>
-                console.log({{ block | json }});
-            </script>
                 <a href="{{ block.settings.collection.url }}" class="link">
                     <div class="link-container" style="background-color: {{ block.settings.background-color }} ">
                         <div class="icon-container">

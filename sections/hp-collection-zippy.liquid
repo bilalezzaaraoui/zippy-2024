@@ -1,0 +1,66 @@
+<div class="zippy-container">
+    <div class="container-one">
+      <h5>{{ section.settings.title }}</h5>
+      <p>{{ section.settings.text }}</p>
+    </div>
+    <div class="container-two">
+        {%- for block in section.blocks -%}
+          <div class="link-container">
+            <img src="{{ block.settings.image | image_url: width: 3200, height: 1000 }}" />
+            <div class="icon-container">
+              <h5>{{ block.settings.text }}</h5>
+              <a href="{{ block.settings.collection.url }}" class="link">
+                <span>Découvrir</span>
+              </a>
+            </div>
+          </div>
+        {%- endfor -%}
+    </div>
+</div>
+
+  
+
+
+  {% schema %}
+{
+  "name": "hp-collection-zippy",
+  "class": "section-hp-collection-zippy",
+  "tag": "section",
+  "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Titre"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Texte"
+    }
+  ],
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "name": "Collection",
+      "type": "collection",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Texte"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -5,46 +5,43 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
-          "type": "link_list",
+        "socials_GtmPaG": {
+          "type": "socials",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "image": "shopify:\/\/shop_images\/item-instagram.svg",
+            "link": "https:\/\/facebook.com"
           }
         },
-        "footer-1": {
-          "type": "link_list",
+        "socials_mpGWU3": {
+          "type": "socials",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "image": "shopify:\/\/shop_images\/item-fb.svg",
+            "link": "https:\/\/facebook.com"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "socials_4ggiRX": {
+          "type": "socials",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "image": "shopify:\/\/shop_images\/item-tiktok.svg",
+            "link": "https:\/\/facebook.com"
+          }
+        },
+        "socials_bRWP8f": {
+          "type": "socials",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/item-x.svg",
+            "link": "https:\/\/facebook.com"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "socials_GtmPaG",
+        "socials_mpGWU3",
+        "socials_4ggiRX",
+        "socials_bRWP8f"
       ],
       "settings": {
-        "color_scheme": "scheme-2",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image_svg": "shopify:\/\/shop_images\/wave-clipper.png"
       }
     }
   },

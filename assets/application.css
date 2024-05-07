@@ -472,5 +472,26 @@ h5 {
   width: auto;
   height: 1.5rem;
 }
+.footer-zippy .wide-footer .max-width-container .first-container .newsletter-social-media-layout .rs-layout {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 1rem;
+  margin-top: 1rem;
+}
+.footer-zippy .wide-footer .max-width-container .second-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.footer-zippy .wide-footer .max-width-container .second-container p {
+  color: #ececec;
+}
+.footer-zippy .wide-footer .max-width-container .second-container .bottom-link-layout {
+  display: flex;
+  column-gap: 1rem;
+}
+.footer-zippy .wide-footer .max-width-container .second-container .bottom-link-layout a {
+  color: #ececec;
+}
 
 /*# sourceMappingURL=application.css.map */

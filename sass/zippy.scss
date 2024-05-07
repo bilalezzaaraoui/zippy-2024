@@ -548,6 +548,32 @@ h5 {
               }
             }
           }
+
+          .rs-layout {
+            display: flex;
+            justify-content: flex-end;
+            column-gap: 1rem;
+            margin-top: 1rem;
+          }
+        }
+      }
+
+      .second-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        p {
+          color: #ececec;
+        }
+
+        .bottom-link-layout {
+          display: flex;
+          column-gap: 1rem;
+
+          a {
+            color: #ececec;
+          }
         }
       }
     }

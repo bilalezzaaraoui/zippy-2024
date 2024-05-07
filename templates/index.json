@@ -108,14 +108,64 @@
     },
     "hp-bienfait-cbd-zippy": {
       "type": "hp-bienfait-cbd-zippy",
+      "blocks": {
+        "container_nXyqCc": {
+          "type": "container",
+          "settings": {
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\".",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg"
+          }
+        },
+        "container_4i79je": {
+          "type": "container",
+          "settings": {
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\".",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg"
+          }
+        },
+        "container_X9eeNR": {
+          "type": "container",
+          "settings": {
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\".",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg"
+          }
+        }
+      },
+      "block_order": [
+        "container_nXyqCc",
+        "container_4i79je",
+        "container_X9eeNR"
+      ],
       "settings": {
       }
     },
     "hp-collection-zippy": {
       "type": "hp-collection-zippy",
+      "blocks": {
+        "collection_gHQy3m": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_8.svg",
+            "collection": "dormir",
+            "text": "Fleurs de cbd"
+          }
+        },
+        "collection_NnfdbX": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_8.svg",
+            "collection": "dormir",
+            "text": "Résine de cbd"
+          }
+        }
+      },
+      "block_order": [
+        "collection_gHQy3m",
+        "collection_NnfdbX"
+      ],
       "settings": {
-        "title": "",
-        "text": ""
+        "title": "Que recherchez vous ?",
+        "text": "Let Us Help You Reach Your Health Goals!"
       }
     },
     "hp-best-brand-zippy": {

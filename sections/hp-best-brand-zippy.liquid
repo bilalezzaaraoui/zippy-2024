@@ -1,6 +1,6 @@
 <div class="zippy-container">
     <div class="container-one">
-      <h3>{{ section.settings.paragraph }}</h3>
+      <h2>{{ section.settings.paragraph }}</h2>
     </div>
     <div class="container-two">
         <h4>zippy c'est ...</h4>
@@ -10,8 +10,8 @@
                     <img src="{{ block.settings.image | image_url: width: 3200, height: 1000 }}" />
                 </div>
                 <div class="info-container">
-                  <p>{{ block.settings.title }}</p>
-                  <span>{{ block.settings.text }}</span>
+                  {{ block.settings.title | replace: '<p', '<p class="title-info"' }}
+                  {{ block.settings.text | replace: '<p', '<p class="text-info-message"' }}
                 </div>
             </div>
         {%- endfor -%}

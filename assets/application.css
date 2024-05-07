@@ -144,4 +144,219 @@ h5 {
   font-size: 1.8rem;
 }
 
+.section-hp-bienfait-cbd-zippy .zippy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 4rem 1.5rem;
+}
+.section-hp-bienfait-cbd-zippy .zippy-container h5 {
+  text-align: center;
+}
+.section-hp-bienfait-cbd-zippy .zippy-container .layout {
+  display: flex;
+  column-gap: 3rem;
+}
+.section-hp-bienfait-cbd-zippy .zippy-container .layout .card-container {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.section-hp-bienfait-cbd-zippy .zippy-container .layout .card-container p {
+  text-align: center;
+}
+
+.section-hp-collection-zippy {
+  background-color: #fff;
+}
+.section-hp-collection-zippy .zippy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  row-gap: 2rem;
+  padding: 4rem 1.5rem;
+}
+.section-hp-collection-zippy .zippy-container .container-one {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-hp-collection-zippy .zippy-container .container-two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.section-hp-collection-zippy .zippy-container .container-two .link-container {
+  background: linear-gradient(100deg, rgb(36, 46, 73) 12%, rgb(42, 64, 120) 65%);
+  border-radius: 15px;
+  position: relative;
+  height: 125px;
+}
+.section-hp-collection-zippy .zippy-container .container-two .link-container .icon-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-hp-collection-zippy .zippy-container .container-two .link-container .icon-container h5 {
+  color: #fff7e5;
+}
+.section-hp-collection-zippy .zippy-container .container-two .link-container .icon-container .link {
+  color: #2a4078;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 25px;
+  background-color: #fff7e5;
+  border-radius: 35px;
+}
+
+.section-hp-best-brand-zippy .zippy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  row-gap: 2rem;
+  padding: 5rem 1.5rem;
+}
+.section-hp-best-brand-zippy .zippy-container .container-one {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.section-hp-best-brand-zippy .zippy-container .container-one h2 {
+  max-width: 480px;
+}
+.section-hp-best-brand-zippy .zippy-container .container-one h2 strong {
+  font-weight: normal;
+  padding: 0 1rem;
+  background: #000;
+  border-radius: 10px;
+  color: #f8d5c0;
+}
+.section-hp-best-brand-zippy .zippy-container .container-two {
+  width: 40%;
+}
+.section-hp-best-brand-zippy .zippy-container .container-two h4 {
+  margin-bottom: 2rem;
+}
+.section-hp-best-brand-zippy .zippy-container .container-two .link-container {
+  display: flex;
+  column-gap: 15px;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+.section-hp-best-brand-zippy .zippy-container .container-two .link-container .icon-container {
+  padding: 0.8rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8d5c0;
+}
+.section-hp-best-brand-zippy .zippy-container .container-two .link-container .icon-container img {
+  width: 18px;
+  height: 18px;
+}
+.section-hp-best-brand-zippy .zippy-container .container-two .link-container .info-container {
+  margin-top: -4px;
+}
+.section-hp-best-brand-zippy .zippy-container .container-two .link-container .info-container .title-info {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.section-reviews-client-zippy {
+  background: #f2f2f2;
+}
+.section-reviews-client-zippy .super-title {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+.section-reviews-client-zippy .zippy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 5rem 1.5rem;
+}
+.section-reviews-client-zippy .zippy-container h2 {
+  text-align: center;
+}
+.section-reviews-client-zippy .zippy-container .layout {
+  display: flex;
+  column-gap: 2rem;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-one {
+  width: fit-content;
+  display: grid;
+  justify-content: center;
+  column-gap: 1.5rem;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 1.5rem;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-one .container-img {
+  height: fit-content;
+  width: fit-content;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-two {
+  flex: 1;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-two .layout-reviews {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-two .layout-reviews .review-container {
+  border: 2px solid #15433d;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-two .layout-reviews .review-container img {
+  max-width: 100px;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-two .layout-reviews .review-container .layout-container {
+  display: flex;
+  justify-content: space-between;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-two .layout-reviews .review-container .layout-container .author {
+  font-weight: bold;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-two .layout-reviews .review-container .layout-container .verified-badge {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-two .layout-reviews .review-container .layout-container .verified-badge img {
+  max-height: 19px;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-two .layout-reviews .review-container .layout-container .verified-badge span {
+  font-weight: bold;
+}
+.section-reviews-client-zippy .zippy-container .layout .container-two .link {
+  display: inline-block;
+  width: 100%;
+  padding: 1.5rem 0;
+  text-align: center;
+  background-color: #000;
+  margin-top: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=application.css.map */

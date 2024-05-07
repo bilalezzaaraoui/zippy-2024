@@ -4,7 +4,7 @@
             <div class="reassurance-container">
               <img src="{{ block.settings.image | image_url: width: 3200, height: 1000 }}" />
               <p>{{ block.settings.title }}</p>
-              <p>{{ block.settings.text }}</p>
+              <p class="message-reassurance">{{ block.settings.text }}</p>
             </div>
         {%- endfor -%}
     </div>

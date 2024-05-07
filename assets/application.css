@@ -359,4 +359,57 @@ h5 {
   font-weight: bold;
 }
 
+.section-hp-process-zippy .zippy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 5rem 1.5rem;
+}
+.section-hp-process-zippy .zippy-container h2 {
+  text-align: center;
+}
+.section-hp-process-zippy .zippy-container .layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+.section-hp-process-zippy .zippy-container .layout .card-container {
+  padding: 3rem 2rem;
+  background-color: #000;
+  border-radius: 20px;
+  color: #fff;
+  height: fit-content;
+}
+.section-hp-process-zippy .zippy-container .layout .card-container .title {
+  margin: 1rem 0;
+}
+.section-hp-process-zippy .zippy-container .layout .card-container .text {
+  margin: 0;
+}
+
+.section-hp-reassurance-zippy .zippy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 5rem 1.5rem;
+}
+.section-hp-reassurance-zippy .zippy-container .layout {
+  display: flex;
+  column-gap: 5rem;
+}
+.section-hp-reassurance-zippy .zippy-container .layout .reassurance-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-hp-reassurance-zippy .zippy-container .layout .reassurance-container .message-reassurance {
+  text-align: center;
+}
+
 /*# sourceMappingURL=application.css.map */

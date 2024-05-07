@@ -411,3 +411,68 @@ h5 {
     }
   }
 }
+
+.section-hp-process-zippy {
+  .zippy-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 5rem 1.5rem;
+
+    h2 {
+      text-align: center;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 3rem;
+      row-gap: 3rem;
+
+      .card-container {
+        padding: 3rem 2rem;
+        background-color: #000;
+        border-radius: 20px;
+        color: #fff;
+        height: fit-content;
+
+        .title {
+          margin: 1rem 0;
+        }
+
+        .text {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.section-hp-reassurance-zippy {
+  .zippy-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 5rem 1.5rem;
+
+    .layout {
+      display: flex;
+      column-gap: 5rem;
+
+      .reassurance-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .message-reassurance {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

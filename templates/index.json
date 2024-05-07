@@ -289,16 +289,101 @@
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
+        },
+        "card_cATzM7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        },
+        "card_XMzgxk": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        },
+        "card_X74hPb": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        },
+        "card_7CieNt": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        },
+        "card_ARcXHz": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
         }
       },
       "block_order": [
-        "card_d7Y7rJ"
+        "card_d7Y7rJ",
+        "card_cATzM7",
+        "card_XMzgxk",
+        "card_X74hPb",
+        "card_7CieNt",
+        "card_ARcXHz"
       ],
       "settings": {
       }
     },
     "hp-reassurance-zippy": {
       "type": "hp-reassurance-zippy",
+      "blocks": {
+        "card_DcwDDL": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        },
+        "card_UHNx4m": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        },
+        "card_XhJEVU": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        },
+        "card_c6VmET": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        }
+      },
+      "block_order": [
+        "card_DcwDDL",
+        "card_UHNx4m",
+        "card_XhJEVU",
+        "card_c6VmET"
+      ],
       "settings": {
       }
     }

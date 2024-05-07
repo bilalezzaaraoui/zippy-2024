@@ -6,24 +6,29 @@
         "slide_LnHDUm": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled.png"
+            "image": "shopify:\/\/shop_images\/Copy_of_Copy_of_Untitled.png"
           }
         },
         "slide_FbCAXf": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Copy_of_Untitled_1.png"
+            "image": "shopify:\/\/shop_images\/Copy_of_Untitled_1.png"
           }
         },
         "slide_Hxcaw3": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design_2.png"
+            "image": "shopify:\/\/shop_images\/Untitled_design_2.png"
           }
         }
       },
-      "block_order": ["slide_LnHDUm", "slide_FbCAXf", "slide_Hxcaw3"],
-      "settings": {}
+      "block_order": [
+        "slide_LnHDUm",
+        "slide_FbCAXf",
+        "slide_Hxcaw3"
+      ],
+      "settings": {
+      }
     },
     "hp-media-zippy": {
       "type": "hp-media-zippy",
@@ -31,25 +36,25 @@
         "media_QMMzhY": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Logo-konbini.svg"
+            "image": "shopify:\/\/shop_images\/Logo-konbini.svg"
           }
         },
         "media_UECJ6e": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/GQ_Logo.svg"
+            "image": "shopify:\/\/shop_images\/GQ_Logo.svg"
           }
         },
         "media_jEMUyN": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Vice-Media-logo.svg"
+            "image": "shopify:\/\/shop_images\/Vice-Media-logo.svg"
           }
         },
         "media_miEpbz": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/W9-Logo.svg"
+            "image": "shopify:\/\/shop_images\/W9-Logo.svg"
           }
         }
       },
@@ -59,28 +64,81 @@
         "media_jEMUyN",
         "media_miEpbz"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "hp-thematique-zippy": {
-      "type": "hp-thematique-zippy"
+      "type": "hp-thematique-zippy",
+      "blocks": {
+        "button_dK7Qnw": {
+          "type": "button",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stress.svg",
+            "collection": "stress",
+            "text": "Pour le stress",
+            "background-color": "#c3e5fd"
+          }
+        },
+        "button_ck3UXC": {
+          "type": "button",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dormir.svg",
+            "collection": "dormir",
+            "text": "Pour dormir",
+            "background-color": "#d9c3fd"
+          }
+        },
+        "button_dVPFF7": {
+          "type": "button",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/douleur.svg",
+            "collection": "douleur",
+            "text": "Pour la douleur",
+            "background-color": "#ffd0fa"
+          }
+        }
+      },
+      "block_order": [
+        "button_dK7Qnw",
+        "button_ck3UXC",
+        "button_dVPFF7"
+      ],
+      "settings": {
+      }
     },
     "hp-bienfait-cbd-zippy": {
-      "type": "hp-bienfait-cbd-zippy"
+      "type": "hp-bienfait-cbd-zippy",
+      "settings": {
+      }
     },
     "hp-collection-zippy": {
-      "type": "hp-collection-zippy"
+      "type": "hp-collection-zippy",
+      "settings": {
+        "title": "",
+        "text": ""
+      }
     },
     "hp-best-brand-zippy": {
-      "type": "hp-best-brand-zippy"
+      "type": "hp-best-brand-zippy",
+      "settings": {
+        "paragraph": ""
+      }
     },
     "hp-reviews-client-zippy": {
-      "type": "hp-reviews-client-zippy"
+      "type": "hp-reviews-client-zippy",
+      "settings": {
+        "collection": ""
+      }
     },
     "hp-process-zippy": {
-      "type": "hp-process-zippy"
+      "type": "hp-process-zippy",
+      "settings": {
+      }
     },
     "hp-reassurance-zippy": {
-      "type": "hp-reassurance-zippy"
+      "type": "hp-reassurance-zippy",
+      "settings": {
+      }
     }
   },
   "order": [

@@ -4,6 +4,42 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "socials_GtmPaG": {
+          "type": "socials",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/item-instagram.svg",
+            "link": "https:\/\/facebook.com"
+          }
+        },
+        "socials_mpGWU3": {
+          "type": "socials",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/item-fb.svg",
+            "link": "https:\/\/facebook.com"
+          }
+        },
+        "socials_4ggiRX": {
+          "type": "socials",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/item-tiktok.svg",
+            "link": "https:\/\/facebook.com"
+          }
+        },
+        "socials_bRWP8f": {
+          "type": "socials",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/item-x.svg",
+            "link": "https:\/\/facebook.com"
+          }
+        }
+      },
+      "block_order": [
+        "socials_GtmPaG",
+        "socials_mpGWU3",
+        "socials_4ggiRX",
+        "socials_bRWP8f"
+      ],
       "settings": {
         "image_svg": "shopify:\/\/shop_images\/wave-clipper.png"
       }

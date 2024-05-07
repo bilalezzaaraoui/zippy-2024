@@ -170,14 +170,113 @@
     },
     "hp-best-brand-zippy": {
       "type": "hp-best-brand-zippy",
+      "blocks": {
+        "line_4z88he": {
+          "type": "Line",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_check-fill.svg",
+            "title": "<p>Powerfull!<\/p>",
+            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)<\/strong><\/p>"
+          }
+        },
+        "line_fXKHx7": {
+          "type": "Line",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_check-fill.svg",
+            "title": "<p>Powerfull!<\/p>",
+            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)<\/strong><\/p>"
+          }
+        },
+        "line_3CRTV8": {
+          "type": "Line",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_check-fill.svg",
+            "title": "<p>Powerfull!<\/p>",
+            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "line_4z88he",
+        "line_fXKHx7",
+        "line_3CRTV8"
+      ],
       "settings": {
-        "paragraph": ""
+        "paragraph": "<p>Why <strong>200,000+<\/strong> customers think zippy delivers unforgettable experience<\/p>"
       }
     },
     "hp-reviews-client-zippy": {
       "type": "hp-reviews-client-zippy",
+      "blocks": {
+        "avis_ytWWFi": {
+          "type": "avis",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stars-5.png",
+            "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
+            "author": "Sara M.",
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+          }
+        },
+        "avis_Bk7MLD": {
+          "type": "avis",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stars-5.png",
+            "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
+            "author": "Sara M.",
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+          }
+        },
+        "avis_bDTMKd": {
+          "type": "avis",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stars-5.png",
+            "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
+            "author": "Sara M.",
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+          }
+        },
+        "avis_wxHXKL": {
+          "type": "avis",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stars-5.png",
+            "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
+            "author": "Sara M.",
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+          }
+        },
+        "avis_chaEBE": {
+          "type": "avis",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stars-5.png",
+            "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
+            "author": "Sara M.",
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+          }
+        },
+        "avis_rhw9NB": {
+          "type": "avis",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stars-5.png",
+            "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
+            "author": "Sara M.",
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+          }
+        }
+      },
+      "block_order": [
+        "avis_ytWWFi",
+        "avis_Bk7MLD",
+        "avis_bDTMKd",
+        "avis_wxHXKL",
+        "avis_chaEBE",
+        "avis_rhw9NB"
+      ],
       "settings": {
-        "collection": ""
+        "image_1": "shopify:\/\/shop_images\/Frame_49.png",
+        "image_2": "shopify:\/\/shop_images\/Frame_48.png",
+        "image_3": "shopify:\/\/shop_images\/Frame_45.png",
+        "image_4": "shopify:\/\/shop_images\/Frame_47.png",
+        "collection": "dormir"
       }
     },
     "hp-process-zippy": {

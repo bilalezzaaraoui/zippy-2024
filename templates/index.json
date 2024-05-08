@@ -109,6 +109,9 @@
     "hp-best-seller-zippy": {
       "type": "hp-best-seller-zippy",
       "settings": {
+        "title": "Meilleurs ventes",
+        "description-message": "",
+        "collection": "homepage-best-sellers"
       }
     },
     "hp-bienfait-cbd-zippy": {

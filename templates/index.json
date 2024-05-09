@@ -6,24 +6,29 @@
         "slide_LnHDUm": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled.png"
+            "image": "shopify:\/\/shop_images\/Copy_of_Copy_of_Untitled.png"
           }
         },
         "slide_FbCAXf": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Copy_of_Untitled_1.png"
+            "image": "shopify:\/\/shop_images\/Copy_of_Untitled_1.png"
           }
         },
         "slide_Hxcaw3": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design_2.png"
+            "image": "shopify:\/\/shop_images\/Untitled_design_2.png"
           }
         }
       },
-      "block_order": ["slide_LnHDUm", "slide_FbCAXf", "slide_Hxcaw3"],
-      "settings": {}
+      "block_order": [
+        "slide_LnHDUm",
+        "slide_FbCAXf",
+        "slide_Hxcaw3"
+      ],
+      "settings": {
+      }
     },
     "hp-media-zippy": {
       "type": "hp-media-zippy",
@@ -31,25 +36,25 @@
         "media_QMMzhY": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Logo-konbini.svg"
+            "image": "shopify:\/\/shop_images\/Logo-konbini.svg"
           }
         },
         "media_UECJ6e": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/GQ_Logo.svg"
+            "image": "shopify:\/\/shop_images\/GQ_Logo.svg"
           }
         },
         "media_jEMUyN": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Vice-Media-logo.svg"
+            "image": "shopify:\/\/shop_images\/Vice-Media-logo.svg"
           }
         },
         "media_miEpbz": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/W9-Logo.svg"
+            "image": "shopify:\/\/shop_images\/W9-Logo.svg"
           }
         }
       },
@@ -59,7 +64,8 @@
         "media_jEMUyN",
         "media_miEpbz"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "hp-thematique-zippy": {
       "type": "hp-thematique-zippy",
@@ -67,7 +73,7 @@
         "button_dK7Qnw": {
           "type": "button",
           "settings": {
-            "image": "shopify://shop_images/stress.svg",
+            "image": "shopify:\/\/shop_images\/stress.svg",
             "collection": "stress",
             "text": "Pour le stress",
             "background-color": "#c3e5fd"
@@ -76,7 +82,7 @@
         "button_ck3UXC": {
           "type": "button",
           "settings": {
-            "image": "shopify://shop_images/dormir.svg",
+            "image": "shopify:\/\/shop_images\/dormir.svg",
             "collection": "dormir",
             "text": "Pour dormir",
             "background-color": "#d9c3fd"
@@ -85,18 +91,28 @@
         "button_dVPFF7": {
           "type": "button",
           "settings": {
-            "image": "shopify://shop_images/douleur.svg",
+            "image": "shopify:\/\/shop_images\/douleur.svg",
             "collection": "douleur",
             "text": "Pour la douleur",
             "background-color": "#ffd0fa"
           }
         }
       },
-      "block_order": ["button_dK7Qnw", "button_ck3UXC", "button_dVPFF7"],
-      "settings": {}
+      "block_order": [
+        "button_dK7Qnw",
+        "button_ck3UXC",
+        "button_dVPFF7"
+      ],
+      "settings": {
+      }
     },
     "hp-best-seller-zippy": {
-      "type": "hp-best-seller-zippy"
+      "type": "hp-best-seller-zippy",
+      "settings": {
+        "title": "Meilleurs ventes",
+        "description-message": "",
+        "collection": "homepage-best-sellers"
+      }
     },
     "hp-bienfait-cbd-zippy": {
       "type": "hp-bienfait-cbd-zippy",
@@ -105,21 +121,21 @@
           "type": "container",
           "settings": {
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\".",
-            "image": "shopify://shop_images/mingcute_sleep-line.svg"
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg"
           }
         },
         "container_4i79je": {
           "type": "container",
           "settings": {
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\".",
-            "image": "shopify://shop_images/mingcute_sleep-line.svg"
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg"
           }
         },
         "container_X9eeNR": {
           "type": "container",
           "settings": {
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\".",
-            "image": "shopify://shop_images/mingcute_sleep-line.svg"
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg"
           }
         }
       },
@@ -128,7 +144,8 @@
         "container_4i79je",
         "container_X9eeNR"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "hp-collection-zippy": {
       "type": "hp-collection-zippy",
@@ -136,7 +153,7 @@
         "collection_gHQy3m": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_8.svg",
+            "image": "shopify:\/\/shop_images\/Group_8.svg",
             "collection": "dormir",
             "text": "Fleurs de cbd"
           }
@@ -144,13 +161,16 @@
         "collection_NnfdbX": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_8.svg",
+            "image": "shopify:\/\/shop_images\/Group_8.svg",
             "collection": "dormir",
             "text": "Résine de cbd"
           }
         }
       },
-      "block_order": ["collection_gHQy3m", "collection_NnfdbX"],
+      "block_order": [
+        "collection_gHQy3m",
+        "collection_NnfdbX"
+      ],
       "settings": {
         "title": "Que recherchez vous ?",
         "text": "Let Us Help You Reach Your Health Goals!"
@@ -162,31 +182,35 @@
         "line_4z88he": {
           "type": "Line",
           "settings": {
-            "image": "shopify://shop_images/mingcute_check-fill.svg",
-            "title": "<p>Powerfull!</p>",
-            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)</strong></p>"
+            "image": "shopify:\/\/shop_images\/mingcute_check-fill.svg",
+            "title": "<p>Powerfull!<\/p>",
+            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)<\/strong><\/p>"
           }
         },
         "line_fXKHx7": {
           "type": "Line",
           "settings": {
-            "image": "shopify://shop_images/mingcute_check-fill.svg",
-            "title": "<p>Powerfull!</p>",
-            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)</strong></p>"
+            "image": "shopify:\/\/shop_images\/mingcute_check-fill.svg",
+            "title": "<p>Powerfull!<\/p>",
+            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)<\/strong><\/p>"
           }
         },
         "line_3CRTV8": {
           "type": "Line",
           "settings": {
-            "image": "shopify://shop_images/mingcute_check-fill.svg",
-            "title": "<p>Powerfull!</p>",
-            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)</strong></p>"
+            "image": "shopify:\/\/shop_images\/mingcute_check-fill.svg",
+            "title": "<p>Powerfull!<\/p>",
+            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)<\/strong><\/p>"
           }
         }
       },
-      "block_order": ["line_4z88he", "line_fXKHx7", "line_3CRTV8"],
+      "block_order": [
+        "line_4z88he",
+        "line_fXKHx7",
+        "line_3CRTV8"
+      ],
       "settings": {
-        "paragraph": "<p>Why <strong>200,000+</strong> customers think zippy delivers unforgettable experience</p>"
+        "paragraph": "<p>Why <strong>200,000+<\/strong> customers think zippy delivers unforgettable experience<\/p>"
       }
     },
     "hp-reviews-client-zippy": {
@@ -195,55 +219,55 @@
         "avis_ytWWFi": {
           "type": "avis",
           "settings": {
-            "image": "shopify://shop_images/stars-5.png",
+            "image": "shopify:\/\/shop_images\/stars-5.png",
             "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
             "author": "Sara M.",
-            "icon": "shopify://shop_images/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
           }
         },
         "avis_Bk7MLD": {
           "type": "avis",
           "settings": {
-            "image": "shopify://shop_images/stars-5.png",
+            "image": "shopify:\/\/shop_images\/stars-5.png",
             "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
             "author": "Sara M.",
-            "icon": "shopify://shop_images/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
           }
         },
         "avis_bDTMKd": {
           "type": "avis",
           "settings": {
-            "image": "shopify://shop_images/stars-5.png",
+            "image": "shopify:\/\/shop_images\/stars-5.png",
             "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
             "author": "Sara M.",
-            "icon": "shopify://shop_images/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
           }
         },
         "avis_wxHXKL": {
           "type": "avis",
           "settings": {
-            "image": "shopify://shop_images/stars-5.png",
+            "image": "shopify:\/\/shop_images\/stars-5.png",
             "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
             "author": "Sara M.",
-            "icon": "shopify://shop_images/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
           }
         },
         "avis_chaEBE": {
           "type": "avis",
           "settings": {
-            "image": "shopify://shop_images/stars-5.png",
+            "image": "shopify:\/\/shop_images\/stars-5.png",
             "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
             "author": "Sara M.",
-            "icon": "shopify://shop_images/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
           }
         },
         "avis_rhw9NB": {
           "type": "avis",
           "settings": {
-            "image": "shopify://shop_images/stars-5.png",
+            "image": "shopify:\/\/shop_images\/stars-5.png",
             "message": "“It contains Epimedium & Maca Root to activate & enhenace performance”",
             "author": "Sara M.",
-            "icon": "shopify://shop_images/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
+            "icon": "shopify:\/\/shop_images\/Frame_49_04e3a7db-4e40-4de3-8e99-c7e83fe85a4f.svg"
           }
         }
       },
@@ -256,10 +280,10 @@
         "avis_rhw9NB"
       ],
       "settings": {
-        "image_1": "shopify://shop_images/Frame_49.png",
-        "image_2": "shopify://shop_images/Frame_48.png",
-        "image_3": "shopify://shop_images/Frame_45.png",
-        "image_4": "shopify://shop_images/Frame_47.png",
+        "image_1": "shopify:\/\/shop_images\/Frame_49.png",
+        "image_2": "shopify:\/\/shop_images\/Frame_48.png",
+        "image_3": "shopify:\/\/shop_images\/Frame_45.png",
+        "image_4": "shopify:\/\/shop_images\/Frame_47.png",
         "collection": "dormir"
       }
     },
@@ -269,7 +293,7 @@
         "card_d7Y7rJ": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -277,7 +301,7 @@
         "card_cATzM7": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -285,7 +309,7 @@
         "card_XMzgxk": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -293,7 +317,7 @@
         "card_X74hPb": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -301,7 +325,7 @@
         "card_7CieNt": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -309,7 +333,7 @@
         "card_ARcXHz": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -323,7 +347,8 @@
         "card_7CieNt",
         "card_ARcXHz"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "hp-reassurance-zippy": {
       "type": "hp-reassurance-zippy",
@@ -331,7 +356,7 @@
         "card_DcwDDL": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -339,7 +364,7 @@
         "card_UHNx4m": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -347,7 +372,7 @@
         "card_XhJEVU": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -355,7 +380,7 @@
         "card_c6VmET": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -367,7 +392,8 @@
         "card_XhJEVU",
         "card_c6VmET"
       ],
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

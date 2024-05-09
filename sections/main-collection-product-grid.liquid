@@ -162,7 +162,7 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
-                  {% render 'card-product',
+                  {% comment %} {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
                     image_shape: section.settings.image_shape,
@@ -172,6 +172,14 @@
                     lazy_load: lazy_load,
                     quick_add: section.settings.quick_add,
                     section_id: section.id
+                  %} {% endcomment %}
+                  {% render 'card-product-zippy',
+                    card_product: product,
+                    svg_url: section.settings.svg-wave,
+                    index_number: forloop.index0,
+                    tags: product.metafields.custom.type_de_produit,
+                    bg_color_first: product.metafields.custom.couleur_fond_image_card,
+                    bg_color_second: product.metafields.custom.couleur_fond_info_card,
                   %}
                 </li>
               {%- endfor -%}

@@ -80,6 +80,116 @@ h5 {
   height: 30px;
 }
 
+.card-wrapper-zippy {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.card-wrapper-zippy .card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 4rem;
+  padding: 2rem 1.5rem 3.5rem;
+}
+.card-wrapper-zippy .card-image .first {
+  position: relative;
+  left: 10px;
+}
+.card-wrapper-zippy .card-image svg {
+  position: absolute;
+  bottom: 0;
+  height: fit-content;
+  margin-bottom: -1px;
+  width: 101%;
+}
+.card-wrapper-zippy .card-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 0.5rem 1.5rem 2rem;
+}
+.card-wrapper-zippy .card-info .title-avis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-wrapper-zippy .card-info .title-avis h3 {
+  font-size: 28px !important;
+  margin-bottom: 0;
+  position: relative;
+  top: 1px;
+}
+.card-wrapper-zippy .card-info .title-avis .review-container {
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  background-color: #15433d;
+  padding: 1px 1.1rem;
+  border-radius: 15px;
+  position: relative;
+  top: 2px;
+}
+.card-wrapper-zippy .card-info .title-avis .review-container svg {
+  position: relative;
+  top: -1px;
+}
+.card-wrapper-zippy .card-info .title-avis .review-container span {
+  font-size: 12px;
+  color: #ffd12c;
+}
+.card-wrapper-zippy .card-info .list-container {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  column-gap: 6px;
+}
+.card-wrapper-zippy .card-info .list-container li {
+  padding: 2px 1rem 0;
+  background-color: #15433d;
+  border-radius: 15px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.card-wrapper-zippy .card-info .select-list {
+  display: flex;
+  column-gap: 10px;
+}
+.card-wrapper-zippy .card-info .select-list .shopify-product-form {
+  display: flex;
+  width: 100%;
+  column-gap: 5px;
+}
+.card-wrapper-zippy .card-info .select-list select {
+  border: 1px solid #000;
+  padding: 6px 8px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: 0.8;
+  position: relative;
+  width: 100%;
+}
+.card-wrapper-zippy .card-info .select-list select:focus {
+  outline: none;
+}
+.card-wrapper-zippy .card-info .select-list button {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000;
+  background: #15433d;
+  padding: 0 1.5rem;
+  border-radius: 10px;
+  align-items: center;
+}
+.card-wrapper-zippy .card-info .select-list button svg {
+  width: 20px;
+  height: 20px;
+}
+
 .section-hp-media-zippy {
   background-color: #fafafa;
 }
@@ -166,112 +276,29 @@ h5 {
   display: flex;
   column-gap: 2rem;
   list-style: none;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout {
-  width: 300px;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy {
-  overflow: hidden;
-  border-radius: 10px;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding-bottom: 4rem;
-  padding: 2rem 1.5rem 3.5rem;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-image .first {
-  position: relative;
-  left: 10px;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-image svg {
-  position: absolute;
-  bottom: 0;
-  height: fit-content;
-  margin-bottom: -1px;
-  width: 101%;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  padding: 0.5rem 1.5rem 2rem;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .title-avis {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .title-avis h3 {
-  font-size: 28px !important;
-  margin-bottom: 0;
-  position: relative;
-  top: 1px;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .title-avis .review-container {
-  display: flex;
-  align-items: center;
-  column-gap: 3px;
-  background-color: #15433d;
-  padding: 1px 1.1rem;
-  border-radius: 15px;
-  position: relative;
-  top: 2px;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .title-avis .review-container svg {
-  position: relative;
-  top: -1px;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .title-avis .review-container span {
-  font-size: 12px;
-  color: #ffd12c;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .list-container {
-  list-style: none;
   padding: 0;
-  display: flex;
-  column-gap: 6px;
+  justify-content: center;
 }
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .list-container li {
-  padding: 2px 1rem 0;
-  background-color: #15433d;
-  border-radius: 15px;
-  font-size: 11px;
-  display: flex;
-  align-items: center;
-  color: #fff;
+.facets-container {
+  display: none !important;
 }
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list {
-  display: flex;
-  column-gap: 10px;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list select {
-  border: 1px solid #000;
-  padding: 6px 8px;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 14px;
-  opacity: 0.8;
+
+#shopify-section-template--22408752431429__banner .collection-hero {
+  padding: 8rem 0 0rem;
   position: relative;
-  width: 100%;
+  margin-top: -6rem;
+  z-index: -1;
 }
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list select:focus {
-  outline: none;
+#shopify-section-template--22408752431429__banner .collection-hero .collection-hero__title {
+  font-size: 42px !important;
 }
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list button {
+
+.product-grid {
+  row-gap: 5rem !important;
+}
+.product-grid .grid__item {
   display: flex;
   justify-content: center;
-  border: 1px solid #000;
-  background: #15433d;
-  padding: 0 1.5rem;
-  border-radius: 10px;
-  align-items: center;
-}
-.section-hp-best-seller-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list button svg {
-  width: 20px;
-  height: 20px;
 }
 
 .section-hp-bienfait-cbd-zippy .zippy-container {

@@ -197,6 +197,7 @@ h5 {
         padding: 0 1.5rem;
         border-radius: 10px;
         align-items: center;
+        cursor: pointer;
 
         svg {
           width: 20px;
@@ -917,6 +918,92 @@ h5 {
             span {
               text-align: center;
               display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-fp-autre-produit-zippy {
+  .zippy-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 4rem 1.5rem;
+
+    .title {
+      text-align: center;
+      margin: 0;
+    }
+
+    .message {
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+
+    .layout {
+      display: flex;
+      column-gap: 2rem;
+      list-style: none;
+      padding: 0;
+      justify-content: center;
+
+      .card-layout {
+        .card-wrapper-zippy {
+          width: 230px !important;
+
+          .card-image {
+            .first {
+              width: 60%;
+            }
+          }
+
+          .card-info {
+            padding: 0.5rem 1rem 1rem;
+
+            .title-avis {
+              h3 {
+                font-size: 18px !important;
+              }
+
+              .review-container {
+                span {
+                  font-size: 11px;
+                }
+
+                svg {
+                  width: 10px;
+                }
+              }
+            }
+
+            .list-container {
+              column-gap: 4px;
+
+              li {
+                padding: 0 5px;
+              }
+            }
+
+            .select-list {
+              .shopify-product-form {
+                flex-direction: column;
+                row-gap: 5px;
+
+                select {
+                  padding: 5px 5px;
+                }
+
+                button {
+                  padding: 5px 0px;
+                  cursor: pointer;
+                }
+              }
             }
           }
         }

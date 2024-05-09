@@ -1,7 +1,10 @@
 {
   "sections": {
-    "fp-focus-produit": {
-      "type": "fp-focus-produit"
+    "fp-focus-produit-zippy": {
+      "type": "fp-focus-produit-zippy"
+    },
+    "fp-autre-produit-zippy": {
+      "type": "fp-autre-produit-zippy"
     },
     "main": {
       "type": "main-product",
@@ -488,7 +491,8 @@
     }
   },
   "order": [
-    "fp-focus-produit",
+    "fp-focus-produit-zippy",
+    "fp-autre-produit-zippy",
     "main",
     "featured_collection_tnjtRR",
     "image_with_text_Nmt9TD",

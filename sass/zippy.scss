@@ -128,8 +128,8 @@ h5 {
         display: flex;
         align-items: center;
         column-gap: 3px;
-        background-color: #15433d;
-        padding: 1px 1.1rem;
+        background-color: #000;
+        padding: 0 1.1rem;
         border-radius: 15px;
         position: relative;
         top: 2px;
@@ -137,11 +137,12 @@ h5 {
         svg {
           position: relative;
           top: -1px;
+          width: 12px;
         }
 
         span {
           font-size: 12px;
-          color: #ffd12c;
+          color: #00b375;
         }
       }
     }
@@ -762,6 +763,161 @@ h5 {
 
           a {
             color: #ececec;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-fp-focus-produit-zippy {
+  .zippy-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem 1.5rem;
+
+    nav {
+      .breadcrumb {
+        background: none;
+        padding: 5px 0;
+
+        .breadcrumb-item {
+          color: #15433d;
+
+          &::before {
+            color: #15433d;
+          }
+
+          a {
+            color: #15433d;
+          }
+        }
+      }
+    }
+
+    .focus-produit-layout {
+      display: flex;
+      column-gap: 3.5rem;
+
+      .image-block {
+        width: 50%;
+        display: flex;
+        column-gap: 1rem;
+
+        .carousel-container {
+          width: 75%;
+          border-radius: 10px;
+
+          #carouselExampleControls {
+            height: 100%;
+
+            .carousel-inner {
+              height: 100%;
+
+              .carousel-item {
+                height: 100%;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+
+                .flex-container {
+                  height: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  .first-slide {
+                    position: relative;
+                    left: 2rem;
+                  }
+
+                  img {
+                    width: 80% !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .box-container {
+          width: 25%;
+          display: flex;
+          flex-direction: column;
+          row-gap: 1rem;
+
+          .box {
+            border-radius: 10px;
+            flex: 1;
+            display: flex;
+          }
+        }
+      }
+
+      .info-block {
+        width: 50%;
+
+        .info-reviews {
+          display: flex;
+          column-gap: 10px;
+
+          .reviews-container {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            background-color: #fff;
+            padding: 0px 10px;
+            border-radius: 20px;
+
+            .stars-layout {
+              display: flex;
+              column-gap: 2px;
+            }
+
+            span {
+              font-weight: bold;
+            }
+          }
+
+          .info-more {
+            font-weight: bold;
+          }
+        }
+
+        .title {
+          margin: 1rem 0 0;
+        }
+
+        .list-claim {
+          padding: 0;
+          list-style: none;
+
+          .claim-item {
+          }
+        }
+
+        .btn-atc {
+          width: 100%;
+          background-color: #15433d;
+          border: none;
+          border-radius: 30px;
+          padding: 5px 0;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        .reassurance-layout {
+          display: flex;
+          column-gap: 2rem;
+
+          .reassurance {
+            span {
+              text-align: center;
+              display: block;
+            }
           }
         }
       }

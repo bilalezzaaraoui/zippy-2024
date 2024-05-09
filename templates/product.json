@@ -1,10 +1,33 @@
 {
   "sections": {
     "fp-focus-produit-zippy": {
-      "type": "fp-focus-produit-zippy"
+      "type": "fp-focus-produit-zippy",
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "fp-autre-produit-zippy": {
-      "type": "fp-autre-produit-zippy"
+      "type": "fp-autre-produit-zippy",
+      "settings": {
+        "title": "Notre gamme de produit",
+        "description-message": "",
+        "collection": "frontpage"
+      }
+    },
+    "fp-middle-claim-zippy": {
+      "type": "fp-middle-claim-zippy"
     },
     "main": {
       "type": "main-product",
@@ -494,6 +517,7 @@
   "order": [
     "fp-focus-produit-zippy",
     "fp-autre-produit-zippy",
+    "fp-middle-claim-zippy",
     "main",
     "featured_collection_tnjtRR",
     "image_with_text_Nmt9TD",

@@ -1,0 +1,43 @@
+{% render 'svg-card-wave-full',
+    colorA: product.metafields.custom.fp_background_couleur_global, 
+    colorB: product.metafields.custom.fp_background_couleur_milieu, 
+%}
+<section id="midlle-info" style="background-color: {{ product.metafields.custom.fp_background_couleur_milieu }}; margin-top: -1rem;">
+    <div class="zippy-container">
+        <h2 class="title">{{ section.settings.title }}</h2>
+        <div class="layout">
+          <div class="info-card">
+            <img src="{{ product.metafields.custom.claim_image_n_1 }}">
+            <div>
+              <h3>{{ product.metafields.custom.claim_titre_n_1 }}</h3>
+              <p>{{ product.metafields.custom.claim_texte_n_1 }}</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div>
+              <h3>{{ product.metafields.custom.claim_titre_n_2 }}</h3>
+              <p>{{ product.metafields.custom.claim_texte_n_2 }}</p>
+            </div>
+            <img src="{{ product.metafields.custom.claim_image_n_2 }}">
+          </div>
+          <div class="info-card">
+            <img src="{{ product.metafields.custom.claim_image_n_3 }}">
+            <div>
+              <h3>{{ product.metafields.custom.claim_titre_n_3 }}</h3>
+              <p>{{ product.metafields.custom.claim_texte_n_3 }}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  
+  {% schema %}
+  {
+    "name": "fp-middle-claim-zippy",
+    "class": "section-fp-middle-claim-zippy",
+    "tag": "section",
+    "settings": [
+    ]
+  }
+  {% endschema %}
+  

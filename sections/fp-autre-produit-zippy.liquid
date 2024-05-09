@@ -4,9 +4,6 @@
       {{ section.settings.description-message | replace: '<p', '<p class="message"'  }}
       <ul class="layout">
           {%- for product in section.settings.collection.products -%}
-              {% comment %} <script>
-                  console.log({{ product.metafields | json }})
-              </script> {% endcomment %}
               <li class="card-layout">
                   {% render 'card-product-zippy',
                       card_product: product,

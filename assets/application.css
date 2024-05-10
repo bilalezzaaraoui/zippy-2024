@@ -873,11 +873,14 @@ h5 {
   border-bottom: 1px solid #15433d;
   color: #15433d;
   background: none;
+  font-size: 1rem !important;
+  padding: 1rem 0 !important;
 }
 .section-fp-faq-table-zippy .zippy-container .layout {
   display: flex;
   align-items: center;
   column-gap: 8rem;
+  justify-content: space-around;
 }
 .section-fp-faq-table-zippy .zippy-container .layout .accordion {
   min-width: 490px;
@@ -889,13 +892,9 @@ h5 {
   border: none;
 }
 .section-fp-faq-table-zippy .zippy-container .layout .img-table {
-  max-width: 700px;
+  max-width: 550px;
 }
 
-.section-fp-bottom-faq-zippy .page-layout {
-  padding-bottom: 10rem;
-  margin-bottom: -10rem;
-}
 .section-fp-bottom-faq-zippy .page-layout .zippy-container {
   max-width: 1300px;
   margin: 0 auto;
@@ -928,10 +927,40 @@ h5 {
   border-bottom: 1px solid #15433d;
   color: #15433d;
   background: none;
+  font-size: 1rem !important;
+  padding: 1rem 0 !important;
 }
 .section-fp-bottom-faq-zippy .page-layout .zippy-container .max-width-container .accordion .accordion-item {
   background: none;
   border: none;
+}
+
+.section-fp-reassurance-zippy .page-layout {
+  padding-bottom: 10rem;
+  margin-bottom: -10rem;
+}
+.section-fp-reassurance-zippy .zippy-container {
+  padding-bottom: 10rem;
+  margin-bottom: -10rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 5rem 1.5rem;
+}
+.section-fp-reassurance-zippy .zippy-container .layout {
+  display: flex;
+  column-gap: 5rem;
+}
+.section-fp-reassurance-zippy .zippy-container .layout .reassurance-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-fp-reassurance-zippy .zippy-container .layout .reassurance-container .message-reassurance {
+  text-align: center;
 }
 
 /*# sourceMappingURL=application.css.map */

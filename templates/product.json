@@ -28,21 +28,64 @@
     },
     "fp-middle-claim-zippy": {
       "type": "fp-middle-claim-zippy",
-      "settings": {}
+      "settings": {
+      }
     },
     "fp-faq-table-zippy": {
       "type": "fp-faq-table-zippy",
       "settings": {
-        "table_image": "shopify://shop_images/Ajouter_des_l.png"
+        "table_image": "shopify:\/\/shop_images\/Ajouter_des_l.png"
       }
     },
     "fp-bottom-faq-zippy": {
       "type": "fp-bottom-faq-zippy",
-      "settings": {}
+      "settings": {
+      }
     },
     "fp-reassurance-zippy": {
       "type": "fp-reassurance-zippy",
-      "settings": {}
+      "blocks": {
+        "card_a3f7bK": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        },
+        "card_wRi4A9": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        },
+        "card_az6kRa": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        },
+        "card_QABYWR": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
+            "title": "Freak In The Spreadsheets",
+            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
+          }
+        }
+      },
+      "block_order": [
+        "card_a3f7bK",
+        "card_wRi4A9",
+        "card_az6kRa",
+        "card_QABYWR"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [

@@ -29,6 +29,15 @@
     "fp-middle-claim-zippy": {
       "type": "fp-middle-claim-zippy"
     },
+    "fp-faq-table-zippy": {
+      "type": "fp-faq-table-zippy"
+    },
+    "fp-bottom-faq-zippy": {
+      "type": "fp-bottom-faq-zippy"
+    },
+    "fp-reassurance-zippy": {
+      "type": "fp-reassurance-zippy"
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -518,6 +527,9 @@
     "fp-focus-produit-zippy",
     "fp-autre-produit-zippy",
     "fp-middle-claim-zippy",
+    "fp-faq-table-zippy",
+    "fp-bottom-faq-zippy",
+    "fp-reassurance-zippy",
     "main",
     "featured_collection_tnjtRR",
     "image_with_text_Nmt9TD",

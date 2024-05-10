@@ -1,0 +1,49 @@
+<div class="page-layout" style="background-color: {{ product.metafields.custom.fp_background_couleur_milieu }}">
+    <div class="zippy-container">
+        <div class="layout">
+            {%- for block in section.blocks -%}
+                <div class="reassurance-container">
+                <img src="{{ block.settings.image | image_url: width: 3200, height: 1000 }}" />
+                <p>{{ block.settings.title }}</p>
+                <p class="message-reassurance">{{ block.settings.text }}</p>
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+  
+
+
+  {% schema %}
+{
+  "name": "fp-reassurance-zippy",
+  "class": "section-fp-reassurance-zippy",
+  "tag": "section",
+  "settings": [
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "name": "Card",
+      "type": "card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Titre"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Texte"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -8,7 +8,7 @@
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-<section class="page-layout" style="background-color: {{ product.metafields.custom.fp_background_couleur_global }}">
+<div class="page-layout" style="background-color: {{ product.metafields.custom.fp_background_couleur_global }}">
   <div class="zippy-container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -96,7 +96,7 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
 {% comment %} <section
   id="MainProduct-{{ section.id }}"

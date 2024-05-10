@@ -2,34 +2,34 @@
     colorA: product.metafields.custom.fp_background_couleur_global, 
     colorB: product.metafields.custom.fp_background_couleur_milieu, 
 %}
-<section id="midlle-info" style="background-color: {{ product.metafields.custom.fp_background_couleur_milieu }}; margin-top: -1rem;">
+<div id="middle-info" style="background-color: {{ product.metafields.custom.fp_background_couleur_milieu }}; margin-top: -1rem;">
     <div class="zippy-container">
         <h2 class="title">{{ section.settings.title }}</h2>
         <div class="layout">
           <div class="info-card">
-            <img src="{{ product.metafields.custom.claim_image_n_1 }}">
-            <div>
+            <img src="{{ product.metafields.custom.claim_image_n_1 | image_url: width: 575 }}">
+            <div class="info-container">
               <h3>{{ product.metafields.custom.claim_titre_n_1 }}</h3>
-              <p>{{ product.metafields.custom.claim_texte_n_1 }}</p>
+              {{ product.metafields.custom.claim_texte_n_1 | metafield_tag }}
             </div>
           </div>
           <div class="info-card">
-            <div>
+            <div class="info-container">
               <h3>{{ product.metafields.custom.claim_titre_n_2 }}</h3>
-              <p>{{ product.metafields.custom.claim_texte_n_2 }}</p>
+              {{ product.metafields.custom.claim_texte_n_2 | metafield_tag  }}
             </div>
-            <img src="{{ product.metafields.custom.claim_image_n_2 }}">
+            <img src="{{ product.metafields.custom.claim_image_n_2 | image_url: width: 575 }}">
           </div>
           <div class="info-card">
-            <img src="{{ product.metafields.custom.claim_image_n_3 }}">
-            <div>
+            <img src="{{ product.metafields.custom.claim_image_n_3 | image_url: width: 575 }}">
+            <div class="info-container">
               <h3>{{ product.metafields.custom.claim_titre_n_3 }}</h3>
-              <p>{{ product.metafields.custom.claim_texte_n_3 }}</p>
+              {{ product.metafields.custom.claim_texte_n_3 | metafield_tag  }}
             </div>
           </div>
         </div>
     </div>
-  </section>
+  </div>
   
   {% schema %}
   {

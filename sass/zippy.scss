@@ -1013,4 +1013,125 @@ h5 {
 }
 
 .section-fp-middle-claim-zippy {
+  #middle-info {
+    .zippy-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      padding: 5rem 1.5rem;
+
+      .layout {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12rem;
+
+        .info-card {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
+          .metafield-rich_text_field {
+            max-width: 595px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-fp-faq-table-zippy {
+  .zippy-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 5rem 1.5rem;
+
+    div {
+      font-family: HelveticaNeue, sans-serif !important;
+    }
+
+    button[aria-expended="true"] {
+      background: rgba(5, 45, 9, 0.1) !important;
+    }
+
+    button {
+      font-family: HelveticaNeue, sans-serif !important;
+      font-weight: bold;
+      box-shadow: none;
+      border-bottom: 1px solid #15433d;
+      color: #15433d;
+      background: none;
+    }
+
+    .layout {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 8rem;
+
+      .accordion {
+        min-width: 490px;
+        border: none;
+      }
+
+      .accordion-item {
+        background: none;
+        border: none;
+      }
+
+      .img-table {
+        max-width: 700px;
+      }
+    }
+  }
+}
+
+.section-fp-bottom-faq-zippy {
+  .zippy-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 1.5rem;
+
+    .title {
+      text-align: center;
+      margin: 0;
+    }
+
+    .max-width-container {
+      margin: 0 auto;
+
+      .accordion {
+        min-width: 600px;
+        max-width: 600px;
+        border: none;
+
+        div {
+          font-family: HelveticaNeue, sans-serif !important;
+        }
+
+        button[aria-expended="true"] {
+          background: rgba(5, 45, 9, 0.1) !important;
+        }
+
+        button {
+          font-family: HelveticaNeue, sans-serif !important;
+          font-weight: bold;
+          box-shadow: none;
+          border-bottom: 1px solid #15433d;
+          color: #15433d;
+          background: none;
+        }
+
+        .accordion-item {
+          background: none;
+          border: none;
+        }
+      }
+    }
+  }
 }

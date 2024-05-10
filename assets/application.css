@@ -830,4 +830,103 @@ h5 {
   cursor: pointer;
 }
 
+.section-fp-middle-claim-zippy #middle-info .zippy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 5rem 1.5rem;
+}
+.section-fp-middle-claim-zippy #middle-info .zippy-container .layout {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12rem;
+}
+.section-fp-middle-claim-zippy #middle-info .zippy-container .layout .info-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-fp-middle-claim-zippy #middle-info .zippy-container .layout .info-card .metafield-rich_text_field {
+  max-width: 595px;
+}
+
+.section-fp-faq-table-zippy .zippy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 5rem 1.5rem;
+}
+.section-fp-faq-table-zippy .zippy-container div {
+  font-family: HelveticaNeue, sans-serif !important;
+}
+.section-fp-faq-table-zippy .zippy-container button[aria-expended=true] {
+  background: rgba(5, 45, 9, 0.1) !important;
+}
+.section-fp-faq-table-zippy .zippy-container button {
+  font-family: HelveticaNeue, sans-serif !important;
+  font-weight: bold;
+  box-shadow: none;
+  border-bottom: 1px solid #15433d;
+  color: #15433d;
+  background: none;
+}
+.section-fp-faq-table-zippy .zippy-container .layout {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 8rem;
+}
+.section-fp-faq-table-zippy .zippy-container .layout .accordion {
+  min-width: 490px;
+  border: none;
+}
+.section-fp-faq-table-zippy .zippy-container .layout .accordion-item {
+  background: none;
+  border: none;
+}
+.section-fp-faq-table-zippy .zippy-container .layout .img-table {
+  max-width: 700px;
+}
+
+.section-fp-bottom-faq-zippy .zippy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1.5rem;
+}
+.section-fp-bottom-faq-zippy .zippy-container .title {
+  text-align: center;
+  margin: 0;
+}
+.section-fp-bottom-faq-zippy .zippy-container .max-width-container {
+  margin: 0 auto;
+}
+.section-fp-bottom-faq-zippy .zippy-container .max-width-container .accordion {
+  min-width: 600px;
+  max-width: 600px;
+  border: none;
+}
+.section-fp-bottom-faq-zippy .zippy-container .max-width-container .accordion div {
+  font-family: HelveticaNeue, sans-serif !important;
+}
+.section-fp-bottom-faq-zippy .zippy-container .max-width-container .accordion button[aria-expended=true] {
+  background: rgba(5, 45, 9, 0.1) !important;
+}
+.section-fp-bottom-faq-zippy .zippy-container .max-width-container .accordion button {
+  font-family: HelveticaNeue, sans-serif !important;
+  font-weight: bold;
+  box-shadow: none;
+  border-bottom: 1px solid #15433d;
+  color: #15433d;
+  background: none;
+}
+.section-fp-bottom-faq-zippy .zippy-container .max-width-container .accordion .accordion-item {
+  background: none;
+  border: none;
+}
+
 /*# sourceMappingURL=application.css.map */

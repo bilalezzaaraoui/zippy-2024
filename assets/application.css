@@ -876,12 +876,13 @@ h5 {
 }
 .section-fp-faq-table-zippy .zippy-container .layout {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   column-gap: 8rem;
 }
 .section-fp-faq-table-zippy .zippy-container .layout .accordion {
   min-width: 490px;
   border: none;
+  padding-top: 4rem;
 }
 .section-fp-faq-table-zippy .zippy-container .layout .accordion-item {
   background: none;
@@ -891,32 +892,36 @@ h5 {
   max-width: 700px;
 }
 
-.section-fp-bottom-faq-zippy .zippy-container {
+.section-fp-bottom-faq-zippy .page-layout {
+  padding-bottom: 10rem;
+  margin-bottom: -10rem;
+}
+.section-fp-bottom-faq-zippy .page-layout .zippy-container {
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 5rem 1.5rem;
 }
-.section-fp-bottom-faq-zippy .zippy-container .title {
+.section-fp-bottom-faq-zippy .page-layout .zippy-container .title {
   text-align: center;
-  margin: 0;
+  margin: 0 0 2rem;
 }
-.section-fp-bottom-faq-zippy .zippy-container .max-width-container {
+.section-fp-bottom-faq-zippy .page-layout .zippy-container .max-width-container {
   margin: 0 auto;
 }
-.section-fp-bottom-faq-zippy .zippy-container .max-width-container .accordion {
+.section-fp-bottom-faq-zippy .page-layout .zippy-container .max-width-container .accordion {
   min-width: 600px;
   max-width: 600px;
   border: none;
 }
-.section-fp-bottom-faq-zippy .zippy-container .max-width-container .accordion div {
+.section-fp-bottom-faq-zippy .page-layout .zippy-container .max-width-container .accordion div {
   font-family: HelveticaNeue, sans-serif !important;
 }
-.section-fp-bottom-faq-zippy .zippy-container .max-width-container .accordion button[aria-expended=true] {
+.section-fp-bottom-faq-zippy .page-layout .zippy-container .max-width-container .accordion button[aria-expended=true] {
   background: rgba(5, 45, 9, 0.1) !important;
 }
-.section-fp-bottom-faq-zippy .zippy-container .max-width-container .accordion button {
+.section-fp-bottom-faq-zippy .page-layout .zippy-container .max-width-container .accordion button {
   font-family: HelveticaNeue, sans-serif !important;
   font-weight: bold;
   box-shadow: none;
@@ -924,7 +929,7 @@ h5 {
   color: #15433d;
   background: none;
 }
-.section-fp-bottom-faq-zippy .zippy-container .max-width-container .accordion .accordion-item {
+.section-fp-bottom-faq-zippy .page-layout .zippy-container .max-width-container .accordion .accordion-item {
   background: none;
   border: none;
 }

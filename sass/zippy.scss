@@ -1069,12 +1069,13 @@ h5 {
 
     .layout {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       column-gap: 8rem;
 
       .accordion {
         min-width: 490px;
         border: none;
+        padding-top: 4rem;
       }
 
       .accordion-item {
@@ -1090,46 +1091,51 @@ h5 {
 }
 
 .section-fp-bottom-faq-zippy {
-  .zippy-container {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 5rem 1.5rem;
+  .page-layout {
+    padding-bottom: 10rem;
+    margin-bottom: -10rem;
 
-    .title {
-      text-align: center;
-      margin: 0;
-    }
-
-    .max-width-container {
+    .zippy-container {
+      max-width: 1300px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      padding: 5rem 1.5rem;
 
-      .accordion {
-        min-width: 600px;
-        max-width: 600px;
-        border: none;
+      .title {
+        text-align: center;
+        margin: 0 0 2rem;
+      }
 
-        div {
-          font-family: HelveticaNeue, sans-serif !important;
-        }
+      .max-width-container {
+        margin: 0 auto;
 
-        button[aria-expended="true"] {
-          background: rgba(5, 45, 9, 0.1) !important;
-        }
-
-        button {
-          font-family: HelveticaNeue, sans-serif !important;
-          font-weight: bold;
-          box-shadow: none;
-          border-bottom: 1px solid #15433d;
-          color: #15433d;
-          background: none;
-        }
-
-        .accordion-item {
-          background: none;
+        .accordion {
+          min-width: 600px;
+          max-width: 600px;
           border: none;
+
+          div {
+            font-family: HelveticaNeue, sans-serif !important;
+          }
+
+          button[aria-expended="true"] {
+            background: rgba(5, 45, 9, 0.1) !important;
+          }
+
+          button {
+            font-family: HelveticaNeue, sans-serif !important;
+            font-weight: bold;
+            box-shadow: none;
+            border-bottom: 1px solid #15433d;
+            color: #15433d;
+            background: none;
+          }
+
+          .accordion-item {
+            background: none;
+            border: none;
+          }
         }
       }
     }

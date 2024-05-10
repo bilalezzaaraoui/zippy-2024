@@ -28,121 +28,21 @@
     },
     "fp-middle-claim-zippy": {
       "type": "fp-middle-claim-zippy",
-      "settings": {
-      }
+      "settings": {}
     },
     "fp-faq-table-zippy": {
       "type": "fp-faq-table-zippy",
       "settings": {
-        "table_image": "shopify:\/\/shop_images\/Ajouter_des_l.png"
+        "table_image": "shopify://shop_images/Ajouter_des_l.png"
       }
     },
     "fp-bottom-faq-zippy": {
       "type": "fp-bottom-faq-zippy",
-      "settings": {
-      }
+      "settings": {}
     },
     "fp-reassurance-zippy": {
       "type": "fp-reassurance-zippy",
-      "settings": {
-      }
-    },
-    "main": {
-      "type": "main-product",
-      "blocks": {
-        "rating_ymgkrL": {
-          "type": "rating",
-          "settings": {
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "icon_with_text_MzDVkj": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "horizontal",
-            "icon_1": "heart",
-            "heading_1": "Heading",
-            "icon_2": "return",
-            "heading_2": "Heading",
-            "icon_3": "truck",
-            "heading_3": "Heading"
-          }
-        }
-      },
-      "block_order": [
-        "rating_ymgkrL",
-        "title",
-        "description",
-        "caption",
-        "variant_picker",
-        "buy_buttons",
-        "icon_with_text_MzDVkj"
-      ],
-      "disabled": true,
-      "settings": {
-        "enable_sticky_info": true,
-        "color_scheme": "",
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "gallery_layout": "columns",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
-        "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "disabled": true,
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
+      "settings": {}
     }
   },
   "order": [
@@ -151,8 +51,6 @@
     "fp-middle-claim-zippy",
     "fp-faq-table-zippy",
     "fp-bottom-faq-zippy",
-    "fp-reassurance-zippy",
-    "main",
-    "related-products"
+    "fp-reassurance-zippy"
   ]
 }

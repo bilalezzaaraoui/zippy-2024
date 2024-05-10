@@ -1,12 +1,140 @@
-<script>
-  console.log({{ product | json }})
-</script>
-
 {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
 {{ 'component-swatch-input.css' | asset_url | stylesheet_tag }}
 {{ 'component-swatch.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const ajouterAuPanierBouton = document.querySelector('.btn-atc');
+  
+    // Fonction pour ajouter une variante au panier
+    function ajouterAuPanier(variantId, quantity) {
+      var data = {
+        items: [
+          {
+            id: variantId,
+            quantity: quantity
+          }
+        ]
+      };
+  
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (response.ok) {
+          console.log('Variant ajouté avec succès');
+          return response.json();
+        } else {
+          throw new Error('Échec de l\'ajout au panier');
+        }
+      })
+      .then(async data => {
+        console.log(data);
+        // Mise à jour de l'affichage du panier ou toute autre action après l'ajout
+        {% comment %} alert('Produit ajouté au panier!'); {% endcomment %}
+
+        // Get new cart object
+        const res = await fetch("/cart.json");
+        const cart = await res.json();
+
+
+        var headerCartIcon = document.querySelector(".header__icon--cart");
+        var existingBubble = headerCartIcon.querySelector(".cart-count-bubble");
+        console.log(cart)
+        console.log(cart.item_count)
+        console.log(existingBubble)
+        console.log(existingBubble)
+
+ 
+        function createCartCountBubble(item) {
+          // Créer l'élément div pour le bubble
+          var cartCountBubble = document.createElement("div");
+          cartCountBubble.className = "cart-count-bubble";
+
+          // Créer le premier span avec aria-hidden
+          var spanAriaHidden = document.createElement("span");
+          spanAriaHidden.setAttribute("aria-hidden", "true");
+          spanAriaHidden.textContent = `${item}`; // Supposons que vous voulez mettre 15 articles
+
+          // Créer le second span pour accessibilité
+          var spanVisuallyHidden = document.createElement("span");
+          spanVisuallyHidden.className = "visually-hidden";
+          spanVisuallyHidden.textContent = `${item} articles`;
+
+          // Ajouter les spans au div bubble
+          cartCountBubble.appendChild(spanAriaHidden);
+          cartCountBubble.appendChild(spanVisuallyHidden);
+
+          // Retourner l'élément bubble complet
+          return cartCountBubble;
+        }
+
+        // Vérifier si le bubble existe déjà
+        if (!existingBubble) {
+          var newCartCountBubble = await createCartCountBubble(cart.item_count);
+          headerCartIcon.appendChild(newCartCountBubble);
+          console.log("Cart count bubble added.");
+        } else {
+          // Update cart count
+          var cartBubble = document.querySelector(".cart-count-bubble");
+
+          // Within this element, find the <span> that has the 'aria-hidden' attribute set to 'true'
+          var ariaHiddenSpan = cartBubble.querySelector('span[aria-hidden="true"]');
+
+          ariaHiddenSpan.textContent = cart.item_count;
+          console.log("Cart count bubble already exists.");
+        }
+
+         //Update cart
+          const updateCartDrawer = async () => {
+            const res = await fetch("/?section_id=cart-drawer");
+            const text = await res.text();
+
+            const html = document.createElement("div");
+            html.innerHTML = text;
+
+            const newBox = html.querySelector("#cart-target").innerHTML;
+            document.querySelector("#cart-target").innerHTML = newBox;
+
+            console.log(html, "lol");
+          };
+
+          await updateCartDrawer();
+
+          const cartDrawer = document.querySelector(".drawer");
+          cartDrawer.classList.add("active"); // Ajouter la classe 'active'
+      })
+      .catch(error => {
+        console.error('Erreur:', error);
+      });
+    }
+    
+    // Événement au clic sur le bouton "Ajouter au panier"
+    ajouterAuPanierBouton.addEventListener('click', async function(e) {
+      e.preventDefault();  // Empêche le comportement par défaut de recharger la page
+  
+      // Extrait l'ID de la variante de l'URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const variantId = urlParams.get('variant');
+  
+      console.log(variantId)
+  
+      if (variantId) {
+        await ajouterAuPanier(variantId, 1); // Remplacer `1` par la quantité désirée
+      } else {
+        alert('Veuillez sélectionner une variante');
+        return;
+      }
+    });
+  });
+  
+</script>
 
 <div class="page-layout" style="background-color: {{ product.metafields.custom.fp_background_couleur_global }}">
   <div class="zippy-container">
@@ -69,13 +197,10 @@
           <li class="claim-item">💖 Retrouve un sommeil paisible et réparateur</li>
           <li class="claim-item">💖 Retrouve un sommeil paisible et réparateur</li>
         </ul>
-        <div>
-          <button>3g</button>
-          <button>5g</button>
-          <button>10g</button>
-          <button>20g</button>
-        </div>
-        <button type="submit" class="btn-atc">Ajouter au panier</button>
+        {% comment %} {% form 'product', product %} {% endcomment %}
+          {% render 'product-variant-picker', product: product, product_form_id: product.id %}
+          <button type="submit" class="btn-atc">Ajouter au panier</button>
+        {% comment %} {% endform %} {% endcomment %}
         <div class="reassurance-layout">
           <div class="reassurance">
             <img src="" alt="">

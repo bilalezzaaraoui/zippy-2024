@@ -16,13 +16,20 @@
     picker_type: picker_type
   %}
 {% endcomment %}
-{%- liquid
+
+<script>
+  console.log({{ option | json }}, "variants");
+</script>
+<script>
+  console.log({{ product | json }}, "product");
+</script>
+{% comment %} {%- liquid
   assign variants_available_arr = product.variants | map: 'available'
   assign variants_option1_arr = product.variants | map: 'option1'
   assign variants_option2_arr = product.variants | map: 'option2'
   assign variants_option3_arr = product.variants | map: 'option3'
 
-  assign product_form_id = 'product-form-' | append: section.id
+  assign product_form_id = 'product-form-' | append: product.id
 -%}
 
 {%- for value in option.values -%}
@@ -46,16 +53,8 @@
       endcase
     endfor
 
-    assign swatch_focal_point = null
-    if value.swatch.image
-      assign image_url = value.swatch.image | image_url: width: 50
-      assign swatch_value = 'url(' | append: image_url | append: ')'
-      assign swatch_focal_point = value.swatch.image.presentation.focal_point
-    elsif value.swatch.color
-      assign swatch_value = 'rgb(' | append: value.swatch.color.rgb | append: ')'
-    else
+    
       assign swatch_value = null
-    endif
   -%}
 
   {%- capture input_id -%}
@@ -68,30 +67,6 @@
     </span>
   {%- endcapture -%}
 
-  {%- if picker_type == 'swatch' -%}
-    {% liquid
-      assign checked = false
-      if option.selected_value == value
-        assign checked = true
-      endif
-    %}
-    {%- capture help_text -%}
-      <span class="visually-hidden">{{ value | escape }}</span>
-      {{ label_unavailable }}
-    {%- endcapture -%}
-    {%
-      render 'swatch-input',
-      id: input_id,
-      name: option.name,
-      value: value | escape,
-      swatch: value.swatch,
-      product_form_id: product_form_id,
-      checked: checked,
-      visually_disabled: option_disabled,
-      shape: block.settings.swatch_shape,
-      help_text: help_text
-    %}
-  {%- elsif picker_type == 'button' -%}
     <input
       type="radio"
       id="{{ input_id }}"
@@ -109,24 +84,52 @@
       {{ value -}}
       {{ label_unavailable }}
     </label>
-  {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
-    <option
-      value="{{ value | escape }}"
-      {% if option.selected_value == value %}
-        selected="selected"
-      {% endif %}
-      {% if swatch_value and picker_type == 'swatch_dropdown' %}
-        data-option-swatch-value="{{ swatch_value }}"
-        {% if swatch_focal_point %}
-          data-option-swatch-focal-point="{{ swatch_focal_point }}"
-        {% endif %}
-      {% endif %}
-    >
-      {% if option_disabled -%}
-        {{- 'products.product.value_unavailable' | t: option_value: value -}}
-      {%- else -%}
-        {{- value -}}
-      {%- endif %}
-    </option>
-  {%- endif -%}
+{%- endfor -%} {% endcomment %}
+{% comment %}
+  Ce script rend les options des variantes de produits.
+  - 'product' : objet du produit.
+  - 'option' : objet de l'option actuelle du produit.
+{% endcomment %}
+
+{%- liquid
+  assign variantes_disponibles = product.variants | map: 'available'
+  assign option1_values = product.variants | map: 'option1'
+  assign option2_values = product.variants | map: 'option2'
+  assign option3_values = product.variants | map: 'option3'
+  assign form_id_produit = 'form-produit-' | append: product.id
+-%}
+
+{%- for item in option -%}
+  {%- liquid
+    assign desactive = true
+    for indice in (0..option1_values.size) 
+      if option.position == 1 and option1_values[indice] == value and variantes_disponibles[indice]
+        assign desactive = false
+      elsif option.position == 2 and option1_values[indice] == product.selected_or_first_available_variant.option1 and option2_values[indice] == value and variantes_disponibles[indice]
+        assign desactive = false
+      elsif option.position == 3 and option1_values[indice] == product.selected_or_first_available_variant.option1 and option2_values[indice] == product.selected_or_first_available_variant.option2 and option3_values[indice] == value and variantes_disponibles[indice]
+        assign desactive = false
+      endif
+    endfor
+
+    assign variant_price = item.price | money_without_currency | replace: ",", "."
+    assign grams = item.title | remove: "G"
+    assign price_per_gram = variant_price | divided_by: grams
+    
+  -%}
+
+  <input
+    type="radio"
+    id="input-{{ option.position }}-{{ forloop.index0 }}"
+    name="{{ product.options[0] }}"
+    value="{{ item.title | escape }}"
+    form="{{ form_id_produit }}"
+    {% if option.selected_value == value %} checked {% endif %}
+    {% if desactive %} class="desactive" {% endif %}
+  >
+
+    <script>
+      console.log({{ product.variants | json }}, "value")
+    </script>
+  <label for="input-{{ option.position }}-{{ forloop.index0 }}">{{ item.title }} - {{ variant_price }}€ - ({{ price_per_gram }}€ /g) </label>
 {%- endfor -%}

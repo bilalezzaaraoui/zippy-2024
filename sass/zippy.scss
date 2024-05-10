@@ -900,14 +900,28 @@ h5 {
           }
         }
 
+        .product-form__input--pill {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin-bottom: 1.5rem;
+          column-gap: 5px;
+
+          label {
+            border-radius: 5px;
+            background: #fff;
+            font-weight: bold;
+            text-align: left;
+            padding: 13px 10px;
+          }
+        }
+
         .btn-atc {
           width: 100%;
           background-color: #15433d;
           border: none;
           border-radius: 30px;
-          padding: 5px 0;
+          padding: 9px 0;
           color: #fff;
-          font-weight: bold;
         }
 
         .reassurance-layout {

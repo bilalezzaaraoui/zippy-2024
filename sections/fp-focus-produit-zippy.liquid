@@ -108,6 +108,7 @@
           await updateCartDrawer();
 
           const cartDrawer = document.querySelector(".drawer");
+          cartDrawer.classList.add("animate"); // Ajouter la classe 'active'
           cartDrawer.classList.add("active"); // Ajouter la classe 'active'
       })
       .catch(error => {

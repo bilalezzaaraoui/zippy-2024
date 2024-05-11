@@ -975,4 +975,123 @@ h5 {
   text-align: center;
 }
 
+.related-product-cart {
+  background-color: #fff7e5;
+  width: 180px;
+  position: absolute;
+  left: -181px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+.related-product-cart .title {
+  text-align: center;
+  font-family: "Windsor EF";
+  color: #15433d;
+  font-size: 18px;
+  line-height: normal;
+}
+
+#CartDrawer .drawer__inner {
+  padding: 0;
+  border: none;
+  border-left: 3px solid #e5e5e5;
+  overflow: inherit;
+}
+#CartDrawer .drawer__inner .drawer__header {
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid #e5e5e5;
+}
+#CartDrawer .drawer__inner .drawer__header .drawer__heading {
+  font-size: 36px !important;
+  margin: 0;
+}
+#CartDrawer .drawer__inner .drawer__header .drawer__close {
+  top: 15px;
+  right: 0;
+}
+#CartDrawer .drawer__inner .drawer__header .drawer__close svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items thead {
+  display: none;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody {
+  padding: 1.5rem;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item {
+  margin-bottom: 0.5rem;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__media {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__media .image-container {
+  border-radius: 70px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__media .image-container .cart-item__image {
+  width: 65%;
+  position: relative;
+  left: 0.3rem;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__details {
+  padding: 0.5rem 0 0 1rem;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__details .cart-item__name {
+  font-family: "Windsor EF";
+  font-size: 18px;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__details .gramme-container {
+  padding: 2px 6px;
+  background-color: #ebebeb;
+  text-transform: lowercase;
+  border-radius: 2px;
+  color: #15433d;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__quantity .quantity {
+  min-height: 25px;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__quantity .quantity-popover-container {
+  min-height: 25px;
+  height: 25px;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__quantity .quantity-popover-container .cart-quantity {
+  height: 25px;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__quantity .quantity-popover-container button {
+  max-width: fit-content;
+  padding: 0 6px;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__quantity .quantity-popover-container .quantity__input {
+  border-left: 1px solid #15433d;
+  border-right: 1px solid #15433d;
+  font-size: 1.5rem;
+  max-width: 40px;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__totals {
+  padding-top: 1rem;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody cart-remove-button {
+  margin-top: 0;
+}
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody cart-remove-button .cart-remove-button {
+  height: fit-content;
+  min-height: 2.5rem;
+}
+#CartDrawer .drawer__inner .drawer__footer {
+  background: #d5eddf;
+  padding: 0 1rem 1.5rem;
+  border: none;
+  border-top: 2px solid #e5e5e5;
+}
+
 /*# sourceMappingURL=application.css.map */

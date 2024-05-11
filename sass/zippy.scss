@@ -1451,6 +1451,31 @@ h5 {
       padding: 0 1rem 1.5rem;
       border: none;
       border-top: 2px solid #e5e5e5;
+
+      .cart-drawer__footer {
+        .totals {
+          align-items: center;
+          margin-top: 2rem;
+
+          .totals__total {
+            font-size: 22px !important;
+            margin: 0;
+          }
+        }
+
+        .livraison-layout {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin: 2rem 0;
+        }
+      }
+
+      .cart__checkout-button {
+        background-color: #15433d;
+        color: #fff !important;
+        margin-bottom: 2rem;
+      }
     }
   }
 }

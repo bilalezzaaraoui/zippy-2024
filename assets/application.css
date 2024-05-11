@@ -1175,5 +1175,24 @@ h5 {
   border: none;
   border-top: 2px solid #e5e5e5;
 }
+#CartDrawer .drawer__inner .drawer__footer .cart-drawer__footer .totals {
+  align-items: center;
+  margin-top: 2rem;
+}
+#CartDrawer .drawer__inner .drawer__footer .cart-drawer__footer .totals .totals__total {
+  font-size: 22px !important;
+  margin: 0;
+}
+#CartDrawer .drawer__inner .drawer__footer .cart-drawer__footer .livraison-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+#CartDrawer .drawer__inner .drawer__footer .cart__checkout-button {
+  background-color: #15433d;
+  color: #fff !important;
+  margin-bottom: 2rem;
+}
 
 /*# sourceMappingURL=application.css.map */

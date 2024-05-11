@@ -4,12 +4,7 @@
   Usage:
   {% render 'cart-drawer' %}
 {% endcomment %}
-<script>
-  console.log("ok")
-  console.log({{ section.settings.cart_drawer_collection | json }}, "ici un produit reco")
-  console.log({{ settings.cart_drawer_collection | json }}, "ici un produit reco")
-  console.log({{ settings.cart_drawer_collection }}, "ici un produit reco")
-</script>
+
 
 <div id="cart-target">
   {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
@@ -557,8 +552,12 @@
               <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
               <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
             </div>
+            <div class="livraison-layout">
+              <span>Livraison 24/48h gratuite</span>
+              <span>À partir de 49,50€ d'achats</span>
+            </div>
 
-            <small class="tax-note caption-large rte">
+            {% comment %} <small class="tax-note caption-large rte">
               {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
                 {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
               {%- elsif cart.taxes_included -%}
@@ -568,7 +567,7 @@
               {%- else -%}
                 {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
               {%- endif -%}
-            </small>
+            </small> {% endcomment %}
           </div>
 
           <!-- CTAs -->

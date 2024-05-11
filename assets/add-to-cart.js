@@ -7,15 +7,48 @@ addToCartForm.forEach((form) => {
     e.preventDefault();
 
     // Submit form with ajax
+    console.log("Etape 1");
     await fetch("/cart/add", {
       method: "post",
       body: new FormData(form),
     });
 
     // Get new cart object
+    console.log("Etape 2");
     const res = await fetch("/cart.json");
     const cart = await res.json();
 
+    console.log("Etape 3");
+    //Update cart
+    const updateCartDrawer = async () => {
+      const res = await fetch("/?section_id=cart-drawer");
+      const text = await res.text();
+
+      console.log(text, "texte");
+
+      const html = document.createElement("div");
+      html.innerHTML = text;
+
+      const newBox = html.querySelector("#cart-target").innerHTML;
+      document.querySelector("#cart-target").innerHTML = newBox;
+
+      console.log(html, "lol");
+    };
+
+    await updateCartDrawer();
+
+    console.log("Etape 4");
+    const cartDrawer = document.querySelector(".drawer");
+
+    if (!cartDrawer.classList.contains("activate")) {
+      cartDrawer.classList.add("animate"); // Ajouter la classe 'active'
+      cartDrawer.classList.add("active");
+    } else {
+      cartDrawer.classList.remove("animate"); // Ajouter la classe 'active'
+      cartDrawer.classList.remove("active");
+    }
+
+    console.log("Etape 5");
     var headerCartIcon = document.querySelector(".header__icon--cart");
     var existingBubble = headerCartIcon.querySelector(".cart-count-bubble");
 
@@ -42,6 +75,7 @@ addToCartForm.forEach((form) => {
       return cartCountBubble;
     }
 
+    console.log("Etape 6");
     // Vérifier si le bubble existe déjà
     if (!existingBubble) {
       var newCartCountBubble = createCartCountBubble(cart.item_count);
@@ -57,24 +91,5 @@ addToCartForm.forEach((form) => {
       ariaHiddenSpan.textContent = cart.item_count;
       console.log("Cart count bubble already exists.");
     }
-
-    //Update cart
-    const updateCartDrawer = async () => {
-      const res = await fetch("/?section_id=cart-drawer");
-      const text = await res.text();
-
-      const html = document.createElement("div");
-      html.innerHTML = text;
-
-      const newBox = html.querySelector("#cart-target").innerHTML;
-      document.querySelector("#cart-target").innerHTML = newBox;
-
-      console.log(html, "lol");
-    };
-
-    await updateCartDrawer();
-
-    const cartDrawer = document.querySelector(".drawer");
-    cartDrawer.classList.add("active"); // Ajouter la classe 'active'
   });
 });

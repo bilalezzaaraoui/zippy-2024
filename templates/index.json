@@ -5,27 +5,21 @@
       "blocks": {
         "slide_LnHDUm": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Copy_of_Copy_of_Untitled.png"
+            "image": "shopify:\/\/shop_images\/PinkLadyBanner.png"
           }
         },
         "slide_FbCAXf": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Copy_of_Untitled_1.png"
-          }
-        },
-        "slide_Hxcaw3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_2.png"
+            "image": "shopify:\/\/shop_images\/IceRockBanner_65a70dfb-621a-40f4-8878-c8afa2e68ef4.png"
           }
         }
       },
       "block_order": [
         "slide_LnHDUm",
-        "slide_FbCAXf",
-        "slide_Hxcaw3"
+        "slide_FbCAXf"
       ],
       "settings": {
       }
@@ -33,6 +27,12 @@
     "hp-media-zippy": {
       "type": "hp-media-zippy",
       "blocks": {
+        "media_miEpbz": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/W9-Logo.svg"
+          }
+        },
         "media_QMMzhY": {
           "type": "media",
           "settings": {
@@ -50,19 +50,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Vice-Media-logo.svg"
           }
-        },
-        "media_miEpbz": {
-          "type": "media",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/W9-Logo.svg"
-          }
         }
       },
       "block_order": [
+        "media_miEpbz",
         "media_QMMzhY",
         "media_UECJ6e",
-        "media_jEMUyN",
-        "media_miEpbz"
+        "media_jEMUyN"
       ],
       "settings": {
       }
@@ -109,7 +103,7 @@
     "hp-best-seller-zippy": {
       "type": "hp-best-seller-zippy",
       "settings": {
-        "title": "Meilleurs ventes",
+        "title": "Les meilleurs ventes de la semaine",
         "description-message": "",
         "collection": "homepage-best-sellers"
       }

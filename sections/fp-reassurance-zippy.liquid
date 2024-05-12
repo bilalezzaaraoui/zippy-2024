@@ -3,9 +3,9 @@
         <div class="layout">
             {%- for block in section.blocks -%}
                 <div class="reassurance-container">
-                <img src="{{ block.settings.image | image_url: width: 3200, height: 1000 }}" />
-                <p>{{ block.settings.title }}</p>
-                <p class="message-reassurance">{{ block.settings.text }}</p>
+                  <img src="{{ block.settings.image | image_url: width: 3200, height: 1000 }}" />
+                  <p class="title-message">{{ block.settings.title }}</p>
+                  <p class="message-reassurance">{{ block.settings.text }}</p>
                 </div>
             {%- endfor -%}
         </div>

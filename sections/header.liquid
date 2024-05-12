@@ -252,11 +252,12 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
-
       {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-          <account-icon>
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" style="text-wrap: nowrap;
+          width: 100%;
+          text-decoration: none;
+          font-weight: bold;">
+          {% comment %} <account-icon>
             {%- if customer and customer.has_avatar? -%}
               {{ customer | avatar }}
             {%- else -%}
@@ -271,9 +272,14 @@
                 echo 'customer.log_in' | t
               endif
             -%}
-          </span>
+          </span> {% endcomment %}
+          Mon compte
         </a>
       {%- endif -%}
+
+      {% render 'header-search', input_id: 'Search-In-Modal' %}
+
+      
 
       {%- for block in section.blocks -%}
         {%- case block.type -%}

@@ -131,5 +131,13 @@
     <script>
       console.log({{ product.variants | json }}, "value")
     </script>
-  <label for="input-{{ option.position }}-{{ forloop.index0 }}">{{ item.title }} - {{ variant_price }}€ - ({{ price_per_gram }}€ /g) </label>
+  <label for="input-{{ option.position }}-{{ forloop.index0 }}" class="button-class" style="text-transform: lowercase;">
+    <div class="first">
+      <span class="gramme">{{ item.title }}</span>
+      <sup>({{ price_per_gram }}€ /g) </sup>
+    </div>
+    <div>
+      {{ variant_price }}€
+    </div>
+  </label>
 {%- endfor -%}

@@ -802,6 +802,7 @@ h5 {
     .focus-produit-layout {
       display: flex;
       column-gap: 3.5rem;
+      margin-top: 2rem;
 
       .image-block {
         width: 50%;
@@ -854,6 +855,20 @@ h5 {
             border-radius: 10px;
             flex: 1;
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 0.5rem;
+            color: #15433d;
+
+            svg {
+              max-width: 35px;
+            }
+
+            p {
+              text-align: center;
+              font-size: 1.2rem;
+            }
           }
         }
       }
@@ -863,7 +878,8 @@ h5 {
 
         .info-reviews {
           display: flex;
-          column-gap: 10px;
+          column-gap: 5px;
+          align-items: center;
 
           .reviews-container {
             display: flex;
@@ -872,6 +888,7 @@ h5 {
             background-color: #fff;
             padding: 0px 10px;
             border-radius: 20px;
+            max-height: 23px !important;
 
             .stars-layout {
               display: flex;
@@ -880,11 +897,13 @@ h5 {
 
             span {
               font-weight: bold;
+              font-size: 1.3rem;
             }
           }
 
           .info-more {
             font-weight: bold;
+            font-size: 1.4rem;
           }
         }
 
@@ -892,9 +911,53 @@ h5 {
           margin: 1rem 0 0;
         }
 
+        .center-layout {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          position: relative;
+          left: 5px;
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+
+          .round {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #01b777;
+            margin-bottom: 0.2rem;
+            animation: pulse-red 2s infinite;
+
+            @keyframes pulse-red {
+              0% {
+                transform: scale(0.75);
+                box-shadow: 0 0 0 0 rgba(209, 55, 55, 0.7);
+              }
+
+              70% {
+                transform: scale(0.85);
+                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+              }
+
+              100% {
+                transform: scale(0.75);
+                box-shadow: 0 0 0 0 rgba(59, 82, 231, 0);
+              }
+            }
+          }
+
+          .line {
+            margin: 0;
+            position: relative;
+            top: -3px;
+          }
+        }
+
         .list-claim {
           padding: 0;
           list-style: none;
+          margin-bottom: 1rem;
 
           .claim-item {
           }
@@ -904,14 +967,43 @@ h5 {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           margin-bottom: 1.5rem;
-          column-gap: 5px;
+          column-gap: 7px;
+
+          .active {
+            background-color: #fff7e5;
+            border: 2px solid #15433d;
+          }
 
           label {
             border-radius: 5px;
             background: #fff;
+            color: #15433d;
+            border: 1px solid #15433d;
             font-weight: bold;
             text-align: left;
-            padding: 13px 10px;
+            padding: 5px 10px;
+            text-transform: lowercase;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 7px;
+            transition: 0.2s;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #fff7e5;
+            }
+
+            .first {
+              display: flex;
+              align-items: center;
+              column-gap: 3px;
+
+              .gramme {
+                font-family: "Windsor EF" !important;
+                font-size: 2.5rem !important;
+              }
+            }
           }
         }
 
@@ -926,12 +1018,20 @@ h5 {
 
         .reassurance-layout {
           display: flex;
-          column-gap: 2rem;
+          column-gap: 4rem;
+          margin-top: 1.5rem;
 
           .reassurance {
-            span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+
+            .title-info {
               text-align: center;
-              display: block;
+              word-break: break-word;
+              font-size: 1.5rem;
+              line-height: 2.1rem;
             }
           }
         }
@@ -1036,6 +1136,10 @@ h5 {
       row-gap: 2rem;
       padding: 5rem 1.5rem;
 
+      .title-container {
+        text-align: center;
+      }
+
       .layout {
         display: flex;
         flex-direction: column;
@@ -1045,6 +1149,10 @@ h5 {
           display: flex;
           align-items: center;
           justify-content: space-around;
+
+          img {
+            max-height: 300px;
+          }
 
           .metafield-rich_text_field {
             max-width: 595px;
@@ -1079,7 +1187,7 @@ h5 {
       border-bottom: 1px solid #15433d;
       color: #15433d;
       background: none;
-      font-size: 1rem !important;
+      font-size: 1.2rem !important;
       padding: 1rem 0 !important;
     }
 
@@ -1088,9 +1196,11 @@ h5 {
       align-items: center;
       column-gap: 8rem;
       justify-content: space-around;
+      align-items: flex-start;
 
       .accordion {
         min-width: 490px;
+        max-width: 490px;
         border: none;
         padding-top: 4rem;
       }
@@ -1144,7 +1254,7 @@ h5 {
             border-bottom: 1px solid #15433d;
             color: #15433d;
             background: none;
-            font-size: 1rem !important;
+            font-size: 1.2rem !important;
             padding: 1rem 0 !important;
           }
 
@@ -1183,6 +1293,15 @@ h5 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        img {
+          margin-bottom: 1rem;
+        }
+
+        .title-message {
+          font-weight: bold;
+          margin: 0;
+        }
 
         .message-reassurance {
           text-align: center;

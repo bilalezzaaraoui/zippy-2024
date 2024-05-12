@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-    {% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> {% endcomment %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
     <!-- jQuery library -->
@@ -17,8 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     
     <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> 
+ 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     
@@ -378,5 +376,33 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script>
+      const liveElement = document.querySelector('.live');
+    
+      // Nombre initial aléatoire entre 1 et 6
+      let currentValue = Math.floor(Math.random() * 6) + 1;
+      let incrementing = true; // Drapeau pour gérer l'incrémentation ou la décrémentation
+
+      function updateNumber() {
+          // Déterminer la nouvelle valeur en premier
+          if (currentValue === 6) {
+              incrementing = false; // Inverser pour décrémenter lorsque la valeur atteint 6
+          } else if (currentValue === 1) {
+              incrementing = true; // Inverser pour incrémenter lorsque la valeur est à 1
+          }
+
+          // Incrémenter ou décrémenter la valeur selon le drapeau
+          currentValue += incrementing ? 1 : -1;
+
+          // Ensuite, mettre à jour le contenu de l'élément
+          liveElement.textContent = currentValue;
+      }
+
+      // Mettre à jour le nombre toutes les 35 secondes
+      setInterval(updateNumber, 35000);
+
+      // Afficher le nombre initial immédiatement
+      updateNumber();
+    </script>
   </body>
 </html>

@@ -3,7 +3,7 @@
     "image_banner_TAVQTm": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/ZippyCollection.png",
+        "image": "shopify:\/\/shop_images\/ZippyCollectionWave_acc98e66-d356-4fb8-9ea4-f51cbe830851.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -91,7 +91,9 @@
       }
     },
     "hp-reassurance-zippy": {
-      "type": "hp-reassurance-zippy"
+      "type": "hp-reassurance-zippy",
+      "settings": {
+      }
     },
     "multicolumn_9bW8Gb": {
       "type": "multicolumn",

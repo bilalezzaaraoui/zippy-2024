@@ -27,7 +27,8 @@
         "buttons"
       ],
       "custom_css": [
-        "#checkout {background-color: #15433d;}"
+        "#checkout {background-color: #15433d;}",
+        ".tax-note {display: none;}"
       ],
       "settings": {
         "color_scheme": "",

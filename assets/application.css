@@ -1236,6 +1236,10 @@ h5 {
   font-family: "Windsor EF";
   font-size: 18px;
 }
+#CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__details .cart-item__name:focus, #CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__details .cart-item__name:hover {
+  color: #15433d;
+  text-decoration: none;
+}
 #CartDrawer .drawer__inner #CartDrawer-Form .drawer__cart-items-wrapper .cart-items tbody .cart-item__details .gramme-container {
   padding: 2px 6px;
   background-color: #ebebeb;
@@ -1297,6 +1301,18 @@ h5 {
   background-color: #15433d;
   color: #fff !important;
   margin-bottom: 2rem;
+}
+
+.section-template--22408752365893__cart-items-padding .title-wrapper-with-link h1 {
+  font-size: 3rem !important;
+}
+
+.section-template--22408752365893__cart-footer-padding .totals {
+  align-items: center;
+}
+.section-template--22408752365893__cart-footer-padding .totals .totals__total {
+  font-size: 3rem !important;
+  margin: 0;
 }
 
 /*# sourceMappingURL=application.css.map */

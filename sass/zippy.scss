@@ -1510,6 +1510,12 @@ h5 {
               .cart-item__name {
                 font-family: "Windsor EF";
                 font-size: 18px;
+
+                &:focus,
+                &:hover {
+                  color: #15433d;
+                  text-decoration: none;
+                }
               }
 
               .gramme-container {
@@ -1595,6 +1601,24 @@ h5 {
         color: #fff !important;
         margin-bottom: 2rem;
       }
+    }
+  }
+}
+
+.section-template--22408752365893__cart-items-padding {
+  .title-wrapper-with-link {
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+}
+
+.section-template--22408752365893__cart-footer-padding {
+  .totals {
+    align-items: center;
+    .totals__total {
+      font-size: 3rem !important;
+      margin: 0;
     }
   }
 }

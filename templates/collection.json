@@ -44,52 +44,6 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_ixi9z7": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_JikqqB": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "text_ymDXkn": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "button_MyPWPQ": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_JikqqB",
-        "text_ymDXkn",
-        "button_MyPWPQ"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-3",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "hp-reassurance-zippy": {
       "type": "hp-reassurance-zippy",
       "settings": {
@@ -163,7 +117,6 @@
     "image_banner_TAVQTm",
     "banner",
     "product-grid",
-    "image_with_text_ixi9z7",
     "hp-reassurance-zippy",
     "multicolumn_9bW8Gb"
   ]

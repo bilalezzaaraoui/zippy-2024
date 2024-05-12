@@ -307,39 +307,12 @@
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
-        },
-        "card_X74hPb": {
-          "type": "card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
-            "title": "Freak In The Spreadsheets",
-            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
-          }
-        },
-        "card_7CieNt": {
-          "type": "card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
-            "title": "Freak In The Spreadsheets",
-            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
-          }
-        },
-        "card_ARcXHz": {
-          "type": "card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mingcute_sleep-line_2f189551-d0bb-4845-9896-f1fa00028b32.svg",
-            "title": "Freak In The Spreadsheets",
-            "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
-          }
         }
       },
       "block_order": [
         "card_d7Y7rJ",
         "card_cATzM7",
-        "card_XMzgxk",
-        "card_X74hPb",
-        "card_7CieNt",
-        "card_ARcXHz"
+        "card_XMzgxk"
       ],
       "settings": {
       }

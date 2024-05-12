@@ -112,7 +112,7 @@
     "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
-    "cart_drawer_collection": "",
+    "cart_drawer_collection": "produit-recommende",
     "checkout_logo_image": "shopify:\/\/shop_images\/image-logo.svg",
     "checkout_logo_size": "medium",
     "checkout_body_background_color": "#fff7e5",

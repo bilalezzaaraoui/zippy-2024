@@ -3454,3 +3454,10 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+.section-template--22473125527877__image_with_text_m9Q3LX-padding .page-width {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }

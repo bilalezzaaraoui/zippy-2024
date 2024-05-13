@@ -1,0 +1,267 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_8w7nc4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ezFUeA": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Santé & Saveur avec Zippy<\/strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ezFUeA"
+      ],
+      "custom_css": [
+        ".gradient {background-color: #caedea !important;}",
+        ".placeholder {display: none;}",
+        "#ImageWithText--template--22473125527877__image_with_text_8w7nc4 {padding: 0; display: flex; justify-content: center; align-items: center;}",
+        "#ImageWithText--template--22473125527877__image_with_text_8w7nc4 .image-with-text__heading {max-width: 450px;}",
+        ".image-with-text__media-item {display: flex; justify-content: center;}",
+        ".image-with-text__media {border: none; padding: 0 !important; width: 250px;}",
+        ".image-with-text__media img {position: static;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Design_sans_titre_9_0482b737-74f7-44ea-b957-6ee14fbaa1ad.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_m9Q3LX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_whiEkf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_d3wwWH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_kbME36": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_whiEkf",
+        "text_d3wwWH",
+        "button_kbME36"
+      ],
+      "custom_css": [
+        ".gradient {background-color: #d7eedf;}",
+        ".section-template--22473125527877__image_with_text_m9Q3LX-padding .image-with-text__media {border: none;}",
+        ".image-with-text__text-item {display: none;}",
+        ".banner__content {display: none;}",
+        "#Banner-template--22473125527877__image_banner_8e8zJE {display: none !important;}",
+        ".image-with-text__media {border: none;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Design_sans_titre_8_48f24a89-f5f1-426f-8702-c9c4d4263288.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_GiQDxW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LyApNi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Notre mission",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LyApNi"
+      ],
+      "custom_css": [
+        ".content-container {background-color: #d7eedf;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_WJF4Vz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ANVLKh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_4dGYiK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ANVLKh",
+        "text_4dGYiK"
+      ],
+      "custom_css": [
+        ".gradient {background-color: #d7eedf;}",
+        ".placeholder {display: none;}"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_9gPfF6": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Yci44W": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_jnYneg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Yci44W",
+        "text_jnYneg"
+      ],
+      "custom_css": [
+        ".gradient {background-color: #d7eedf;}",
+        ".placeholder {display: none;}"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_LaNzL9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GL8HQP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_qDpgxk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GL8HQP",
+        "text_qDpgxk"
+      ],
+      "custom_css": [
+        ".gradient {background-color: #d7eedf; padding-bottom: 20rem !important; margin-bottom: -15rem;}",
+        ".placeholder {display: none;}"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_8w7nc4",
+    "image_with_text_m9Q3LX",
+    "rich_text_GiQDxW",
+    "image_with_text_WJF4Vz",
+    "image_with_text_9gPfF6",
+    "image_with_text_LaNzL9"
+  ]
+}

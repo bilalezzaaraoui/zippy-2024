@@ -194,7 +194,7 @@
         "text_jnYneg"
       ],
       "custom_css": [
-        ".gradient {background-color: #d7eedf;}"
+        ".gradient {background-color: #d7eedf; padding-bottom: 20rem; margin-bottom: -15rem;}"
       ],
       "settings": {
         "height": "adapt",

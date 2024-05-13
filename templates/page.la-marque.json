@@ -85,7 +85,7 @@
         "button_kbME36"
       ],
       "custom_css": [
-        ".image-with-text__media {border: none;}",
+        "..image-with-text__media {border: none;}",
         ".image-with-text__text-item {display: none;}",
         ".banner__content {display: none;}"
       ],

@@ -82,6 +82,7 @@
         "button_kbME36"
       ],
       "custom_css": [
+        ".gradient {background-color: #d7eedf;}",
         ".section-template--22473125527877__image_with_text_m9Q3LX-padding .image-with-text__media {border: none;}",
         ".image-with-text__text-item {display: none;}",
         ".banner__content {display: none;}",

@@ -23,7 +23,8 @@
         "heading_ezFUeA"
       ],
       "custom_css": [
-        ".gradient {background-color: #caedea !important;}"
+        ".gradient {background-color: #caedea !important;}",
+        ".placeholder {display: none;}"
       ],
       "settings": {
         "height": "adapt",

@@ -18,14 +18,44 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Etape 2");
       const res = await fetch("/cart.json");
       const cart = await res.json();
+      console.log("cart", cart);
 
-      console.log("Etape 3");
+      console.log("Etape 30000000000");
+
+      if (cart.item_count >= 1) {
+        const elementVide = document.querySelector(".drawer__inner-empty");
+        // console.log(cart.item_count, "cart.item_count");
+
+        if (elementVide) {
+          const elementVide = document.querySelector(".drawer__inner-empty");
+          const header = document.querySelector(".drawer__header");
+          const footer = document.querySelector(".drawer__footer");
+
+          elementVide.style.display = "none";
+          header.style.display = "block";
+          footer.style.display = "block";
+        }
+
+        console.log("Etape 4");
+        const cartDrawer = document.querySelector(".drawer");
+
+        if (!cartDrawer.classList.contains("activate")) {
+          console.log("je l'ai pas eu");
+          cartDrawer.classList.remove("is-empty");
+          cartDrawer.classList.add("active");
+        }
+      }
       //Update cart
       const updateCartDrawer = async () => {
         const res = await fetch("/?section_id=cart-drawer");
         const text = await res.text();
 
-        console.log(text, "texte");
+        // console.log(text, "texte");
+        const isEmptyCart = document.querySelector(".is-empty");
+
+        if (isEmptyCart) {
+          isEmptyCart.classList.remove("is-empty");
+        }
 
         const html = document.createElement("div");
         html.innerHTML = text;
@@ -36,21 +66,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const newBox = html.querySelector("#CartDrawer-Form").innerHTML;
         document.querySelector("#CartDrawer-Form").innerHTML = newBox;
 
+        const newBoxAmount = html.querySelector(".drawer__footer").innerHTML;
+        document.querySelector(".drawer__footer").innerHTML = newBoxAmount;
+
         console.log(html, "lol");
       };
 
       await updateCartDrawer();
-
-      console.log("Etape 4");
-      const cartDrawer = document.querySelector(".drawer");
-
-      if (!cartDrawer.classList.contains("activate")) {
-        cartDrawer.classList.add("animate"); // Ajouter la classe 'active'
-        cartDrawer.classList.add("active");
-      } else {
-        cartDrawer.classList.remove("animate"); // Ajouter la classe 'active'
-        cartDrawer.classList.remove("active");
-      }
 
       console.log("Etape 5");
       var headerCartIcon = document.querySelector(".header__icon--cart");

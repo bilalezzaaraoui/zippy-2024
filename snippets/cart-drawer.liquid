@@ -20,8 +20,35 @@
 
 
   <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
-    <div id="CartDrawer" class="cart-drawer">
+    <div id="CartDrawer" class="cart-drawer" style="position: relative;">
       <div id="CartDrawer-Overlay" class="cart-drawer__overlay"></div>
+      <div class="related-product-cart">
+        <p class="title">Les préférés<br/> 
+        de nos clients</p>
+        <div class="product-container">
+          <ul class="layout">
+           {% assign collection = collections[settings.cart_drawer_collection] %}
+            {%- assign counter = 0 -%}
+
+            {%- for product in collection.products -%}
+              {%- if counter < 2 -%}
+                <li class="card-layout">
+                    {% render 'card-product-zippy',
+                        card_product: product,
+                        index_number: forloop.index0,
+                        tags: product.metafields.custom.type_de_produit,
+                        bg_color_first: product.metafields.custom.couleur_fond_image_card,
+                        bg_color_second: product.metafields.custom.couleur_fond_info_card,
+                      %}
+                </li>
+                {%- assign counter = counter | plus: 1 -%}
+              {%- else -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}   
+          </ul>
+        </div>
+      </div>
       <div
         class="drawer__inner gradient color-{{ settings.cart_color_scheme }}"
         role="dialog"
@@ -54,40 +81,13 @@
                 {%- endif -%}
               </div>
             </div>
-            {%- if settings.cart_drawer_collection != blank -%}
+            {% comment %} {%- if settings.cart_drawer_collection != blank -%}
               <div class="cart-drawer__collection">
                 {% render 'card-collection', card_collection: settings.cart_drawer_collection, columns: 1 %}
               </div>
-            {%- endif -%}
+            {%- endif -%} {% endcomment %}
           </div>
         {%- endif -%}
-        <div class="related-product-cart">
-          <p class="title">Nos clients<br/> 
-          ont aussi pris</p>
-          <div class="product-container">
-            <ul class="layout">
-             {% assign collection = collections[settings.cart_drawer_collection] %}
-              {%- assign counter = 0 -%}
-
-              {%- for product in collection.products -%}
-                {%- if counter < 2 -%}
-                  <li class="card-layout">
-                      {% render 'card-product-zippy',
-                          card_product: product,
-                          index_number: forloop.index0,
-                          tags: product.metafields.custom.type_de_produit,
-                          bg_color_first: product.metafields.custom.couleur_fond_image_card,
-                          bg_color_second: product.metafields.custom.couleur_fond_info_card,
-                        %}
-                  </li>
-                  {%- assign counter = counter | plus: 1 -%}
-                {%- else -%}
-                  {%- break -%}
-                {%- endif -%}
-              {%- endfor -%}   
-            </ul>
-          </div>
-        </div>
         <div class="drawer__header">
           <h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>
           <button

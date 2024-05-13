@@ -23,7 +23,7 @@
         "heading_ezFUeA"
       ],
       "custom_css": [
-        ".section-template--22473125527877__image_with_text_8w7nc4-padding {background-color: #CAEDEA;}"
+        ".gradient {background-color: #caedea !important;}"
       ],
       "settings": {
         "height": "adapt",

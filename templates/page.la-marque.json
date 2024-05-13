@@ -28,7 +28,7 @@
         "#ImageWithText--template--22473125527877__image_with_text_8w7nc4 {padding: 0; display: flex; justify-content: center; align-items: center;}",
         "#ImageWithText--template--22473125527877__image_with_text_8w7nc4 .image-with-text__heading {max-width: 450px;}",
         ".image-with-text__media-item {display: flex; justify-content: center;}",
-        ".image-with-text__media {border: none; padding: 0; width: 250px;}",
+        ".image-with-text__media {border: none; padding: 0 !important; width: 250px;}",
         ".image-with-text__media img {position: static;}"
       ],
       "settings": {

@@ -194,7 +194,7 @@
         "text_jnYneg"
       ],
       "custom_css": [
-        ".gradient {background-color: #d7eedf; padding-bottom: 20rem; margin-bottom: -15rem;}"
+        ".gradient {background-color: #d7eedf;}"
       ],
       "settings": {
         "height": "adapt",
@@ -234,7 +234,7 @@
         "text_qDpgxk"
       ],
       "custom_css": [
-        ".gradient {background-color: #d7eedf;}"
+        ".gradient {background-color: #d7eedf; padding-bottom: 20rem !important; margin-bottom: -15rem;}"
       ],
       "settings": {
         "height": "adapt",

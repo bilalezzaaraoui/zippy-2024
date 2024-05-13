@@ -1,15 +1,45 @@
 <div class="card-wrapper-zippy">
     <script>
-        console.log({{ card_product.url | json }})
+        console.log({{ card_product | json }}, "produit actuel")
     </script>
-    <a href="{{ card_product.url }}">
-        <div class="card-image" style="background-color: {{ bg_color_first }}">
+    {% assign contains_stock_0 = true %}
+    {% assign contains_fleur_0 = true %}
+    {% for tag in card_product.tags %}
+        {% if tag == 'stock_0' %}
+            {% assign contains_stock_0 = false %}
+        {% endif %}
+        {% if tag == 'fleur_0' %}
+            {% assign contains_fleur_0 = false %}
+        {% endif %}
+    {% endfor %}
+    
+    {% if contains_stock_0 %}
+        <a href="{{ card_product.url }}">
+            <div class="card-image" style="background-color: {{ bg_color_first }}">
+    {% else %}
+        <div class="card-image" style="background-color: {{ bg_color_first }}" style="cursor: not-allowed;">
+    {% endif %}
+    {% comment %} <a href="{{ card_product.url }}"> {% endcomment %}
             <img src="{{ card_product.media[0].src | image_url: width: 165 }}" class="first">
             <img src="{{ card_product.media[1].src | image_url: width: 165 }}" style="display: none;">
             {% render 'svg-card-wave',
                 color: bg_color_second, %}
+    {% if contains_stock_0 %}
+            </div>
+        </a>
+    {% else %}
         </div>
-    </a>
+    {% endif %}
+    {% if contains_stock_0 == false  %}
+        <div class="out-of-stock-container">
+            <span>Victime de son succès</span>
+        </div>
+        {% if contains_fleur_0 == true  %}
+            <div class="out-of-stock-container-number">
+                <span>(5000/5000 vendus) </span>
+            </div>
+        {% endif %}
+    {% endif %}
     <div class="card-info" style="background-color: {{ bg_color_second }}">
         <div class="title-avis">
             <h3>{{ card_product.title }}</h3>
@@ -25,22 +55,24 @@
         </ul>
         <div class="select-list">
           {% form 'product', card_product %}
-            <select name="id">
-                {% for variant in card_product.variants %}
-                    {% assign variant_title = variant.title %}
-                    {% assign variant_price = variant.price | money_without_currency | replace: ",", "." %}
-                    {% assign grams = variant_title | remove: "G" %}
-                    {% assign price_per_gram = variant_price | divided_by: grams %}
+            {% if contains_stock_0 %}
+                <select name="id">
+                    {% for variant in card_product.variants %}
+                        {% assign variant_title = variant.title %}
+                        {% assign variant_price = variant.price | money_without_currency | replace: ",", "." %}
+                        {% assign grams = variant_title | remove: "G" %}
+                        {% assign price_per_gram = variant_price | divided_by: grams %}
 
-                  <option value="{{ variant.id }}"
-                    {% if variant == current_variant %}selected="selected"{% endif %}
-                  >
-                    <span>{{ variant.title }} ({{ price_per_gram }}€ /g)</span>
-                    <span>{{ variant.price | money_without_currency }}€</span> 
-                  </option>
-                {% endfor %}
-            </select>
-            <button type="submit">
+                    <option value="{{ variant.id }}"
+                        {% if variant == current_variant %}selected="selected"{% endif %}
+                    >
+                        <span>{{ variant.title }} ({{ price_per_gram }}€ /g)</span>
+                        <span>{{ variant.price | money_without_currency }}€</span> 
+                    </option>
+                    {% endfor %}
+                </select>
+            {% endif %}
+            <button type="submit" class="{% if contains_stock_0 == false  %}out-of-stock{% endif %}">
                 {%- render 'icon-cart-card' -%}
             </button>
           {% endform %}

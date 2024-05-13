@@ -84,6 +84,34 @@ h5 {
   width: 300px;
   overflow: hidden;
   border-radius: 10px;
+  position: relative;
+}
+.card-wrapper-zippy .out-of-stock-container {
+  width: inherit;
+  position: fixed;
+  top: -13px;
+  display: flex;
+  justify-content: center;
+}
+.card-wrapper-zippy .out-of-stock-container span {
+  padding: 0 10px;
+  background-color: #dc5c5c;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid #15433d;
+}
+.card-wrapper-zippy .out-of-stock-container-number {
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card-wrapper-zippy .out-of-stock-container-number span {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .card-wrapper-zippy .card-image {
   display: flex;
@@ -109,6 +137,7 @@ h5 {
   flex-direction: column;
   row-gap: 10px;
   padding: 0.5rem 1.5rem 2rem;
+  height: 100%;
 }
 .card-wrapper-zippy .card-info .title-avis {
   display: flex;
@@ -176,6 +205,14 @@ h5 {
 }
 .card-wrapper-zippy .card-info .select-list select:focus {
   outline: none;
+}
+.card-wrapper-zippy .card-info .select-list .out-of-stock {
+  width: 100%;
+  height: 32px;
+  position: relative;
+  top: 1px;
+  background: #7c7e7e;
+  cursor: not-allowed !important;
 }
 .card-wrapper-zippy .card-info .select-list button {
   display: flex;
@@ -897,6 +934,7 @@ h5 {
 }
 .section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy {
   width: 230px !important;
+  border: 1px solid #fff;
 }
 .section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-image .first {
   width: 60%;
@@ -1312,6 +1350,17 @@ h5 {
 .section-template--22408752365893__cart-footer-padding .totals .totals__total {
   font-size: 3rem !important;
   margin: 0;
+}
+
+.pagination {
+  justify-content: center !important;
+}
+.pagination .pagination__list {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.pagination .pagination__list a:hover {
+  color: #15433d;
 }
 
 /*# sourceMappingURL=application.css.map */

@@ -87,7 +87,8 @@
       "custom_css": [
         "..image-with-text__media {border: none;}",
         ".image-with-text__text-item {display: none;}",
-        ".banner__content {display: none;}"
+        ".banner__content {display: none;}",
+        "#Banner-template--22473125527877__image_banner_8e8zJE {display: none;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Design_sans_titre_8_f619e872-d300-4087-8b69-2346f138be0b.png",

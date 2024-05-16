@@ -14,19 +14,28 @@
     "image_with_text_8w7nc4": {
       "type": "image-with-text",
       "blocks": {
+        "caption_qCnq9b": {
+          "type": "caption",
+          "settings": {
+            "caption": "Zippy",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_ezFUeA": {
           "type": "heading",
           "settings": {
-            "heading": "Zippy : Une Histoire de Bien-être Naturel",
+            "heading": "Une Histoire de Bien-être Naturel",
             "heading_size": "h2"
           }
         }
       },
       "block_order": [
+        "caption_qCnq9b",
         "heading_ezFUeA"
       ],
       "custom_css": [
-        ".gradient {background-color: #D7F1F0 !important;}",
+        ".gradient {background-color: #d7f1f0 !important;}",
         ".placeholder {display: none;}",
         "#ImageWithText--template--22473125527877__image_with_text_8w7nc4 {padding: 0; display: flex; justify-content: center; align-items: center;}",
         "#ImageWithText--template--22473125527877__image_with_text_8w7nc4 .image-with-text__heading {max-width: 450px;}",

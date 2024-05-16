@@ -146,14 +146,14 @@
         "heading_ANVLKh": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Notre Histoire et Nos Valeurs<\/strong>",
+            "heading": "Des Racines Profondes",
             "heading_size": "h1"
           }
         },
         "text_4dGYiK": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>L'histoire de Zippy commence au cœur des vallées ensoleillées d'Italie, où la passion pour la nature et le bien-être se transmet de génération en génération.<\/p><p>Fondée sur des valeurs de pureté, de respect de l'environnement et d'innovation, Zippy s'engage à offrir le meilleur du CBD, cultivé avec amour et expertise.<\/p>",
             "text_style": "body"
           }
         }

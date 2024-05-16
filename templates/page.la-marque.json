@@ -26,7 +26,7 @@
         "heading_ezFUeA"
       ],
       "custom_css": [
-        ".gradient {background-color: #caedea !important;}",
+        ".gradient {background-color: #D7F1F0 !important;}",
         ".placeholder {display: none;}",
         "#ImageWithText--template--22473125527877__image_with_text_8w7nc4 {padding: 0; display: flex; justify-content: center; align-items: center;}",
         "#ImageWithText--template--22473125527877__image_with_text_8w7nc4 .image-with-text__heading {max-width: 450px;}",

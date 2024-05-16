@@ -3,7 +3,7 @@
     "image_banner_TAVQTm": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/ZippyCollectionWave_acc98e66-d356-4fb8-9ea4-f51cbe830851.png",
+        "image": "shopify://shop_images/ZippyCollectionWave_acc98e66-d356-4fb8-9ea4-f51cbe830851.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -46,8 +46,50 @@
     },
     "hp-reassurance-zippy": {
       "type": "hp-reassurance-zippy",
-      "settings": {
-      }
+      "blocks": {
+        "card_DbjjAe": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/vaadin_chat-cropped.svg",
+            "title": "Service de qualité",
+            "text": "Réponses personnalisées<br>\nen moins de 24 heures."
+          }
+        },
+        "card_CReMjk": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/material-symbols_diamond-outline.svg",
+            "title": "Qualité Haut de gamme",
+            "text": "Bienfaits naturels préservés,<br>\nqualité garantie."
+          }
+        },
+        "card_PT6JKz": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/mdi_truck-outline.svg",
+            "title": "Livraisons rapide et discrète",
+            "text": "Livraison en 24-48h,<br>\ndiscrétion assurée."
+          }
+        },
+        "card_atNnxB": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/emojione-monotone_flag-for-european-union.svg",
+            "title": "Légal en Europe",
+            "text": "THC < 0,3%, conforme aux<br>\nnormes européennes."
+          }
+        }
+      },
+      "block_order": [
+        "card_DbjjAe",
+        "card_CReMjk",
+        "card_PT6JKz",
+        "card_atNnxB"
+      ],
+      "custom_css": [
+        ".section-hp-reassurance-zippy {background-color: #eaf5f1; padding-bottom: 15rem; margin-bottom: -15rem;}"
+      ],
+      "settings": {}
     }
   },
   "order": [

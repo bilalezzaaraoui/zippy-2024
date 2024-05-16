@@ -1,4 +1,4 @@
-<div  style="{% if product %}background-color:  {{ product.metafields.custom.fp_background_couleur_milieu }} {% endif %}">
+<div class="bg-container" style="{% if product %}background-color:  {{ product.metafields.custom.fp_background_couleur_milieu }} {% endif %}">
   <div class="zippy-container">
       <div class="layout">
           {%- for block in section.blocks -%}

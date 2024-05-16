@@ -778,6 +778,7 @@ h5 {
     .layout {
       display: flex;
       column-gap: 5rem;
+      justify-content: space-around;
 
       .reassurance-container {
         display: flex;

@@ -663,6 +663,7 @@ h5 {
 .section-hp-reassurance-zippy .zippy-container .layout {
   display: flex;
   column-gap: 5rem;
+  justify-content: space-around;
 }
 .section-hp-reassurance-zippy .zippy-container .layout .reassurance-container {
   display: flex;

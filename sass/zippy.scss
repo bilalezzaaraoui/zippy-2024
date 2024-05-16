@@ -1011,6 +1011,7 @@ h5 {
           display: flex;
           flex-direction: column;
           row-gap: 1rem;
+          padding: 0 1rem;
 
           .box {
             border-radius: 10px;
@@ -1576,7 +1577,7 @@ h5 {
 
 #CartDrawer {
   .drawer__inner {
-    padding: 0;
+    padding: 0 1.5rem 0 0;
     border: none;
     border-left: 3px solid #e5e5e5;
     overflow: inherit;

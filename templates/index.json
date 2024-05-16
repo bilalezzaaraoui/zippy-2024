@@ -177,24 +177,24 @@
           "type": "Line",
           "settings": {
             "image": "shopify:\/\/shop_images\/mingcute_check-fill.svg",
-            "title": "<p>Powerfull!<\/p>",
-            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)<\/strong><\/p>"
+            "title": "<p><strong>Qualité Premium<\/strong><\/p>",
+            "text": "<p>Des produits purs, testés et certifiés pour une <strong>efficacité maximale<\/strong>.<\/p>"
           }
         },
         "line_fXKHx7": {
           "type": "Line",
           "settings": {
             "image": "shopify:\/\/shop_images\/mingcute_check-fill.svg",
-            "title": "<p>Powerfull!<\/p>",
-            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)<\/strong><\/p>"
+            "title": "<p><strong>Livraison Express<\/strong><\/p>",
+            "text": "<p>Recevez votre commande rapidement, <strong>discrètement<\/strong> et en <strong>toute sécurité<\/strong>.<\/p>"
           }
         },
         "line_3CRTV8": {
           "type": "Line",
           "settings": {
             "image": "shopify:\/\/shop_images\/mingcute_check-fill.svg",
-            "title": "<p>Powerfull!<\/p>",
-            "text": "<p>It contains Epimedium & Maca Root to activate & enhenace performance<strong>(effect* last 1 - 3h 🔥)<\/strong><\/p>"
+            "title": "<p><strong>Support Personnalisé<\/strong><\/p>",
+            "text": "<p>Des conseils adaptés et un <strong>service client réactif<\/strong>, toujours à votre écoute.<\/p>"
           }
         }
       },

@@ -325,7 +325,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Service de qualité",
-            "text": "Réponses personnalisées en moins de 24 heures."
+            "text": "Réponses personnalisées<br>en moins de 24 heures."
           }
         },
         "card_UHNx4m": {
@@ -333,7 +333,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Qualité Haut de gamme",
-            "text": "Bienfaits naturels préservés, qualité garantie."
+            "text": "Bienfaits naturels préservés,<br>qualité garantie."
           }
         },
         "card_XhJEVU": {
@@ -341,7 +341,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Livraisons rapide et discrète",
-            "text": "Livraison en 24-48h, discrétion assurée."
+            "text": "Livraison en 24-48h,<br>discrétion assurée."
           }
         },
         "card_c6VmET": {
@@ -349,7 +349,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Légal en Europe",
-            "text": "THC < 0,3%, conforme aux normes européennes."
+            "text": "THC < 0,3%, conforme aux<br>normes européennes."
           }
         }
       },

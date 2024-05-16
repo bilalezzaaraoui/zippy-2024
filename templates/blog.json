@@ -2,6 +2,9 @@
   "sections": {
     "main": {
       "type": "main-blog",
+      "custom_css": [
+        ".card__information {padding: 2rem;}"
+      ],
       "settings": {
         "layout": "grid",
         "show_image": true,

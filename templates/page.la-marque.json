@@ -228,14 +228,14 @@
         "heading_GL8HQP": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Une Communauté Unie",
             "heading_size": "h1"
           }
         },
         "text_qDpgxk": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Rejoindre Zippy, c'est bien plus qu'acheter un produit. C'est intégrer une communauté dédiée au bien-être et à l'entraide. <\/p><p>Nous partageons nos connaissances, nos expériences et notre passion pour un mode de vie équilibré. <\/p><p>Nos clients sont notre famille, et ensemble, nous cultivons un avenir plus serein et sain.<\/p>",
             "text_style": "body"
           }
         }

@@ -44,7 +44,9 @@ h5 {
   letter-spacing: normal;
 }
 .utility-bar .announcement-bar .announcement-bar__message span {
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: HelveticaNeue, sans-serif !important;
 }
 
 .header {
@@ -52,19 +54,25 @@ h5 {
   padding-bottom: 10px !important;
 }
 .header .header__inline-menu {
-  font-weight: bold;
+  font-weight: 600;
 }
 .header .header__inline-menu .header__menu-item span {
+  color: #15433d;
+}
+.header .header__inline-menu .header__menu-item span:hover {
   text-underline-offset: 10px;
+  text-decoration: none;
 }
 .header .header__inline-menu .header__menu-item[aria-current=page] {
   background-color: #15433d;
   border-radius: 25px;
-  padding: 8px 15px;
+  padding: 9px 20px;
   margin-top: 5px;
+  position: relative;
+  top: -2px;
 }
 .header .header__inline-menu .header__menu-item[aria-current=page] span {
-  color: #fff7e5;
+  color: #fff7e5 !important;
   text-decoration: none;
 }
 .header .header__heading {

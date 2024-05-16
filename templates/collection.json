@@ -86,6 +86,9 @@
         "card_PT6JKz",
         "card_atNnxB"
       ],
+      "custom_css": [
+        ".section-hp-reassurance-zippy {background-color: #eaf5f1; padding-bottom: 15rem; margin-bottom: -15rem;}"
+      ],
       "settings": {
       }
     }

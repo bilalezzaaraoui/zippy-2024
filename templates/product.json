@@ -2,7 +2,8 @@
   "sections": {
     "fp-focus-produit-zippy": {
       "type": "fp-focus-produit-zippy",
-      "settings": {}
+      "settings": {
+      }
     },
     "fp-autre-produit-zippy": {
       "type": "fp-autre-produit-zippy",
@@ -14,12 +15,13 @@
     },
     "fp-middle-claim-zippy": {
       "type": "fp-middle-claim-zippy",
-      "settings": {}
+      "settings": {
+      }
     },
     "fp-faq-table-zippy": {
       "type": "fp-faq-table-zippy",
       "settings": {
-        "table_image": "shopify://shop_images/Ajouter_des_l.png"
+        "table_image": "shopify:\/\/shop_images\/Ajouter_des_l.png"
       }
     },
     "rich_text_azhbyy": {
@@ -35,11 +37,14 @@
         "text_W9GG6p": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
         }
       },
-      "block_order": ["heading_wxKGgg", "text_W9GG6p"],
+      "block_order": [
+        "heading_wxKGgg",
+        "text_W9GG6p"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -53,7 +58,7 @@
       "type": "apps",
       "blocks": {
         "loox_reviews_loox_dynamic_section_P4tFhC": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,
@@ -64,14 +69,17 @@
           }
         }
       },
-      "block_order": ["loox_reviews_loox_dynamic_section_P4tFhC"],
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_P4tFhC"
+      ],
       "settings": {
         "include_margins": true
       }
     },
     "fp-bottom-faq-zippy": {
       "type": "fp-bottom-faq-zippy",
-      "settings": {}
+      "settings": {
+      }
     },
     "fp-reassurance-zippy": {
       "type": "fp-reassurance-zippy",
@@ -79,7 +87,7 @@
         "card_a3f7bK": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -87,7 +95,7 @@
         "card_wRi4A9": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -95,7 +103,7 @@
         "card_az6kRa": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -103,7 +111,7 @@
         "card_QABYWR": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/mingcute_sleep-line.svg",
+            "image": "shopify:\/\/shop_images\/mingcute_sleep-line.svg",
             "title": "Freak In The Spreadsheets",
             "text": "\"Tabs blends historically horny ingredients into the mix to give their dark chocolate a little more... oomph\"."
           }
@@ -115,10 +123,53 @@
         "card_az6kRa",
         "card_QABYWR"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "hp-reassurance-zippy": {
-      "type": "hp-reassurance-zippy"
+      "type": "hp-reassurance-zippy",
+      "blocks": {
+        "card_bXKjxj": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vaadin_chat-cropped.svg",
+            "title": "Service de qualité",
+            "text": "Réponses personnalisées<br>\nen moins de 24 heures"
+          }
+        },
+        "card_ceCiNz": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/material-symbols_diamond-outline.svg",
+            "title": "Qualité Haut de gamme",
+            "text": "Bienfaits naturels préservés,<br>\nqualité garantie"
+          }
+        },
+        "card_8HjBDC": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mdi_truck-outline.svg",
+            "title": "Livraisons rapide et discrète",
+            "text": "Réponses personnalisées<br>\nen moins de 24 heures"
+          }
+        },
+        "card_kWF8kg": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/emojione-monotone_flag-for-european-union.svg",
+            "title": "Légal en Europe",
+            "text": "THC < 0,3%, conforme aux<br>\nnormes européennes"
+          }
+        }
+      },
+      "block_order": [
+        "card_bXKjxj",
+        "card_ceCiNz",
+        "card_8HjBDC",
+        "card_kWF8kg"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [

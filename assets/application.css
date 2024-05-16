@@ -724,6 +724,10 @@ h5 {
   color: #ececec;
   text-decoration: none;
   font-weight: 300;
+  transition: 0.2s;
+}
+.footer-zippy .wide-footer .max-width-container .first-container .menu-layout .menu-list .url-link:hover {
+  text-decoration: underline;
 }
 .footer-zippy .wide-footer .max-width-container .first-container .newsletter-social-media-layout {
   flex: 1;
@@ -766,6 +770,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  font-size: 14px;
 }
 .footer-zippy .wide-footer .max-width-container .second-container p {
   color: #ececec;
@@ -776,6 +781,11 @@ h5 {
 }
 .footer-zippy .wide-footer .max-width-container .second-container .bottom-link-layout a {
   color: #ececec;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.footer-zippy .wide-footer .max-width-container .second-container .bottom-link-layout a:hover {
+  text-decoration: underline;
 }
 
 .section-fp-focus-produit-zippy .zippy-container {

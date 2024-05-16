@@ -847,6 +847,11 @@ h5 {
               color: #ececec;
               text-decoration: none;
               font-weight: 300;
+              transition: 0.2s;
+
+              &:hover {
+                text-decoration: underline;
+              }
             }
           }
         }
@@ -902,6 +907,7 @@ h5 {
         display: flex;
         justify-content: space-between;
         margin-top: 2rem;
+        font-size: 14px;
 
         p {
           color: #ececec;
@@ -913,6 +919,12 @@ h5 {
 
           a {
             color: #ececec;
+            text-decoration: none;
+            transition: 0.2s;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }

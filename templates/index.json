@@ -68,7 +68,7 @@
           "type": "button",
           "settings": {
             "image": "shopify:\/\/shop_images\/stress.svg",
-            "collection": "stress",
+            "collection": "anti-stress",
             "text": "Pour le stress",
             "background-color": "#c3e5fd"
           }
@@ -77,7 +77,7 @@
           "type": "button",
           "settings": {
             "image": "shopify:\/\/shop_images\/dormir.svg",
-            "collection": "dormir",
+            "collection": "sommeil",
             "text": "Pour dormir",
             "background-color": "#d9c3fd"
           }
@@ -86,7 +86,7 @@
           "type": "button",
           "settings": {
             "image": "shopify:\/\/shop_images\/douleur.svg",
-            "collection": "douleur",
+            "collection": "anti-douleur",
             "text": "Pour la douleur",
             "background-color": "#ffd0fa"
           }
@@ -148,7 +148,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_8.svg",
-            "collection": "dormir",
+            "collection": "sommeil",
             "text": "Fleurs de cbd"
           }
         },
@@ -156,7 +156,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_8.svg",
-            "collection": "dormir",
+            "collection": "sommeil",
             "text": "Résine de cbd"
           }
         }
@@ -278,7 +278,7 @@
         "image_2": "shopify:\/\/shop_images\/Frame_48.png",
         "image_3": "shopify:\/\/shop_images\/Frame_45.png",
         "image_4": "shopify:\/\/shop_images\/Frame_47.png",
-        "collection": "dormir"
+        "collection": "sommeil"
       }
     },
     "hp-process-zippy": {

@@ -786,6 +786,11 @@ h5 {
         justify-content: center;
         align-items: center;
 
+        img {
+          max-height: 45px;
+          margin-bottom: 5px;
+        }
+
         .message-reassurance {
           text-align: center;
         }

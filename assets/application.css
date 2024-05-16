@@ -671,6 +671,10 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+.section-hp-reassurance-zippy .zippy-container .layout .reassurance-container img {
+  max-height: 45px;
+  margin-bottom: 5px;
+}
 .section-hp-reassurance-zippy .zippy-container .layout .reassurance-container .message-reassurance {
   text-align: center;
 }

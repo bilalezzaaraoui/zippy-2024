@@ -432,13 +432,16 @@ h5 {
   margin: 0 auto;
   display: flex;
   row-gap: 2rem;
-  padding: 4rem 1.5rem;
+  padding: 8rem 1.5rem;
 }
 .section-hp-collection-zippy .zippy-container .container-one {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.section-hp-collection-zippy .zippy-container .container-one .title {
+  margin: 0;
 }
 .section-hp-collection-zippy .zippy-container .container-two {
   width: 50%;
@@ -488,6 +491,7 @@ h5 {
 }
 .section-hp-best-brand-zippy .zippy-container .container-one h2 {
   max-width: 480px;
+  color: #15433d;
 }
 .section-hp-best-brand-zippy .zippy-container .container-one h2 strong {
   font-weight: normal;

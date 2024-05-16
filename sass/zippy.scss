@@ -748,6 +748,11 @@ h5 {
         border-radius: 20px;
         color: #fff;
         height: fit-content;
+        height: 100%;
+
+        img {
+          max-height: 35px;
+        }
 
         .title {
           margin: 1rem 0;

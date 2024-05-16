@@ -46,6 +46,46 @@
     },
     "hp-reassurance-zippy": {
       "type": "hp-reassurance-zippy",
+      "blocks": {
+        "card_DbjjAe": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vaadin_chat-cropped.svg",
+            "title": "Service de qualité",
+            "text": "Réponses personnalisées<br>\nen moins de 24 heures."
+          }
+        },
+        "card_CReMjk": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/material-symbols_diamond-outline.svg",
+            "title": "Qualité Haut de gamme",
+            "text": "Bienfaits naturels préservés,<br>\nqualité garantie."
+          }
+        },
+        "card_PT6JKz": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mdi_truck-outline.svg",
+            "title": "Livraisons rapide et discrète",
+            "text": "Livraison en 24-48h,<br>\ndiscrétion assurée."
+          }
+        },
+        "card_atNnxB": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/emojione-monotone_flag-for-european-union.svg",
+            "title": "Légal en Europe",
+            "text": "THC < 0,3%, conforme aux<br>\nnormes européennes."
+          }
+        }
+      },
+      "block_order": [
+        "card_DbjjAe",
+        "card_CReMjk",
+        "card_PT6JKz",
+        "card_atNnxB"
+      ],
       "settings": {
       }
     }

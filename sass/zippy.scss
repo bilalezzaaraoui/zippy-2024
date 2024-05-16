@@ -465,16 +465,23 @@ h5 {
       column-gap: 3rem;
 
       .card-container {
-        border: 2px solid #000;
+        border: 2px solid #15433d;
         border-radius: 10px;
-        padding: 1rem 2rem;
+        padding: 1.5rem 2rem;
         display: flex;
+        row-gap: 1rem;
         flex-direction: column;
         align-items: center;
         background-color: #fff;
 
+        img {
+          max-height: 35px;
+        }
+
         p {
           text-align: center;
+          color: #15433d;
+          margin: 0;
         }
       }
     }

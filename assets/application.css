@@ -406,16 +406,22 @@ h5 {
   column-gap: 3rem;
 }
 .section-hp-bienfait-cbd-zippy .zippy-container .layout .card-container {
-  border: 2px solid #000;
+  border: 2px solid #15433d;
   border-radius: 10px;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   display: flex;
+  row-gap: 1rem;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
 }
+.section-hp-bienfait-cbd-zippy .zippy-container .layout .card-container img {
+  max-height: 35px;
+}
 .section-hp-bienfait-cbd-zippy .zippy-container .layout .card-container p {
   text-align: center;
+  color: #15433d;
+  margin: 0;
 }
 
 .section-hp-collection-zippy {

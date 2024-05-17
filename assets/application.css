@@ -227,7 +227,6 @@ h5 {
 @media (max-width: 500px) {
   .card-wrapper-zippy .card-image .review-container span {
     position: relative;
-    top: -1px;
     font-size: 10px;
   }
 }

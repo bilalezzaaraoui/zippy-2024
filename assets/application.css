@@ -215,7 +215,7 @@ h5 {
   }
 }
 .card-wrapper-zippy .card-info .title-avis h3 {
-  font-size: 28px;
+  font-size: 28px !important;
   margin-bottom: 0;
   position: relative;
   top: 1px;
@@ -235,14 +235,33 @@ h5 {
   position: relative;
   top: 2px;
 }
+@media (max-width: 500px) {
+  .card-wrapper-zippy .card-info .title-avis .review-container {
+    position: absolute;
+    right: 5px;
+    height: 15px;
+    top: 5px;
+    padding: 0 5px;
+  }
+}
 .card-wrapper-zippy .card-info .title-avis .review-container svg {
   position: relative;
   top: -1px;
   width: 12px;
 }
+@media (max-width: 500px) {
+  .card-wrapper-zippy .card-info .title-avis .review-container svg {
+    width: 8px;
+  }
+}
 .card-wrapper-zippy .card-info .title-avis .review-container span {
   font-size: 12px;
   color: #00b375;
+}
+@media (max-width: 500px) {
+  .card-wrapper-zippy .card-info .title-avis .review-container span {
+    font-size: 10px;
+  }
 }
 .card-wrapper-zippy .card-info .list-container {
   list-style: none;

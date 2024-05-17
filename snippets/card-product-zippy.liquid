@@ -66,8 +66,8 @@
                     <option value="{{ variant.id }}"
                         {% if variant == current_variant %}selected="selected"{% endif %}
                     >
-                        <span>{{ variant.title }} ({{ price_per_gram }}€ /g)</span>
-                        <span>{{ variant.price | money_without_currency }}€</span> 
+                        <span>{{ variant.title }} - {{ variant.price | money_without_currency }}€ - ({{ price_per_gram }}€ /g)</span>
+                        <span></span> 
                     </option>
                     {% endfor %}
                 </select>

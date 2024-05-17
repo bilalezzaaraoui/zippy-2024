@@ -59,6 +59,14 @@ h5 {
   }
 }
 
+.product-grid-container {
+  #product-grid {
+    @media (max-width: 500px) {
+      row-gap: 3rem !important;
+    }
+  }
+}
+
 .utility-bar {
   .announcement-bar {
     .announcement-bar__message {
@@ -138,12 +146,22 @@ h5 {
     width: auto;
   }
 
+  @media (max-width: 500px) {
+    width: 95%;
+  }
+
   .out-of-stock-container {
     width: inherit;
     position: fixed;
     top: -13px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 500px) {
+      left: 0;
+      width: 100%;
+      top: -20px;
+    }
 
     span {
       padding: 0 10px;
@@ -153,6 +171,11 @@ h5 {
       font-size: 1.5rem;
       font-weight: bold;
       border: 2px solid #15433d;
+
+      @media (max-width: 500px) {
+        text-align: center;
+        font-size: 10px;
+      }
     }
   }
 
@@ -747,7 +770,12 @@ h5 {
     z-index: -1;
 
     .collection-hero__title {
-      font-size: 42px !important;
+      font-size: 42px;
+
+      @media (max-width: 500px) {
+        font-size: 34px !important;
+        margin: 0;
+      }
     }
   }
 }
@@ -1546,10 +1574,20 @@ h5 {
       column-gap: 3.5rem;
       margin-top: 2rem;
 
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        row-gap: 2rem;
+      }
+
       .image-block {
         width: 50%;
         display: flex;
         column-gap: 1rem;
+
+        @media (max-width: 1000px) {
+          width: 100%;
+          height: 400px;
+        }
 
         .carousel-container {
           width: 75%;
@@ -1576,6 +1614,14 @@ h5 {
                   .first-slide {
                     position: relative;
                     left: 2rem;
+
+                    @media (max-width: 1000px) {
+                      width: 30rem !important;
+                    }
+
+                    @media (max-width: 500px) {
+                      width: 25rem !important;
+                    }
                   }
 
                   img {
@@ -1619,10 +1665,20 @@ h5 {
       .info-block {
         width: 50%;
 
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+
         .info-reviews {
           display: flex;
           column-gap: 5px;
           align-items: center;
+
+          @media (max-width: 1150px) {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            row-gap: 5px;
+          }
 
           .reviews-container {
             display: flex;
@@ -1795,6 +1851,10 @@ h5 {
     .title {
       text-align: center;
       margin: 0;
+
+      @media (max-width: 1150px) {
+        font-size: 32px !important;
+      }
     }
 
     .message {
@@ -1810,10 +1870,36 @@ h5 {
       padding: 0;
       justify-content: center;
 
+      @media (max-width: 1150px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+      }
+
+      .only-desktop {
+        display: flex;
+
+        @media (max-width: 500px) {
+          display: none !important;
+        }
+      }
+
+      .only-mobile {
+        display: none;
+
+        @media (max-width: 500px) {
+          display: flex !important;
+        }
+      }
+
       .card-layout {
         .card-wrapper-zippy {
           width: 230px !important;
           border: 1px solid #fff;
+
+          @media (max-width: 1150px) {
+            width: auto !important;
+          }
 
           .card-image {
             .first {
@@ -1882,6 +1968,13 @@ h5 {
 
       .title-container {
         text-align: center;
+        max-width: 700px;
+        margin: 0 auto 3rem;
+
+        @media (max-width: 1000px) {
+          font-size: 36px !important;
+          max-width: 400px;
+        }
       }
 
       .layout {
@@ -1889,17 +1982,55 @@ h5 {
         flex-direction: column;
         row-gap: 12rem;
 
+        @media (max-width: 1150px) {
+          row-gap: 5rem;
+        }
+
+        .second {
+          @media (max-width: 1000px) {
+            flex-direction: column-reverse !important;
+          }
+        }
+
         .info-card {
           display: flex;
           align-items: center;
-          justify-content: space-around;
+          justify-content: center;
+          column-gap: 5rem;
+
+          @media (max-width: 1000px) {
+            flex-direction: column;
+            row-gap: 3rem;
+          }
+
+          .info-container {
+            max-width: 550px;
+
+            h3 {
+              @media (max-width: 1150px) {
+                text-align: center;
+                max-width: 500px;
+                margin: 0 auto 1rem;
+              }
+            }
+          }
 
           img {
-            max-height: 300px;
+            max-height: 350px;
+
+            @media (max-width: 1000px) {
+              max-height: 250px;
+            }
           }
 
           .metafield-rich_text_field {
             max-width: 595px;
+
+            p {
+              @media (max-width: 1150px) {
+                text-align: center;
+              }
+            }
           }
         }
       }
@@ -1942,11 +2073,20 @@ h5 {
       justify-content: space-around;
       align-items: flex-start;
 
+      @media (max-width: 1150px) {
+        flex-direction: column-reverse;
+      }
+
       .accordion {
         min-width: 490px;
         max-width: 490px;
         border: none;
         padding-top: 4rem;
+
+        @media (max-width: 1150px) {
+          min-width: 100%;
+          width: 100%;
+        }
       }
 
       .accordion-item {
@@ -1956,6 +2096,11 @@ h5 {
 
       .img-table {
         max-width: 550px;
+
+        @media (max-width: 1150px) {
+          margin: 0 auto;
+          width: 100%;
+        }
       }
     }
   }
@@ -1978,10 +2123,19 @@ h5 {
       .max-width-container {
         margin: 0 auto;
 
+        @media (max-width: 1150px) {
+          margin: initial;
+        }
+
         .accordion {
           min-width: 600px;
           max-width: 600px;
           border: none;
+
+          @media (max-width: 1150px) {
+            min-width: 100%;
+            width: 100% !important;
+          }
 
           div {
             font-family: HelveticaNeue, sans-serif !important;

@@ -707,8 +707,8 @@ h5 {
         border: 2px solid #15433d;
         border-radius: 10px;
         padding: 1.5rem 2rem;
-        display: flex;
         row-gap: 1rem;
+        display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #fff;
@@ -1124,11 +1124,17 @@ h5 {
 
       .card-container {
         padding: 3rem 2rem;
-        background-color: #f2f2f2;
         border-radius: 20px;
         color: #15433d;
-        height: fit-content;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media (max-width: 500px) {
+          padding: 1.5rem 2rem;
+          height: 180px;
+        }
 
         &:nth-child(1) {
           background-color: #c3e5fd;
@@ -1149,6 +1155,10 @@ h5 {
         .title {
           margin: 1rem 0;
           font-weight: bold;
+
+          @media (max-width: 500px) {
+            margin: 7px 0 0;
+          }
         }
 
         .text {

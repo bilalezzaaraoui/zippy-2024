@@ -252,6 +252,10 @@ h5 {
     height: 100%;
     position: relative;
 
+    @media (max-width: 500px) {
+      padding: 0.5rem 1rem 1rem;
+    }
+
     .review-container {
       align-items: center;
       column-gap: 3px;

@@ -169,6 +169,22 @@ h5 {
     }
   }
 
+  .only-desktop {
+    display: flex;
+
+    @media (max-width: 500px) {
+      display: none !important;
+    }
+  }
+
+  .only-mobile {
+    display: none;
+
+    @media (max-width: 500px) {
+      display: flex !important;
+    }
+  }
+
   .card-image {
     display: flex;
     justify-content: center;
@@ -179,7 +195,6 @@ h5 {
     // background-color: red;
 
     .review-container {
-      display: flex;
       align-items: center;
       column-gap: 3px;
       background-color: #000;
@@ -236,6 +251,45 @@ h5 {
     padding: 0.5rem 1.5rem 2rem;
     height: 100%;
     position: relative;
+
+    .review-container {
+      align-items: center;
+      column-gap: 3px;
+      background-color: #000;
+      padding: 0 1.1rem;
+      border-radius: 15px;
+      position: relative;
+      top: 2px;
+
+      @media (max-width: 500px) {
+        position: absolute;
+        right: 5px;
+        height: 15px;
+        top: 5px;
+        padding: 0 5px;
+      }
+
+      svg {
+        position: relative;
+        top: -1px;
+        width: 12px;
+
+        @media (max-width: 500px) {
+          width: 8px;
+        }
+      }
+
+      span {
+        font-size: 12px;
+        color: #00b375;
+
+        @media (max-width: 500px) {
+          position: relative;
+          top: -1px;
+          font-size: 10px;
+        }
+      }
+    }
 
     .svg-icon {
       height: fit-content;

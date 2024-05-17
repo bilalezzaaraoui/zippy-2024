@@ -168,6 +168,22 @@ h5 {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.card-wrapper-zippy .only-desktop {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .card-wrapper-zippy .only-desktop {
+    display: none !important;
+  }
+}
+.card-wrapper-zippy .only-mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .card-wrapper-zippy .only-mobile {
+    display: flex !important;
+  }
+}
 .card-wrapper-zippy .card-image {
   display: flex;
   justify-content: center;
@@ -177,7 +193,6 @@ h5 {
   padding: 2rem 1.5rem 3.5rem;
 }
 .card-wrapper-zippy .card-image .review-container {
-  display: flex;
   align-items: center;
   column-gap: 3px;
   background-color: #000;
@@ -232,6 +247,45 @@ h5 {
   padding: 0.5rem 1.5rem 2rem;
   height: 100%;
   position: relative;
+}
+.card-wrapper-zippy .card-info .review-container {
+  align-items: center;
+  column-gap: 3px;
+  background-color: #000;
+  padding: 0 1.1rem;
+  border-radius: 15px;
+  position: relative;
+  top: 2px;
+}
+@media (max-width: 500px) {
+  .card-wrapper-zippy .card-info .review-container {
+    position: absolute;
+    right: 5px;
+    height: 15px;
+    top: 5px;
+    padding: 0 5px;
+  }
+}
+.card-wrapper-zippy .card-info .review-container svg {
+  position: relative;
+  top: -1px;
+  width: 12px;
+}
+@media (max-width: 500px) {
+  .card-wrapper-zippy .card-info .review-container svg {
+    width: 8px;
+  }
+}
+.card-wrapper-zippy .card-info .review-container span {
+  font-size: 12px;
+  color: #00b375;
+}
+@media (max-width: 500px) {
+  .card-wrapper-zippy .card-info .review-container span {
+    position: relative;
+    top: -1px;
+    font-size: 10px;
+  }
 }
 .card-wrapper-zippy .card-info .svg-icon {
   height: fit-content;

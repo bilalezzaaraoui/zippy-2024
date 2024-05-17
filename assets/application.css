@@ -1557,6 +1557,11 @@ h5 {
   row-gap: 0.5rem;
   color: #15433d;
 }
+@media (max-width: 1150px) {
+  .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .image-block .box-container .box {
+    row-gap: 0;
+  }
+}
 .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .image-block .box-container .box svg {
   max-width: 35px;
 }
@@ -1568,6 +1573,7 @@ h5 {
 .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .image-block .box-container .box p {
   text-align: center;
   font-size: 1.2rem;
+  margin: 0;
 }
 .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .info-block {
   width: 50%;

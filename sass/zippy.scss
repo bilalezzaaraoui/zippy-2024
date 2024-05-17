@@ -1651,6 +1651,10 @@ h5 {
             row-gap: 0.5rem;
             color: #15433d;
 
+            @media (max-width: 1150px) {
+              row-gap: 0;
+            }
+
             svg {
               max-width: 35px;
 
@@ -1662,6 +1666,7 @@ h5 {
             p {
               text-align: center;
               font-size: 1.2rem;
+              margin: 0;
             }
           }
         }

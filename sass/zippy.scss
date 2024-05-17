@@ -518,10 +518,10 @@ h5 {
 
     h2 {
       text-align: center;
-      font-size: 38px;
+      font-size: 38px !important;
 
       @media (max-width: 750px) {
-        font-size: 28px !important;
+        font-size: 28px;
       }
 
       @media (max-width: 500px) {
@@ -606,7 +606,8 @@ h5 {
       }
 
       @media (max-width: 500px) {
-        font-size: 38px !important;
+        font-size: 28px !important;
+        max-width: 300px;
       }
     }
 
@@ -688,7 +689,7 @@ h5 {
       text-align: center;
 
       @media (max-width: 500px) {
-        max-width: 300px;
+        max-width: 290px;
       }
     }
 
@@ -772,6 +773,11 @@ h5 {
         @media (max-width: 1000px) {
           text-align: center;
         }
+
+        @media (max-width: 500px) {
+          max-width: 260px;
+          margin: 0 auto 5px;
+        }
       }
     }
 
@@ -846,6 +852,10 @@ h5 {
       padding: 4rem 2rem;
     }
 
+    @media (max-width: 500px) {
+      row-gap: 0;
+    }
+
     .container-one {
       // width: 60%;
       width: fit-content;
@@ -860,6 +870,10 @@ h5 {
         @media (max-width: 1000px) {
           max-width: max-content;
           font-size: 44px !important;
+        }
+
+        @media (max-width: 500px) {
+          font-size: 36px !important;
         }
 
         strong {
@@ -882,6 +896,10 @@ h5 {
 
       h4 {
         margin-bottom: 2rem;
+
+        @media (max-width: 500px) {
+          font-size: 36px !important;
+        }
       }
 
       .link-container {
@@ -924,6 +942,10 @@ h5 {
     max-width: 900px;
     margin: 0 auto 2rem;
 
+    @media (max-width: 1000px) {
+      font-size: 38px !important;
+    }
+
     @media (max-width: 500px) {
       font-size: 24px !important;
     }
@@ -943,10 +965,6 @@ h5 {
 
     h2 {
       text-align: center;
-
-      @media (max-width: 1000px) {
-        font-size: 38px !important;
-      }
     }
 
     .layout {
@@ -1004,6 +1022,12 @@ h5 {
             row-gap: 1rem;
           }
 
+          @media (max-width: 500px) {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5rem;
+          }
+
           .review-container {
             border: 2px solid #15433d;
             border-radius: 15px;
@@ -1013,13 +1037,27 @@ h5 {
               max-width: 100px;
             }
 
+            &:nth-child(4) {
+              @media (max-width: 500px) {
+                display: none;
+              }
+            }
+
+            &:nth-child(5) {
+              @media (max-width: 500px) {
+                display: none;
+              }
+            }
+
+            &:nth-child(6) {
+              @media (max-width: 500px) {
+                display: none;
+              }
+            }
+
             .layout-container {
               display: flex;
               justify-content: space-between;
-
-              @media (max-width: 1000px) {
-                flex-direction: column;
-              }
 
               .author {
                 font-weight: bold;
@@ -1086,11 +1124,23 @@ h5 {
 
       .card-container {
         padding: 3rem 2rem;
-        background-color: #000;
+        background-color: #f2f2f2;
         border-radius: 20px;
-        color: #fff;
+        color: #15433d;
         height: fit-content;
         height: 100%;
+
+        &:nth-child(1) {
+          background-color: #c3e5fd;
+        }
+
+        &:nth-child(2) {
+          background-color: #d9c3fd;
+        }
+
+        &:nth-child(3) {
+          background-color: #ffd0fa;
+        }
 
         img {
           max-height: 35px;
@@ -1098,6 +1148,7 @@ h5 {
 
         .title {
           margin: 1rem 0;
+          font-weight: bold;
         }
 
         .text {
@@ -1111,14 +1162,6 @@ h5 {
 .section-hp-reassurance-zippy {
   .only-mob {
     display: none;
-
-    .reassurance-container {
-      img {
-        margin: 0 auto !important;
-        position: relative;
-        left: 46%;
-      }
-    }
 
     @media (max-width: 1000px) {
       display: block;
@@ -1153,6 +1196,13 @@ h5 {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      .block-flex-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
       img {
         max-height: 45px;

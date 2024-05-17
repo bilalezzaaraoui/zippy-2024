@@ -188,11 +188,15 @@ h5 {
     }
 
     svg {
-      position: absolute;
-      bottom: 0 !important;
+      // position: absolute;
+      // bottom: 0 !important;
       height: fit-content;
       margin-bottom: -1px;
       width: 101%;
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
     }
   }
 
@@ -274,6 +278,22 @@ h5 {
     .select-list {
       display: flex;
       column-gap: 10px;
+
+      @media (max-width: 500px) {
+        .shopify-product-form {
+          flex-direction: column;
+          row-gap: 5px;
+
+          select {
+            padding: 5px 5px;
+          }
+
+          button {
+            padding: 5px 0px;
+            cursor: pointer;
+          }
+        }
+      }
 
       .shopify-product-form {
         display: flex;

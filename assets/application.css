@@ -187,7 +187,7 @@ h5 {
 }
 .card-wrapper-zippy .card-image svg {
   position: absolute;
-  bottom: 0;
+  bottom: 0 !important;
   height: fit-content;
   margin-bottom: -1px;
   width: 101%;

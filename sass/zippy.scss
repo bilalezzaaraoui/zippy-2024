@@ -1755,6 +1755,18 @@ h5 {
             margin: 0;
             position: relative;
             top: -3px;
+
+            .live {
+              @media (max-width: 1150px) {
+                font-size: 14px !important;
+              }
+            }
+
+            .visitor {
+              @media (max-width: 1150px) {
+                font-size: 12px !important;
+              }
+            }
           }
         }
 

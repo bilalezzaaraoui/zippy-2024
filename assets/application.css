@@ -1650,6 +1650,16 @@ h5 {
   position: relative;
   top: -3px;
 }
+@media (max-width: 1150px) {
+  .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .info-block .center-layout .line .live {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 1150px) {
+  .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .info-block .center-layout .line .visitor {
+    font-size: 12px !important;
+  }
+}
 .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .info-block .list-claim {
   padding: 0;
   list-style: none;

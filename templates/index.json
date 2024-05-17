@@ -65,15 +65,6 @@
     "hp-thematique-zippy": {
       "type": "hp-thematique-zippy",
       "blocks": {
-        "button_dK7Qnw": {
-          "type": "button",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/stress.svg",
-            "collection": "anti-stress",
-            "text": "Pour le stress",
-            "background-color": "#c3e5fd"
-          }
-        },
         "button_ck3UXC": {
           "type": "button",
           "settings": {
@@ -81,6 +72,15 @@
             "collection": "sommeil",
             "text": "Pour dormir",
             "background-color": "#d9c3fd"
+          }
+        },
+        "button_dK7Qnw": {
+          "type": "button",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stress.svg",
+            "collection": "anti-stress",
+            "text": "Pour le stress",
+            "background-color": "#c3e5fd"
           }
         },
         "button_dVPFF7": {
@@ -94,8 +94,8 @@
         }
       },
       "block_order": [
-        "button_dK7Qnw",
         "button_ck3UXC",
+        "button_dK7Qnw",
         "button_dVPFF7"
       ],
       "settings": {

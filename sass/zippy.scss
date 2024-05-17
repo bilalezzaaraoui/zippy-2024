@@ -331,6 +331,22 @@ h5 {
   }
 
   .carousel-inner {
+    .only-mobile {
+      display: none;
+
+      @media (max-width: 750px) {
+        display: block !important;
+      }
+    }
+
+    .only-desktop {
+      display: block;
+
+      @media (max-width: 750px) {
+        display: none !important;
+      }
+    }
+
     .layout {
       position: absolute;
       top: 0;
@@ -351,9 +367,23 @@ h5 {
 
         @media (max-width: 750px) {
           justify-content: flex-start;
-          padding: 1rem 0;
+          padding: 5rem 0;
           align-items: center;
         }
+
+        @media (max-width: 750px) {
+          padding: 3rem 0;
+        }
+
+        @media (max-width: 500px) {
+          padding: 2rem 0 0;
+        }
+
+        // @media (max-width: 750px) {
+        //   justify-content: flex-start;
+        //   padding: 1rem 0;
+        //   align-items: center;
+        // }
 
         .title {
           font-size: 4rem !important;
@@ -373,7 +403,16 @@ h5 {
             font-size: 2rem !important;
             max-width: inherit;
             text-align: center;
-            padding: 0 2rem;
+            padding: 0 5rem;
+          }
+
+          @media (max-width: 600px) {
+            padding: 0 1rem;
+          }
+
+          @media (max-width: 500px) {
+            max-width: 350px;
+            margin-bottom: 0;
           }
         }
 
@@ -884,6 +923,10 @@ h5 {
   .super-title {
     max-width: 900px;
     margin: 0 auto 2rem;
+
+    @media (max-width: 500px) {
+      font-size: 24px !important;
+    }
   }
 
   .zippy-container {

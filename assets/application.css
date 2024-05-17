@@ -311,6 +311,22 @@ h5 {
 .section-hp-carousel-zippy .carousel-control-next {
   display: none;
 }
+.section-hp-carousel-zippy .carousel-inner .only-mobile {
+  display: none;
+}
+@media (max-width: 750px) {
+  .section-hp-carousel-zippy .carousel-inner .only-mobile {
+    display: block !important;
+  }
+}
+.section-hp-carousel-zippy .carousel-inner .only-desktop {
+  display: block;
+}
+@media (max-width: 750px) {
+  .section-hp-carousel-zippy .carousel-inner .only-desktop {
+    display: none !important;
+  }
+}
 .section-hp-carousel-zippy .carousel-inner .layout {
   position: absolute;
   top: 0;
@@ -333,8 +349,18 @@ h5 {
 @media (max-width: 750px) {
   .section-hp-carousel-zippy .carousel-inner .layout .container-layout {
     justify-content: flex-start;
-    padding: 1rem 0;
+    padding: 5rem 0;
     align-items: center;
+  }
+}
+@media (max-width: 750px) {
+  .section-hp-carousel-zippy .carousel-inner .layout .container-layout {
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .section-hp-carousel-zippy .carousel-inner .layout .container-layout {
+    padding: 2rem 0 0;
   }
 }
 .section-hp-carousel-zippy .carousel-inner .layout .container-layout .title {
@@ -355,7 +381,18 @@ h5 {
     font-size: 2rem !important;
     max-width: inherit;
     text-align: center;
-    padding: 0 2rem;
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 600px) {
+  .section-hp-carousel-zippy .carousel-inner .layout .container-layout .title {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .section-hp-carousel-zippy .carousel-inner .layout .container-layout .title {
+    max-width: 350px;
+    margin-bottom: 0;
   }
 }
 .section-hp-carousel-zippy .carousel-inner .layout .container-layout .message {
@@ -839,6 +876,11 @@ h5 {
 .section-reviews-client-zippy .super-title {
   max-width: 900px;
   margin: 0 auto 2rem;
+}
+@media (max-width: 500px) {
+  .section-reviews-client-zippy .super-title {
+    font-size: 24px !important;
+  }
 }
 .section-reviews-client-zippy .zippy-container {
   max-width: 1300px;

@@ -2,10 +2,10 @@
     <div class="carousel-inner">
         {%- for block in section.blocks -%}
             <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
-                    <img class="d-block w-100 only-desktop" src="{{
+                    <img class="w-100 only-desktop" src="{{
                         block.settings.image
                         | image_url: width: 3200}}" />
-                    <img class="d-block w-100 only-mobile" src="{{
+                    <img class="w-100 only-mobile" src="{{
                           block.settings.image_mobile
                           | image_url: width: 3200}}" />
                     <div class="layout">

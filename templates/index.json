@@ -6,7 +6,8 @@
         "slide_LnHDUm": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PinkLadyBanner.png"
+            "image": "shopify:\/\/shop_images\/PinkLadyBanner.png",
+            "image_mobile": "shopify:\/\/shop_images\/PinkLadyHP.png"
           }
         },
         "slide_FbCAXf": {

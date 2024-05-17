@@ -1108,6 +1108,7 @@ h5 {
 }
 .section-hp-process-zippy .zippy-container .layout .card-container img {
   max-height: 35px;
+  min-height: 30px;
 }
 .section-hp-process-zippy .zippy-container .layout .card-container .title {
   margin: 1rem 0;

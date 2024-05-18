@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "13.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.logo.name",
@@ -1479,14 +1479,14 @@
         "type": "text",
         "id": "cart_pre_goal_message",
         "label": "Pre-Goal Message",
-        "default": "You're only [remainingForGoalFormatted] away from <strong>FREE SHIPPING</strong>",
+        "default": "You're only [remainingForGoalFormatted] away from <strong>FREE SHIPPING<\/strong>",
         "info": "Message displayed before reaching the goal. Use [remainingForGoalFormatted] to insert the dynamic remaining amount."
       },
       {
         "type": "text",
         "id": "cart_post_goal_message",
         "label": "Post-Goal Message",
-        "default": "🎉 Congrats! You've unlocked <strong>FREE SHIPPING</strong>",
+        "default": "🎉 Congrats! You've unlocked <strong>FREE SHIPPING<\/strong>",
         "info": "Message displayed after reaching the goal."
       },
       {

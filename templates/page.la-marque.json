@@ -167,7 +167,7 @@
         ".placeholder {display: none;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/BrandImage1.png",
+        "image": "shopify:\/\/shop_images\/Brand1.png",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",

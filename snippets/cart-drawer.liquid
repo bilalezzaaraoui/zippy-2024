@@ -22,7 +22,7 @@
   <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
     <div id="CartDrawer" class="cart-drawer" style="position: relative;">
       <div id="CartDrawer-Overlay" class="cart-drawer__overlay"></div>
-      <div class="related-product-cart">
+      {% comment %} <div class="related-product-cart">
         <p class="title">Les préférés<br/> 
         de nos clients</p>
         <div class="product-container">
@@ -48,7 +48,7 @@
             {%- endfor -%}   
           </ul>
         </div>
-      </div>
+      </div> {% endcomment %}
       <div
         class="drawer__inner gradient color-{{ settings.cart_color_scheme }}"
         role="dialog"
@@ -510,6 +510,31 @@
             </div>
             <div id="CartDrawer-CartErrors" role="alert"></div>
           </form>
+          <div class="complementary-product">
+            <p class="title-offer">Un petit plaisir pour la route ?</p>
+            <p class="sub-title-offer">Tester avec un gramme</p>
+            <ul class="layout">
+              {% assign collection = collections[settings.cart_drawer_collection] %}
+               {%- assign counter = 0 -%}
+    
+               {%- for product in collection.products -%}
+                 {%- if counter < 2 -%}
+                   <li class="card-layout">
+                       {% render 'card-product-zippy-cart',
+                           card_product: product,
+                           index_number: forloop.index0,
+                           tags: product.metafields.custom.type_de_produit,
+                           bg_color_first: product.metafields.custom.couleur_fond_image_card,
+                           bg_color_second: product.metafields.custom.couleur_fond_info_card,
+                         %}
+                   </li>
+                   {%- assign counter = counter | plus: 1 -%}
+                 {%- else -%}
+                   {%- break -%}
+                 {%- endif -%}
+               {%- endfor -%}   
+            </ul>
+          </div>
         </cart-drawer-items>
         <div class="drawer__footer">
           {%- if settings.show_cart_note -%}

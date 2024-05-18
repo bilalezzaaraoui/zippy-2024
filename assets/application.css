@@ -2159,6 +2159,77 @@ h5 {
   border-left: 3px solid #e5e5e5;
   overflow: inherit;
 }
+#CartDrawer .drawer__inner .complementary-product {
+  padding-bottom: 1rem;
+}
+#CartDrawer .drawer__inner .complementary-product .title-offer {
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #15433d;
+}
+#CartDrawer .drawer__inner .complementary-product .sub-title-offer {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #15433d;
+}
+#CartDrawer .drawer__inner .complementary-product .layout {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-layout {
+  display: flex;
+  justify-content: center;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  max-height: 100px;
+  max-width: 80%;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-image img {
+  max-width: 60px;
+  left: 2px;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info {
+  flex: 1;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .title-avis {
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  row-gap: 3px;
+  margin-top: 5px;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .title-avis h3 {
+  font-size: 18px !important;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .title-avis .review-container {
+  height: 16px;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .title-avis .review-container span {
+  font-size: 11px;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .title-avis .review-container svg {
+  position: relative;
+  top: -1px;
+  width: 9px;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .list-container {
+  display: none !important;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .shopify-product-form select {
+  display: none;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .shopify-product-form button {
+  width: 100%;
+  padding: 2px 0;
+}
 #CartDrawer .drawer__inner .carousel {
   background-color: #15433d;
 }

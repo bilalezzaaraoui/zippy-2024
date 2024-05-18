@@ -78,7 +78,7 @@
           "type": "button",
           "settings": {
             "image": "shopify:\/\/shop_images\/stress.svg",
-            "collection": "anti-stress",
+            "collection": "reduction-du-stress",
             "text": "Pour le stress",
             "background-color": "#c3e5fd"
           }

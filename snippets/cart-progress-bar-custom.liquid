@@ -25,16 +25,78 @@
       data-post-goal-message="{{ postGoalMessage | escape }}"
           data-money-format="{{ shop.money_format | escape }}"
     >
+      {% assign totalFormated = cartTotal | divided_by: 100 | float %}
+
+      {% assign shippingOffer = "" %}
+      
+      {% assign threshold1 = 50 %}
+      {% assign threshold2 = 100 %}
+      {% assign threshold3 = 150 %}
+
+      {% if totalFormated >= 0 and totalFormated < threshold1 %}
+          {% assign shippingOffer = "la livraison gratuite" %}
+          {% assign difference = totalFormated | minus: threshold1 | abs %}
+      {% elsif totalFormated >= threshold1 and totalFormated < threshold2 %}
+          {% assign shippingOffer = "5g offert" %}
+          {% assign difference = totalFormated | minus: threshold2 | abs %}
+      {% elsif totalFormated >= threshold2 %}
+          {% assign shippingOffer = "10g offert" %}
+          {% assign difference = totalFormated | minus: threshold3 | abs %}
+      {% endif %}
+
+      {% comment %} {% assign thresholdForNextStep = 50 %}  {# Seuil pour passer à l'étape suivante #}
+
+      
+      {% if remainingForGoalFormatted < thresholdForNextStep %}
+          {% assign remainingForNextStep = difference %}
+      {% else %}
+          {% assign remainingForNextStep = 0 %}
+      {% endif %} {% endcomment %}
+
+      <p class="claim-title" style="text-align: center; line-height: normal; margin-bottom: 2rem"><sup><strong>Offre cumulabe</strong></sup><br/>Il reste <strong>{{ difference }}€</strong> pour avoir <strong>{{ shippingOffer }}</strong></p>
+      {% comment %} <p class="claim-offer">🚚 La livraison gratuite Standard + 1g offert</p>
+      <p class="claim-offer">😊 5g offert</p>
+      <p class="claim-offer">😊 10g offert</p>
+      <p>{{ remainingForGoalFormatted }}</p>
+      <p>{{ cartTotal | money_without_currency  }}</p> {% endcomment %}
+
       <div class="cart-progress-bar-container">
         <div id="cart-progress-bar" style="width: {{ progressPercentage }}%;"></div>
+        <div class="layout">
+          <div class="steps">
+            <span class="line"></span>
+            <div class="position-container">
+              <span class="price">50€</span>
+              <span class="gift">Livraison gratuite + 1gr offert</span>
+            </div>
+          </div>
+          <div class="steps">
+            <span class="line"></span>
+            <div class="position-container">
+              <span class="price">100€</span>
+              <span class="gift">5gr offert</span>
+            </div>
+          </div>
+          <div class="steps">
+            <span class="line"></span>
+            <div class="position-container">
+              <span class="price">150€</span>
+              <span class="gift">10gr offert</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="goal-message">
+
+      {% comment %} <div class="goal-message">
+
+
         {% if remainingForGoal > 0 %}
           {{ dynamicPreGoalMessage }}
         {% else %}
           {{ postGoalMessage }}
         {% endif %}
-      </div>
+      </div> {% endcomment %}
+      
     </div>
   {% endif %}
   

@@ -550,11 +550,11 @@
                 </ul>
               {%- endif -%}
             </div>
-
+{% comment %} 
             <div class="totals" role="status">
               <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
               <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
-            </div>
+            </div> {% endcomment %}
             {% comment %} <div class="livraison-layout">
               <span>Livraison 24/48h gratuite</span>
               <span>À partir de 49,50€ d'achats</span>
@@ -579,14 +579,16 @@
             <button
               type="submit"
               id="CartDrawer-Checkout"
-              class="cart__checkout-button button"
+              class="cart__checkout-button button cart-confirmation-button"
               name="checkout"
               form="CartDrawer-Form"
               {% if cart == empty %}
                 disabled
               {% endif %}
             >
-              {{ 'sections.cart.checkout' | t }}
+              {%- render 'icon-lock-cart' -%}
+              <span>Passer commande - {{ cart.total_price | money_without_currency }}€</span>
+              {% comment %} {{ 'sections.cart.checkout' | t }} {% endcomment %}
             </button>
           </div>
         </div>

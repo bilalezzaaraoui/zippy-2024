@@ -69,7 +69,7 @@
           "type": "button",
           "settings": {
             "image": "shopify:\/\/shop_images\/dormir.svg",
-            "collection": "sommeil",
+            "collection": "amelioration-du-sommeil",
             "text": "Pour dormir",
             "background-color": "#d9c3fd"
           }
@@ -149,7 +149,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_8.svg",
-            "collection": "sommeil",
+            "collection": "amelioration-du-sommeil",
             "text": "Fleurs de cbd"
           }
         },
@@ -157,7 +157,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_8.svg",
-            "collection": "sommeil",
+            "collection": "amelioration-du-sommeil",
             "text": "Résine de cbd"
           }
         }
@@ -279,7 +279,7 @@
         "image_2": "shopify:\/\/shop_images\/Frame_48.png",
         "image_3": "shopify:\/\/shop_images\/Frame_45.png",
         "image_4": "shopify:\/\/shop_images\/Frame_47.png",
-        "collection": "sommeil"
+        "collection": "amelioration-du-sommeil"
       }
     },
     "hp-process-zippy": {

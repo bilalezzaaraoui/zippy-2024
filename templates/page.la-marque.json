@@ -44,7 +44,7 @@
         ".image-with-text__media img {position: static;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/LaMarque.png",
+        "image": "shopify:\/\/shop_images\/LogoZippyCircle.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",

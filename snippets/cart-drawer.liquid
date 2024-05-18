@@ -99,6 +99,7 @@
             {% render 'icon-close' %}
           </button>
         </div>
+
         <cart-drawer-items
           {% if cart == empty %}
             class=" is-empty"
@@ -535,6 +536,7 @@
           <!-- Subtotals -->
 
           <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
+            {% render 'cart-progress-bar-custom' %}
             <div>
               {%- if cart.cart_level_discount_applications.size > 0 -%}
                 <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
@@ -553,10 +555,10 @@
               <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
               <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
             </div>
-            <div class="livraison-layout">
+            {% comment %} <div class="livraison-layout">
               <span>Livraison 24/48h gratuite</span>
               <span>À partir de 49,50€ d'achats</span>
-            </div>
+            </div> {% endcomment %}
 
             {% comment %} <small class="tax-note caption-large rte">
               {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}

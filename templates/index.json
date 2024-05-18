@@ -87,7 +87,7 @@
           "type": "button",
           "settings": {
             "image": "shopify:\/\/shop_images\/douleur.svg",
-            "collection": "anti-douleur",
+            "collection": "soulagement-de-la-douleur",
             "text": "Pour la douleur",
             "background-color": "#ffd0fa"
           }

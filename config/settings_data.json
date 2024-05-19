@@ -178,6 +178,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "1984534506411008366": {
+        "type": "shopify:\/\/apps\/bot-buy-x-get-y-free-gifts\/blocks\/app-embeded\/ec21afbf-38af-430f-b440-b90dea69c0f9",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {

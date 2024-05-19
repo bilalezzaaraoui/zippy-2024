@@ -20,12 +20,12 @@
             "autoAddOnce": true,
             "hideWhenOutOfStock": false,
             "activateViaLinkOnly": false,
-            "refreshType": "none",
+            "refreshType": "cartItems",
             "cardColor": "#ffffff",
             "cardTextColor": "#000000",
             "buttonColor": "#000000",
-            "title": "Gifts",
-            "cta": "Add gift",
+            "title": "Cadeaux",
+            "cta": "Ajouté",
             "postAddTxt": "gift(s) added",
             "customConfig": "{}"
           }

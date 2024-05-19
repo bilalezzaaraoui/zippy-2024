@@ -575,11 +575,11 @@
                 </ul>
               {%- endif -%}
             </div>
-{% comment %} 
+
             <div class="totals" role="status">
-              <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
+              <h2 class="totals__total">Total</h2>
               <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
-            </div> {% endcomment %}
+            </div>
             {% comment %} <div class="livraison-layout">
               <span>Livraison 24/48h gratuite</span>
               <span>À partir de 49,50€ d'achats</span>
@@ -612,7 +612,8 @@
               {% endif %}
             >
               {%- render 'icon-lock-cart' -%}
-              <span>Passer commande - {{ cart.total_price | money_without_currency }}€</span>
+              <span>Passer commande</span>
+              {% comment %} <span>Passer commande - {{ cart.total_price | money_without_currency }}€</span> {% endcomment %}
               {% comment %} {{ 'sections.cart.checkout' | t }} {% endcomment %}
             </button>
           </div>

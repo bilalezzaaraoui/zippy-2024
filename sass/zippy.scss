@@ -139,8 +139,9 @@ h5 {
 .card-special-cart {
   .btn-cart {
     color: #fff;
-    font-size: 14px;
     font-weight: bold;
+    font-size: 13px;
+    padding: 1px 0;
   }
 }
 
@@ -2365,9 +2366,9 @@ h5 {
 
 #CartDrawer {
   .drawer__inner {
-    padding: 0 1.5rem 0 0;
+    padding: 0;
     border: none;
-    border-left: 3px solid #e5e5e5;
+    // border-left: 3px solid #e5e5e5;
     overflow: inherit;
 
     .complementary-product {
@@ -2376,9 +2377,10 @@ h5 {
       .title-offer {
         margin: 0;
         text-align: center;
-        font-weight: bold;
+        font-family: "Windsor EF" !important;
         color: #15433d;
       }
+
       .sub-title-offer {
         margin: 0 0 1rem;
         text-align: center;
@@ -2486,7 +2488,7 @@ h5 {
 
     .drawer__header {
       padding: 1rem 1.5rem;
-      border-bottom: 2px solid #e5e5e5;
+      // border-bottom: 2px solid #e5e5e5;
 
       .drawer__heading {
         font-size: 36px !important;

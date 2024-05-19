@@ -138,8 +138,9 @@ h5 {
 
 .card-special-cart .btn-cart {
   color: #fff;
-  font-size: 14px;
   font-weight: bold;
+  font-size: 13px;
+  padding: 1px 0;
 }
 
 .card-wrapper-zippy {
@@ -2160,9 +2161,8 @@ h5 {
 }
 
 #CartDrawer .drawer__inner {
-  padding: 0 1.5rem 0 0;
+  padding: 0;
   border: none;
-  border-left: 3px solid #e5e5e5;
   overflow: inherit;
 }
 #CartDrawer .drawer__inner .complementary-product {
@@ -2171,7 +2171,7 @@ h5 {
 #CartDrawer .drawer__inner .complementary-product .title-offer {
   margin: 0;
   text-align: center;
-  font-weight: bold;
+  font-family: "Windsor EF" !important;
   color: #15433d;
 }
 #CartDrawer .drawer__inner .complementary-product .sub-title-offer {
@@ -2255,7 +2255,6 @@ h5 {
 }
 #CartDrawer .drawer__inner .drawer__header {
   padding: 1rem 1.5rem;
-  border-bottom: 2px solid #e5e5e5;
 }
 #CartDrawer .drawer__inner .drawer__header .drawer__heading {
   font-size: 36px !important;

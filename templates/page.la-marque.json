@@ -34,6 +34,7 @@
         "caption_qCnq9b",
         "heading_ezFUeA"
       ],
+      "disabled": true,
       "custom_css": [
         ".gradient {background-color: #d7f1f0 !important;}",
         ".placeholder {display: none;}",
@@ -90,6 +91,7 @@
         "text_d3wwWH",
         "button_kbME36"
       ],
+      "disabled": true,
       "custom_css": [
         ".gradient {background-color: #d7eedf;}",
         ".section-template--22473125527877__image_with_text_m9Q3LX-padding .image-with-text__media {border: none;}",
@@ -136,7 +138,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 0,
+        "padding_top": 48,
         "padding_bottom": 52
       }
     },
@@ -209,7 +211,7 @@
         ".placeholder {display: none;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Brand2.png",
+        "image": "shopify:\/\/shop_images\/LaMarque3_214f88b5-a80f-4e90-afae-4a0eebe1b293.png",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
@@ -251,7 +253,7 @@
         ".placeholder {display: none;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Brand3_19d5c380-ec8d-49ed-a3a4-a2f70bdedac4.png",
+        "image": "shopify:\/\/shop_images\/LaMarque4.png",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",

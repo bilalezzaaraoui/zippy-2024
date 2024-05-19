@@ -76,8 +76,9 @@
                     {% endfor %}
                 </select>
             {% endif %}
-            <button type="submit" class="{% if contains_stock_0 == false  %}out-of-stock{% endif %}">
-                {%- render 'icon-cart-card' -%}
+            <button type="submit" class="btn-cart">
+                {% comment %} {%- render 'icon-cart-card' -%} {% endcomment %}
+                Ajouter
             </button>
           {% endform %}
         </div>

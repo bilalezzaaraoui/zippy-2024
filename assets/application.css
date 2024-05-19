@@ -136,6 +136,12 @@ h5 {
   height: 30px;
 }
 
+.card-special-cart .btn-cart {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .card-wrapper-zippy {
   width: 300px;
   overflow: hidden;
@@ -2408,10 +2414,7 @@ h5 {
 .cart-progress-bar-container #cart-progress-bar {
   background-color: #15433d !important;
   border: 1px solid #15433d !important;
-  border-top-left-radius: 15px !important;
-  border-bottom-left-radius: 15px !important;
-  border-top-right-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
+  border-radius: 15px !important;
 }
 .cart-progress-bar-container .layout {
   display: flex;

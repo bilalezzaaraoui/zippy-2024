@@ -9,6 +9,17 @@
   Usage:
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
+<script>
+  {% comment %} document.addEventListener("DOMContentLoaded", function () { {% endcomment %}
+    // Sélectionnez le bouton avec l'ID "input--1"
+    var button = document.querySelector("label[for='input--1']");
+
+    // Cliquez sur le bouton
+    if (button) {
+      button.click();
+    }
+  {% comment %} }); {% endcomment %}
+</script>
 
   <variant-selects
     id="variant-selects-{{ section.id }}"

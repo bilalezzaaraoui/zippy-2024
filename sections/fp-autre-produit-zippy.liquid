@@ -1,3 +1,21 @@
+<script>
+  const produit = {{ product | json }};
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const target = document.querySelector(".section-fp-autre-produit-zippy");
+    const cardList = target.querySelectorAll(".card-layout")
+  
+    cardList.forEach(item => {
+      const card = item;
+      const h3 = card.querySelector(".title-avis").querySelector("h3").textContent
+  
+      if (produit.title == h3) {
+        item.style.display = "none";
+      }
+    })
+  });
+</script>
+
 <section style="background-color: {{ product.metafields.custom.fp_background_couleur_global }}">
   <div class="zippy-container">
       <h2 class="title">{{ section.settings.title }}</h2>

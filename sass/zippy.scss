@@ -2364,6 +2364,33 @@ h5 {
   }
 }
 
+.add-to-cart-button {
+  position: relative;
+
+  .best-offer-fp-card {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      width: fit-content;
+      background-color: #fff;
+      border-radius: 10px;
+      height: 18px;
+      border: 1px solid;
+
+      span {
+        position: relative;
+        top: -8px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
 #CartDrawer {
   .drawer__inner {
     padding: 0;

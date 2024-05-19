@@ -131,7 +131,18 @@
     <script>
       console.log({{ product.variants | json }}, "value")
     </script>
-  <label for="input-{{ option.position }}-{{ forloop.index0 }}" class="button-class" style="text-transform: lowercase;">
+  <label for="input-{{ option.position }}-{{ forloop.index0 }}" class="button-class add-to-cart-button" style="text-transform: lowercase;">
+    {% assign stripped_title = item.title | strip %}
+
+    {% if stripped_title == "5G" %}
+      <div class="best-offer-fp-card">
+        <div class="container">
+          <span>Populaire</span>
+        </div>
+      </div>
+      <!-- Mettez ici le contenu que vous souhaitez afficher lorsque option.position est égal à "input--1" -->
+    {% endif %}
+
     <div class="first">
       <span class="gramme">{{ item.title }}</span>
       <sup>({{ price_per_gram }}€ /g) </sup>

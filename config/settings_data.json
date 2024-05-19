@@ -183,8 +183,8 @@
         "type": "shopify:\/\/apps\/cartking-free-gifts\/blocks\/gift-embed-v2\/4831ea51-9f80-493d-8541-da4662a9e219",
         "disabled": false,
         "settings": {
-          "targetSelector": "",
-          "targetLocation": "After"
+          "targetSelector": ".complementary-product",
+          "targetLocation": "Before"
         }
       }
     },

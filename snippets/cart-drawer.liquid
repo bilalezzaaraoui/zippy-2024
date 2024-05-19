@@ -4,6 +4,39 @@
   Usage:
   {% render 'cart-drawer' %}
 {% endcomment %}
+{% comment %} {% include 'cart-add-on' %}
+<input type="hidden" gift-id="41900077908137" id="gift-item"> {% endcomment %}
+
+{% comment %} <script>
+  if(state.total_price>20000) {
+  (function($) {
+    var id = $('#gift-item').attr('gift-id');
+    var addproduct = {
+    type: 'POST',
+    url: '/cart/add.js',
+    data: {
+    id: id,
+    },
+    dataType: 'json',
+    success: function(cart) {
+    window.location.href = '/cart';
+  }
+  };
+  $.ajax(addproduct);
+  })(jQuery);
+  }
+  else
+  {
+  var id = $('#gift-item').attr('gift-id');
+  $.post('/cart/change.js', {
+  quantity: 0,
+  id: id,
+  success: function(response){
+  window.location.href = "/cart";
+  }
+  });
+  }
+</script> {% endcomment %}
 
 
 <div id="cart-target">

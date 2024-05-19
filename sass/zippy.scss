@@ -2634,6 +2634,14 @@ h5 {
           justify-content: center !important;
           margin-bottom: 0;
 
+          .sc_simple-info__row {
+            display: none;
+          }
+
+          .sc_code-info {
+            display: flex !important;
+          }
+
           & > div:first-of-type {
             margin: 0 !important;
           }
@@ -2655,7 +2663,12 @@ h5 {
       .cart-drawer__footer {
         .totals {
           align-items: center;
-          margin-top: 2rem;
+          padding: 2rem 1.5rem;
+          margin: 0;
+
+          .totals__total-value {
+            color: #15433d;
+          }
 
           .totals__total {
             font-size: 22px !important;

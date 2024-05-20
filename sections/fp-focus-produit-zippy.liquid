@@ -153,34 +153,38 @@
         });
     });
 
-    // Récupérer l'élément avec la classe 'live'
-    const liveElement = document.querySelector('.live');
+    ////////////////////////
+    const liveElements = document.querySelectorAll('.live');
 
-    // Générer un nombre initial aléatoire entre 1 et 12
-    let currentValue = Math.floor(Math.random() * 12) + 1;
-    let incrementing = true;  // Drapeau pour gérer l'incrémentation ou la décrémentation
-
-    // Fonction pour mettre à jour le nombre
-    function updateNumber() {
+    // Fonction pour mettre à jour le nombre pour un produit spécifique
+    function updateNumber(liveElement) {
+        // Récupérer la clé unique pour ce produit
+        const productId = liveElement.dataset.productId;
+    
+        // Récupérer le dernier chiffre stocké localement pour ce produit ou générer un nouveau nombre initial aléatoire entre 1 et 12
+        let currentValue = parseInt(localStorage.getItem(`currentValue_${productId}`)) || Math.floor(Math.random() * 12) + 1;
+        let incrementing = true;  // Drapeau pour gérer l'incrémentation ou la décrémentation
+    
         // Mettre à jour le contenu de l'élément
         liveElement.textContent = currentValue;
-
+    
         // Déterminer si on doit incrémenter ou décrémenter
         if (currentValue === 12) {
             incrementing = false;  // Commencer à décrémenter
         } else if (currentValue === 1) {
             incrementing = true;   // Commencer à incrémenter
         }
-
+    
         // Incrémenter ou décrémenter le currentValue selon le drapeau
         currentValue += incrementing ? 1 : -1;
+    
+        // Stocker localement le dernier chiffre généré pour ce produit
+        localStorage.setItem(`currentValue_${productId}`, currentValue);
     }
-
-    // Définir l'intervalle pour mettre à jour le nombre toutes les 10 secondes
-    setInterval(updateNumber, 10000);
-
-    // Initialiser la première valeur
-    updateNumber();
+    
+    // Pour chaque élément .live, appeler la fonction updateNumber avec cet élément
+    liveElements.forEach(updateNumber);
+    
   });
 
   // Sélection de l'élément avec la classe ".header-wrapper"

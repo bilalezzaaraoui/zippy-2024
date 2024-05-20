@@ -182,7 +182,29 @@
     // Initialiser la première valeur
     updateNumber();
   });
+
+  // Sélection de l'élément avec la classe ".header-wrapper"
+  var headerWrapper = document.querySelector(".header-wrapper");
+
+  // Couleur d'arrière-plan d'origine
+  var originalBackgroundColor = window.getComputedStyle(headerWrapper).backgroundColor;
+
+  // Ajout d'un gestionnaire d'événements de défilement à la fenêtre
+  window.addEventListener("scroll", function() {
+      // Vérification de la position de défilement de la page
+      if (window.scrollY >= 200) {
+          // Si le défilement est à 300px ou plus
+          headerWrapper.style.backgroundColor = "#fff7e5";
+          headerWrapper.style.borderBottom = "0.1rem solid rgba(21,67,61, .08)"; // Rétablir la couleur d'origine
+      } else {
+          // Si le défilement est en dessous de 300px
+          headerWrapper.style.backgroundColor = originalBackgroundColor; // Rétablir la couleur d'origine
+          headerWrapper.style.border = "none"; // Rétablir la couleur d'origine
+      }
+  });
 </script>
+
+
 
 
 

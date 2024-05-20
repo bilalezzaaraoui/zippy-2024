@@ -380,19 +380,23 @@ h5 {
   column-gap: 10px;
 }
 @media (max-width: 500px) {
-  .card-wrapper-zippy .card-info .select-list .shopify-product-form {
+  .card-wrapper-zippy .card-info .select-list .shopify-product-form,
+  .card-wrapper-zippy .card-info .select-list .form-site-style-special {
     flex-direction: column;
     row-gap: 5px;
   }
-  .card-wrapper-zippy .card-info .select-list .shopify-product-form select {
+  .card-wrapper-zippy .card-info .select-list .shopify-product-form select,
+  .card-wrapper-zippy .card-info .select-list .form-site-style-special select {
     padding: 5px 5px;
   }
-  .card-wrapper-zippy .card-info .select-list .shopify-product-form button {
+  .card-wrapper-zippy .card-info .select-list .shopify-product-form button,
+  .card-wrapper-zippy .card-info .select-list .form-site-style-special button {
     padding: 5px 0px;
     cursor: pointer;
   }
 }
-.card-wrapper-zippy .card-info .select-list .shopify-product-form {
+.card-wrapper-zippy .card-info .select-list .shopify-product-form,
+.card-wrapper-zippy .card-info .select-list .form-site-style-special {
   display: flex;
   width: 100%;
   column-gap: 5px;
@@ -1856,14 +1860,17 @@ h5 {
 .section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .list-container li {
   padding: 0 5px;
 }
-.section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form {
+.section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form,
+.section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .form-site-style-special {
   flex-direction: column;
   row-gap: 5px;
 }
-.section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form select {
+.section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form select,
+.section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .form-site-style-special select {
   padding: 5px 5px;
 }
-.section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form button {
+.section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form button,
+.section-fp-autre-produit-zippy .zippy-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .form-site-style-special button {
   padding: 5px 0px;
   cursor: pointer;
 }
@@ -2165,15 +2172,18 @@ h5 {
 .related-product-cart .product-container .layout .card-layout .card-wrapper-zippy .card-info .list-container li {
   padding: 0 5px;
 }
-.related-product-cart .product-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form {
+.related-product-cart .product-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form,
+.related-product-cart .product-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .form-cart-style-special {
   flex-direction: column;
   row-gap: 5px;
 }
-.related-product-cart .product-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form select {
+.related-product-cart .product-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form select,
+.related-product-cart .product-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .form-cart-style-special select {
   display: none;
   padding: 5px 5px;
 }
-.related-product-cart .product-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form button {
+.related-product-cart .product-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .shopify-product-form button,
+.related-product-cart .product-container .layout .card-layout .card-wrapper-zippy .card-info .select-list .form-cart-style-special button {
   padding: 5px 0px;
   cursor: pointer;
 }
@@ -2272,10 +2282,12 @@ h5 {
 #CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .list-container {
   display: none !important;
 }
-#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .shopify-product-form select {
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .shopify-product-form select,
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .form-cart-style-special select {
   display: none;
 }
-#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .shopify-product-form button {
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .shopify-product-form button,
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .form-cart-style-special button {
   width: 100%;
   padding: 2px 0;
 }

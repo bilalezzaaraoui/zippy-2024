@@ -58,7 +58,7 @@
             {% endfor %}
         </ul>
         <div class="select-list">
-          {% form 'product', card_product %}
+          {% form 'product', card_product, class:'form-cart-style-special' %}
             {% if contains_stock_0 %}
                 <select name="id">
                     {% for variant in card_product.variants %}

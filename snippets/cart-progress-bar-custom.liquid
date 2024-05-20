@@ -1,4 +1,5 @@
 {% if cart != empty %}
+
     {% assign progressThresholdDollars = settings.cart_progress_threshold %}
     {% assign progressThreshold = progressThresholdDollars | times: 100 %}
     {% assign preGoalMessageTemplate = settings.cart_pre_goal_message %}
@@ -32,7 +33,7 @@
       {% assign threshold2 = 100 %}
       {% assign threshold3 = 150 %}
 
-      {% il totalFormated >= 0 and totalFormated < threshold1 %}
+      {% if totalFormated >= 0 and totalFormated < threshold1 %}
           {% assign shippingOffer = "la livraison gratuite" %}
           {% assign difference = totalFormated | minus: threshold1 | abs %}
       {% elsif totalFormated >= threshold1 and totalFormated < threshold2 %}

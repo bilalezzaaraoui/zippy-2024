@@ -166,7 +166,8 @@
       ],
       "custom_css": [
         ".gradient {background-color: #d7eedf;}",
-        ".placeholder {display: none;}"
+        ".placeholder {display: none;}",
+        ".image-with-text__media {border: none;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/LaMarque2.png",
@@ -208,7 +209,8 @@
       ],
       "custom_css": [
         ".gradient {background-color: #d7eedf;}",
-        ".placeholder {display: none;}"
+        ".placeholder {display: none;}",
+        ".image-with-text__media {border: none;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/LaMarque3_214f88b5-a80f-4e90-afae-4a0eebe1b293.png",
@@ -250,7 +252,8 @@
       ],
       "custom_css": [
         ".gradient {background-color: #d7eedf; padding-bottom: 20rem !important; margin-bottom: -15rem;}",
-        ".placeholder {display: none;}"
+        ".placeholder {display: none;}",
+        ".image-with-text__media {border: none;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/LaMarque4.png",

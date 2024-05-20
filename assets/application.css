@@ -1087,6 +1087,8 @@ h5 {
 .section-reviews-client-zippy .zippy-container .layout .container-one .container-img {
   height: fit-content;
   width: fit-content;
+  border-radius: 20px;
+  overflow: hidden;
 }
 @media (max-width: 1000px) {
   .section-reviews-client-zippy .zippy-container .layout .container-one .container-img {

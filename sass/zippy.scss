@@ -1126,6 +1126,8 @@ h5 {
         .container-img {
           height: fit-content;
           width: fit-content;
+          border-radius: 20px;
+          overflow: hidden;
 
           @media (max-width: 1000px) {
             width: 45%;

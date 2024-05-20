@@ -132,7 +132,8 @@
       ],
       "custom_css": [
         ".content-container {background-color: #d7eedf;}",
-        ".rich-text__blocks {display: flex; justify-content: center;}"
+        ".rich-text__blocks {display: flex; justify-content: center;}",
+        ".rte {max-width: 450px;}"
       ],
       "settings": {
         "desktop_content_position": "center",

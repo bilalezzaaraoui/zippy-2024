@@ -131,7 +131,8 @@
         "heading_LyApNi"
       ],
       "custom_css": [
-        ".content-container {background-color: #d7eedf;}"
+        ".content-container {background-color: #d7eedf;}",
+        ".rich-text__blocks {display: flex; justify-content: center;}"
       ],
       "settings": {
         "desktop_content_position": "center",

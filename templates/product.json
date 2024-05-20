@@ -46,7 +46,8 @@
         "text_W9GG6p"
       ],
       "custom_css": [
-        ".rich-text__text {color: #15433d;}"
+        ".rich-text__text {color: #15433d; display: flex; justify-content: center;}",
+        ".rich-text__text p {max-width: 600px;}"
       ],
       "settings": {
         "desktop_content_position": "center",

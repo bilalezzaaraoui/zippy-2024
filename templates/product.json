@@ -30,20 +30,24 @@
         "heading_wxKGgg": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Ce Que Nos Clients Disent",
             "heading_size": "h1"
           }
         },
         "text_W9GG6p": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Chaque avis révèle les incroyables bienfaits de nos produits et l'expérience exceptionnelle qu'ils ont vécue. Rejoignez la communauté Zippy et transformez votre quotidien.<\/p>"
           }
         }
       },
       "block_order": [
         "heading_wxKGgg",
         "text_W9GG6p"
+      ],
+      "custom_css": [
+        ".rich-text__text {color: #15433d; display: flex; justify-content: center;}",
+        ".rich-text__text p {max-width: 600px;}"
       ],
       "settings": {
         "desktop_content_position": "center",

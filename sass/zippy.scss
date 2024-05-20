@@ -1873,6 +1873,7 @@ h5 {
           border-radius: 30px;
           padding: 9px 0;
           color: #fff;
+          cursor: pointer;
         }
 
         .reassurance-layout {
@@ -2413,18 +2414,8 @@ h5 {
   }
 }
 
-#shopify-block-loox_reviews_loox_dynamic_section_P4tFhC {
-  // background-color: red;
-
-  // .list {
-  //   #grid {
-  //     .grid-item-wrap.has-img {
-  //       .item-img {
-  //         display: none !important;
-  //       }
-  //     }
-  //   }
-  // }
+.cart-item__discounted-prices {
+  display: none;
 }
 
 #CartDrawer {

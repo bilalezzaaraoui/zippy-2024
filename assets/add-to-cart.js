@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const addToCartForm = document.querySelectorAll(".shopify-product-form");
+  const addToCartForm = document.querySelectorAll(".form-site-style-special");
   console.log(addToCartForm);
 
   addToCartForm.forEach((form) => {

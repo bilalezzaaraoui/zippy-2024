@@ -1752,6 +1752,7 @@ h5 {
   border-radius: 30px;
   padding: 9px 0;
   color: #fff;
+  cursor: pointer;
 }
 .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .info-block .reassurance-layout {
   display: flex;
@@ -2210,6 +2211,10 @@ h5 {
   position: relative;
   top: -8px;
   font-size: 12px;
+}
+
+.cart-item__discounted-prices {
+  display: none;
 }
 
 #CartDrawer .drawer__inner {

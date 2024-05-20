@@ -2297,6 +2297,32 @@ h5 {
 #CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .form-cart-style-special select {
   display: none;
 }
+#CartDrawer .drawer__inner .complementary-product .scDiscount__container {
+  width: 100%;
+}
+#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp {
+  justify-content: center !important;
+  margin-bottom: 0;
+}
+#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp .sc_simple-info__row {
+  display: none;
+}
+#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp .sc_code-info {
+  display: flex !important;
+}
+#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp > div:first-of-type {
+  margin: 2rem 0 0;
+}
+#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp #code {
+  border-radius: 5px;
+  margin-right: 5px !important;
+  padding: 3px 0 5px 10px;
+}
+#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp #submit {
+  padding: 0 10px 2px;
+  font-size: 15px;
+  border-radius: 5px;
+}
 #CartDrawer .drawer__inner .carousel {
   background-color: #15433d;
 }
@@ -2419,32 +2445,6 @@ h5 {
 }
 #CartDrawer .drawer__inner .drawer__footer #cart-progress-wrapper {
   padding: 2rem 0 0;
-}
-#CartDrawer .drawer__inner .drawer__footer .scDiscount__container {
-  width: 100%;
-}
-#CartDrawer .drawer__inner .drawer__footer .scDiscount__container #scDiscountApp {
-  justify-content: center !important;
-  margin-bottom: 0;
-}
-#CartDrawer .drawer__inner .drawer__footer .scDiscount__container #scDiscountApp .sc_simple-info__row {
-  display: none;
-}
-#CartDrawer .drawer__inner .drawer__footer .scDiscount__container #scDiscountApp .sc_code-info {
-  display: flex !important;
-}
-#CartDrawer .drawer__inner .drawer__footer .scDiscount__container #scDiscountApp > div:first-of-type {
-  margin: 0 !important;
-}
-#CartDrawer .drawer__inner .drawer__footer .scDiscount__container #scDiscountApp #code {
-  border-radius: 5px;
-  margin-right: 5px !important;
-  padding: 3px 0 5px 10px;
-}
-#CartDrawer .drawer__inner .drawer__footer .scDiscount__container #scDiscountApp #submit {
-  padding: 0 10px 2px;
-  font-size: 15px;
-  border-radius: 5px;
 }
 #CartDrawer .drawer__inner .drawer__footer .cart-drawer__footer .totals {
   align-items: center;

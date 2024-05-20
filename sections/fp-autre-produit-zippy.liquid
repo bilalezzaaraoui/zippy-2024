@@ -3,17 +3,26 @@
   
   document.addEventListener("DOMContentLoaded", function () {
     const target = document.querySelector(".section-fp-autre-produit-zippy");
-    const cardList = target.querySelectorAll(".card-layout")
-  
+    const cardList = target.querySelectorAll(".card-layout");
+    let itemHidden = false;
+
     cardList.forEach(item => {
       const card = item;
-      const h3 = card.querySelector(".title-avis").querySelector("h3").textContent
-  
+      const h3 = card.querySelector(".title-avis").querySelector("h3").textContent;
+
       if (produit.title == h3) {
         item.style.display = "none";
+        itemHidden = true;
       }
-    })
-  });
+    });
+
+    // Si aucun élément n'a été masqué, masquer un élément au hasard
+    if (!itemHidden && cardList.length > 0) {
+      const randomIndex = Math.floor(Math.random() * cardList.length);
+      cardList[randomIndex].style.display = "none";
+    }
+  }
+);
 </script>
 
 <section style="background-color: {{ product.metafields.custom.fp_background_couleur_global }}">

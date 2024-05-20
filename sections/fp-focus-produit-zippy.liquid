@@ -277,7 +277,8 @@
               {% render 'icon-star-filled' %}
               {% render 'icon-star-unfiled' %}
             </div>
-            <span>310+</span>
+            <span>{{ product.metafields.loox.num_reviews }}+</span>
+            {% comment %} <span>310+</span> {% endcomment %}
           </div>
           <span class="info-more">100% Légal • Non addictif • {{ product.metafields.custom.taux_de_thc }}% THC</span>
         </div>

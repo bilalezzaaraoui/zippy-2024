@@ -109,7 +109,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "drawer",
+    "cart_type": "page",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "produit-recommende",
@@ -173,18 +173,24 @@
         "settings": {
         }
       },
-      "74204263759510710": {
-        "type": "shopify:\/\/apps\/dcart-discount-in-cart\/blocks\/app-embed\/731e2611-8bdf-4514-b5e4-f64f1cae3fb7",
+      "6065014864672580889": {
+        "type": "shopify:\/\/apps\/slide-cart-by-amp\/blocks\/app-embed\/0a410b8d-7dc4-4f2d-b4e8-c12d34fd2255",
         "disabled": false,
         "settings": {
         }
       },
       "17410671050484012158": {
         "type": "shopify:\/\/apps\/cartking-free-gifts\/blocks\/gift-embed-v2\/4831ea51-9f80-493d-8541-da4662a9e219",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "targetSelector": ".complementary-product",
           "targetLocation": "Before"
+        }
+      },
+      "74204263759510710": {
+        "type": "shopify:\/\/apps\/dcart-discount-in-cart\/blocks\/app-embed\/731e2611-8bdf-4514-b5e4-f64f1cae3fb7",
+        "disabled": true,
+        "settings": {
         }
       }
     },

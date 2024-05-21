@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Get new cart object
         console.log("Etape 2");
-        const res = await fetch("/cart.json");
+        const res = await fetch("/cart.js");
         const cart = await res.json();
         console.log("cart", cart);
 

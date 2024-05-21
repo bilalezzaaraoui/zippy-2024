@@ -31,15 +31,16 @@
     {% endif %}
     {{ block.shopify_attributes }}
   >
-    {%- for option in product.options -%}
-        <fieldset class="js product-form__input product-form__input--pill">
-          {% comment %} <legend class="form__label">{{ option }}</legend> {% endcomment %}
-          {% render 'product-variant-options',
-            product: product,
-            option: product.variants,
-          %}
-        </fieldset>
-    {%- endfor -%}
+    <fieldset class="js product-form__input product-form__input--pill">
+      {%- for option in product.options -%}
+        {% comment %} <legend class="form__label">{{ option }}</legend> {% endcomment %}
+        {% render 'product-variant-options',
+          product: product,
+          option: product.variants,
+        %}
+      {%- endfor -%}
+    </fieldset>
+    <button type="submit" class="btn-atc" id="btn-ok">Ajouter au panier</button>
     
     {% comment %} {%- for option in product.options_with_values -%}
       {%- liquid
@@ -114,4 +115,5 @@
     <script type="application/json">
       {{ product.variants | json }}
     </script>
+
   </variant-selects>

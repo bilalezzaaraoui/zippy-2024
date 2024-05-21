@@ -35,7 +35,7 @@
         }
       })
       .then(async data => {
-        console.log(data);
+        console.log(data, "on est ici");
         // Mise à jour de l'affichage du panier ou toute autre action après l'ajout
         {% comment %} alert('Produit ajouté au panier!'); {% endcomment %}
 
@@ -91,7 +91,10 @@
           console.log("Cart count bubble already exists.");
         }
 
-         //Update cart
+        location.reload();
+
+
+         {% comment %} //Update cart
           const updateCartDrawer = async () => {
             const res = await fetch("/?section_id=cart-drawer");
             const text = await res.text();
@@ -105,11 +108,11 @@
             console.log(html, "lol");
           };
 
-          await updateCartDrawer();
+          await updateCartDrawer(); {% endcomment %}
 
-          const cartDrawer = document.querySelector(".drawer");
+          {% comment %} const cartDrawer = document.querySelector(".drawer");
           cartDrawer.classList.add("animate"); // Ajouter la classe 'active'
-          cartDrawer.classList.add("active"); // Ajouter la classe 'active'
+          cartDrawer.classList.add("active"); // Ajouter la classe 'active' {% endcomment %}
       })
       .catch(error => {
         console.error('Erreur:', error);
@@ -273,17 +276,19 @@
       </div>
       <div class="info-block">
         <div class="info-reviews">
-          <div class="reviews-container">
-            <div class="stars-layout">
-              {% render 'icon-star-filled' %}
-              {% render 'icon-star-filled' %}
-              {% render 'icon-star-filled' %}
-              {% render 'icon-star-filled' %}
-              {% render 'icon-star-unfiled' %}
+          <a href="#shopify-section-template--22408776778053__rich_text_azhbyy" style="scroll-margin-top: 3rem; text-decoration: none; color: #15433d;">
+            <div class="reviews-container">
+              <div class="stars-layout">
+                {% render 'icon-star-filled' %}
+                {% render 'icon-star-filled' %}
+                {% render 'icon-star-filled' %}
+                {% render 'icon-star-filled' %}
+                {% render 'icon-star-unfiled' %}
+              </div>
+              <span>{{ product.metafields.loox.num_reviews }}+</span>
+              {% comment %} <span>310+</span> {% endcomment %}
             </div>
-            <span>{{ product.metafields.loox.num_reviews }}+</span>
-            {% comment %} <span>310+</span> {% endcomment %}
-          </div>
+          </a>
           <span class="info-more">100% Légal • Non addictif • {{ product.metafields.custom.taux_de_thc }}% THC</span>
         </div>
         <h2 class="title">{{ product.title }}</h2>
@@ -299,8 +304,8 @@
         </div>
         {% comment %} {% form 'product', product %} {% endcomment %}
           {% render 'product-variant-picker', product: product, product_form_id: product.id %}
-          <button type="submit" class="btn-atc">Ajouter au panier</button>
-        {% comment %} {% endform %} {% endcomment %}
+          {% comment %} <button type="submit" class="btn-atc" id="btn-ok">Ajouter au panier</button> {% endcomment %}
+          {% comment %} {% endform %} {% endcomment %}
         <div class="reassurance-layout">
           {%- for block in section.blocks -%}
             <div class="reassurance">

@@ -51,7 +51,7 @@
     }
   </style>
 
-  <script>
+  {% comment %} <script>
     document.addEventListener("DOMContentLoaded", function () {
         const addToCartForm = document.querySelectorAll(".form-cart-style-special");
         console.log(addToCartForm);
@@ -187,7 +187,7 @@
           }
         });
       });      
-</script>
+</script> {% endcomment %}
 
 
   <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">

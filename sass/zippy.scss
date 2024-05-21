@@ -5,6 +5,10 @@ body {
   color: #000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-size: 70px !important;
 }
@@ -1579,6 +1583,10 @@ h5 {
   }
 }
 
+.slidecart-form-error {
+  display: none !important;
+}
+
 .section-fp-focus-produit-zippy {
   .zippy-container {
     max-width: 1150px;
@@ -2420,7 +2428,8 @@ h5 {
   .header {
     h2 {
       font-size: 36px !important;
-      color: #15433d;
+      color: #15433d !important;
+      font-weight: normal !important;
     }
   }
 
@@ -2442,10 +2451,17 @@ h5 {
     }
   }
 
+  .items {
+    .item {
+      padding: 20px 20px 5px !important;
+    }
+  }
+
   .upsells {
     h2 {
       font-size: 22px !important;
       color: #15433d !important;
+      font-weight: normal !important;
     }
   }
 }

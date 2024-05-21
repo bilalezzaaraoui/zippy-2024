@@ -376,7 +376,7 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    <script>
+    {% comment %} <script>
       const liveElement = document.querySelector('.live');
     
       // Nombre initial aléatoire entre 1 et 6
@@ -403,6 +403,6 @@
 
       // Afficher le nombre initial immédiatement
       updateNumber();
-    </script>
+    </script> {% endcomment %}
   </body>
 </html>

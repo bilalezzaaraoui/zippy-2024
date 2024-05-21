@@ -2415,7 +2415,7 @@ h5 {
 }
 
 .slidecarthq {
-  background: #fff7e5;
+  background-color: #fff7e5 !important;
 
   .header {
     h2 {
@@ -2426,9 +2426,10 @@ h5 {
 
   .announcements {
     .slick-slider {
-      height: 25px;
-      display: flex;
-      align-items: center;
+      height: 25px !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
 
       .slick-list {
         height: fit-content;

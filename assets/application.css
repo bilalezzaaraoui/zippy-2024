@@ -2214,16 +2214,17 @@ h5 {
 }
 
 .slidecarthq {
-  background: #fff7e5;
+  background-color: #fff7e5 !important;
 }
 .slidecarthq .header h2 {
   font-size: 36px !important;
   color: #15433d;
 }
 .slidecarthq .announcements .slick-slider {
-  height: 25px;
-  display: flex;
-  align-items: center;
+  height: 25px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .slidecarthq .announcements .slick-slider .slick-list {
   height: fit-content;

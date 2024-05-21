@@ -2213,6 +2213,29 @@ h5 {
   font-size: 12px;
 }
 
+.slidecarthq {
+  background: #fff7e5;
+}
+.slidecarthq .header h2 {
+  font-size: 36px !important;
+  color: #15433d;
+}
+.slidecarthq .announcements .slick-slider {
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+.slidecarthq .announcements .slick-slider .slick-list {
+  height: fit-content;
+}
+.slidecarthq .announcements .slick-slider .slick-list .slick-slide p {
+  padding: 0 !important;
+}
+.slidecarthq .upsells h2 {
+  font-size: 22px !important;
+  color: #15433d !important;
+}
+
 .cart-item__discounted-prices {
   display: none;
 }

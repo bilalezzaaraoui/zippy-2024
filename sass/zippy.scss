@@ -2414,11 +2414,47 @@ h5 {
   }
 }
 
+.slidecarthq {
+  background: #fff7e5;
+
+  .header {
+    h2 {
+      font-size: 36px !important;
+      color: #15433d;
+    }
+  }
+
+  .announcements {
+    .slick-slider {
+      height: 25px;
+      display: flex;
+      align-items: center;
+
+      .slick-list {
+        height: fit-content;
+        .slick-slide {
+          p {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .upsells {
+    h2 {
+      font-size: 22px !important;
+      color: #15433d !important;
+    }
+  }
+}
+
 .cart-item__discounted-prices {
   display: none;
 }
 
 #CartDrawer {
+  // visibility: hidden !important;
   .drawer__inner {
     padding: 0;
     border: none;

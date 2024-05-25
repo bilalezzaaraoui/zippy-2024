@@ -35,23 +35,16 @@
         }
       })
       .then(async data => {
-        {% comment %} console.log(data, "on est ici");
         // Mise à jour de l'affichage du panier ou toute autre action après l'ajout
-        {% comment %} alert('Produit ajouté au panier!'); {% endcomment %}
 
         // Get new cart object
         const res = await fetch("/cart.json");
-        const cart = await res.json(); {% endcomment %}
+        const cart = await res.json();
 
-{% comment %} 
         var headerCartIcon = document.querySelector(".header__icon--cart");
         var existingBubble = headerCartIcon.querySelector(".cart-count-bubble");
-        console.log(cart)
-        console.log(cart.item_count)
-        console.log(existingBubble)
-        console.log(existingBubble)
-
  
+
         function createCartCountBubble(item) {
           // Créer l'élément div pour le bubble
           var cartCountBubble = document.createElement("div");
@@ -89,12 +82,12 @@
 
           ariaHiddenSpan.textContent = cart.item_count;
           console.log("Cart count bubble already exists.");
-        } {% endcomment %}
+        }
 
-        location.reload();
+        // location.reload();
 
 
-         {% comment %} //Update cart
+         //Update cart
           const updateCartDrawer = async () => {
             const res = await fetch("/?section_id=cart-drawer");
             const text = await res.text();
@@ -108,11 +101,11 @@
             console.log(html, "lol");
           };
 
-          await updateCartDrawer(); {% endcomment %}
+          await updateCartDrawer();
 
-          {% comment %} const cartDrawer = document.querySelector(".drawer");
+          const cartDrawer = document.querySelector(".drawer");
           cartDrawer.classList.add("animate"); // Ajouter la classe 'active'
-          cartDrawer.classList.add("active"); // Ajouter la classe 'active' {% endcomment %}
+          cartDrawer.classList.add("active"); // Ajouter la classe 'active'
       })
       .catch(error => {
         console.error('Erreur:', error);

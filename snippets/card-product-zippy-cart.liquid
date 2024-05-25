@@ -1,7 +1,4 @@
 <div class="card-wrapper-zippy card-special-cart">
-    <script>
-        console.log({{ card_product | json }}, "produit actuel")
-    </script>
     {% assign contains_stock_0 = true %}
     {% assign contains_fleur_0 = true %}
     {% for tag in card_product.tags %}
@@ -58,7 +55,7 @@
             {% endfor %}
         </ul>
         <div class="select-list">
-          {% form 'product', card_product %}
+          {% form 'product', card_product, class: 'form-site-style-special' %}
             {% if contains_stock_0 %}
                 <select name="id">
                     {% for variant in card_product.variants %}

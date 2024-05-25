@@ -399,11 +399,18 @@ h5 {
     cursor: pointer;
   }
 }
-.card-wrapper-zippy .card-info .select-list .shopify-product-form,
+.card-wrapper-zippy .card-info .select-list .shopify-product-form {
+  display: flex;
+  width: 100%;
+  column-gap: 5px;
+}
 .card-wrapper-zippy .card-info .select-list .form-site-style-special {
   display: flex;
   width: 100%;
   column-gap: 5px;
+}
+.card-wrapper-zippy .card-info .select-list .form-site-style-special select {
+  display: none;
 }
 .card-wrapper-zippy .card-info .select-list select {
   border: 1px solid #000;
@@ -1732,7 +1739,7 @@ h5 {
   border: 1px solid #15433d;
   font-weight: bold;
   text-align: left;
-  padding: 5px 10px;
+  padding: 10px;
   text-transform: lowercase;
   display: flex;
   justify-content: space-between;
@@ -2210,14 +2217,14 @@ h5 {
 }
 .add-to-cart-button .best-offer-fp-card .container {
   width: fit-content;
-  background-color: #fff7e5;
+  background-color: #ff9a3a;
   border-radius: 10px;
   height: 18px;
   border: 1px solid;
 }
 .add-to-cart-button .best-offer-fp-card .container span {
   position: relative;
-  top: -8px;
+  top: 0;
   font-size: 12px;
 }
 
@@ -2333,10 +2340,14 @@ h5 {
   width: 100%;
   padding: 2px 0;
 }
-#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .form-cart-style-special {
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .form-site-style-special {
   width: 100%;
 }
-#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .form-cart-style-special select {
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .form-site-style-special button {
+  width: 100%;
+  padding: 1px;
+}
+#CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .form-site-style-special select {
   display: none;
 }
 #CartDrawer .drawer__inner .complementary-product .scDiscount__container {

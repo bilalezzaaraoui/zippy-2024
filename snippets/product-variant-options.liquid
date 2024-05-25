@@ -17,12 +17,6 @@
   %}
 {% endcomment %}
 
-<script>
-  console.log({{ option | json }}, "variants");
-</script>
-<script>
-  console.log({{ product | json }}, "product");
-</script>
 {% comment %} {%- liquid
   assign variants_available_arr = product.variants | map: 'available'
   assign variants_option1_arr = product.variants | map: 'option1'
@@ -127,10 +121,6 @@
     {% if option.selected_value == value %} checked {% endif %}
     {% if desactive %} class="desactive" {% endif %}
   >
-
-    <script>
-      console.log({{ product.variants | json }}, "value")
-    </script>
   <label for="input-{{ option.position }}-{{ forloop.index0 }}" class="button-class add-to-cart-button" style="text-transform: lowercase;">
     {% assign stripped_title = item.title | strip %}
 

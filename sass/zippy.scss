@@ -1406,11 +1406,11 @@ h5 {
     display: none;
   }
 
-  .predictive-search__pages-wrapper {
-    display: none;
-  }
-
   .predictive-search__result-group {
+    &:nth-of-type(1) {
+      display: none;
+    }
+
     #predictive-search-products {
       color: #15433d !important;
       font-size: 1.5rem !important;

@@ -130,6 +130,12 @@
               aria-labelledby="predictive-search-products"
             >
               {%- for product in predictive_search.resources.products -%}
+                        {% assign contains_stock_0 = false %}
+                        {% for tag in product.tags %}
+                            {% if tag == 'stock_0' %}
+                                {% assign contains_stock_0 = true %}
+                            {% endif %}
+                        {% endfor %}
                 <li
                   id="predictive-search-option-product-{{ forloop.index }}"
                   class="predictive-search__list-item"
@@ -137,7 +143,7 @@
                   aria-selected="false"
                 >
                   <a
-                    href="{{ product.url }}"
+                    href="{% if contains_stock_0 == false  %}{{ product.url }}{% else %}/{% endif %}"
                     class="predictive-search__item predictive-search__item--link-with-thumbnail link link--text"
                     tabindex="-1"
                   >

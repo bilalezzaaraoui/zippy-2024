@@ -1412,6 +1412,10 @@ h5 {
   .wide-footer {
     background-color: #15433d;
 
+    @media (max-width: 500px) {
+      margin-top: -2px;
+    }
+
     .max-width-container {
       max-width: 1300px;
       margin: 0 auto;
@@ -1465,6 +1469,7 @@ h5 {
         }
 
         .newsletter-social-media-layout {
+          display: none;
           flex: 1;
 
           .newsletter-message {
@@ -1857,7 +1862,7 @@ h5 {
             border: 1px solid #15433d;
             font-weight: bold;
             text-align: left;
-            padding: 10px;
+            padding: 13px 10px;
             text-transform: lowercase;
             display: flex;
             justify-content: space-between;
@@ -1878,7 +1883,15 @@ h5 {
               .gramme {
                 font-family: "Windsor EF" !important;
                 font-size: 2.5rem !important;
+                font-weight: normal;
+
+                @media (max-width: 470px) {
+                  font-size: 1.8rem !important;
+                }
               }
+            }
+
+            .second {
             }
           }
         }
@@ -1918,6 +1931,9 @@ h5 {
 }
 
 .section-fp-autre-produit-zippy {
+  @media (max-width: 500px) {
+    margin-bottom: -2px;
+  }
   .zippy-container {
     max-width: 1150px;
     margin: 0 auto;
@@ -2136,6 +2152,10 @@ h5 {
       padding: 1rem 1.5rem 3rem;
     }
 
+    @media (max-width: 500px) {
+      margin-bottom: -2px;
+    }
+
     div {
       font-family: HelveticaNeue, sans-serif !important;
     }
@@ -2197,6 +2217,9 @@ h5 {
 
 .section-fp-bottom-faq-zippy {
   .page-layout {
+    @media (max-width: 500px) {
+      margin-top: -2px;
+    }
     .zippy-container {
       max-width: 1300px;
       margin: 0 auto;

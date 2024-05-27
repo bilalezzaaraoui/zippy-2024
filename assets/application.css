@@ -1341,6 +1341,11 @@ h5 {
 .footer-zippy .wide-footer {
   background-color: #15433d;
 }
+@media (max-width: 500px) {
+  .footer-zippy .wide-footer {
+    margin-top: -2px;
+  }
+}
 .footer-zippy .wide-footer .max-width-container {
   max-width: 1300px;
   margin: 0 auto;
@@ -1392,6 +1397,7 @@ h5 {
   text-decoration: underline;
 }
 .footer-zippy .wide-footer .max-width-container .first-container .newsletter-social-media-layout {
+  display: none;
   flex: 1;
 }
 .footer-zippy .wide-footer .max-width-container .first-container .newsletter-social-media-layout .newsletter-message {
@@ -1739,7 +1745,7 @@ h5 {
   border: 1px solid #15433d;
   font-weight: bold;
   text-align: left;
-  padding: 10px;
+  padding: 13px 10px;
   text-transform: lowercase;
   display: flex;
   justify-content: space-between;
@@ -1759,6 +1765,12 @@ h5 {
 .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .info-block .product-form__input--pill label .first .gramme {
   font-family: "Windsor EF" !important;
   font-size: 2.5rem !important;
+  font-weight: normal;
+}
+@media (max-width: 470px) {
+  .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .info-block .product-form__input--pill label .first .gramme {
+    font-size: 1.8rem !important;
+  }
 }
 .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .info-block .btn-atc {
   width: 100%;
@@ -1787,6 +1799,11 @@ h5 {
   line-height: 2.1rem;
 }
 
+@media (max-width: 500px) {
+  .section-fp-autre-produit-zippy {
+    margin-bottom: -2px;
+  }
+}
 .section-fp-autre-produit-zippy .zippy-container {
   max-width: 1150px;
   margin: 0 auto;
@@ -1977,6 +1994,11 @@ h5 {
     padding: 1rem 1.5rem 3rem;
   }
 }
+@media (max-width: 500px) {
+  .section-fp-faq-table-zippy .zippy-container {
+    margin-bottom: -2px;
+  }
+}
 .section-fp-faq-table-zippy .zippy-container div {
   font-family: HelveticaNeue, sans-serif !important;
 }
@@ -2031,6 +2053,11 @@ h5 {
   }
 }
 
+@media (max-width: 500px) {
+  .section-fp-bottom-faq-zippy .page-layout {
+    margin-top: -2px;
+  }
+}
 .section-fp-bottom-faq-zippy .page-layout .zippy-container {
   max-width: 1300px;
   margin: 0 auto;

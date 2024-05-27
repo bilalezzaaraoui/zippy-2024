@@ -8,14 +8,12 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Livraison gratuite à partir de 40€",
+            "text": "Livraison gratuite à partir de 50€",
             "link": ""
           }
         }
       },
-      "block_order": [
-        "announcement-bar-0"
-      ],
+      "block_order": ["announcement-bar-0"],
       "settings": {
         "color_scheme": "scheme-2",
         "show_line_separator": true,
@@ -49,8 +47,5 @@
       }
     }
   },
-  "order": [
-    "announcement-bar",
-    "header"
-  ]
+  "order": ["announcement-bar", "header"]
 }

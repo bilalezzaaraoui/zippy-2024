@@ -2312,7 +2312,7 @@ h5 {
   display: flex !important;
 }
 .scDiscount__container #scDiscountApp > div:first-of-type {
-  margin: 2rem 0 0;
+  margin: 0;
 }
 .scDiscount__container #scDiscountApp #code {
   border-radius: 5px;
@@ -2544,7 +2544,7 @@ h5 {
 }
 #CartDrawer .drawer__inner .drawer__footer .cart-drawer__footer .totals {
   align-items: center;
-  padding: 1rem 1rem 1.5rem;
+  padding: 2rem 1.5rem 1.5rem;
   margin: 0;
 }
 #CartDrawer .drawer__inner .drawer__footer .cart-drawer__footer .totals .totals__total-value {

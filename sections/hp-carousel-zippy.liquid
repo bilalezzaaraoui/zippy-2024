@@ -12,7 +12,7 @@
                       <div class="container-layout">
                         <h1 class="title">Rejoignez les 3000+ Utilisateurs Satisfaits de notre Pink Lady</h1>
                         <p class="message">Découvrez pourquoi notre Pink Lady est la fleur CBD préférée de nos consommateurs dans leur quotidien.</p>
-                        <a href="" class="link">Ça m'intéresse</a>
+                        <a href="{{ block.settings.product.url }}" class="link">Ça m'intéresse</a>
                       </div>
                     </div>
               </div>
@@ -53,6 +53,11 @@
           "type": "image_picker",
           "id": "image_mobile",
           "label": "Image Mobile"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
         }
       ]
     }

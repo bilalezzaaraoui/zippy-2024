@@ -340,6 +340,10 @@ h5 {
       }
     }
 
+    .new-link {
+      text-decoration: none;
+    }
+
     .title-avis {
       display: flex;
       justify-content: space-between;
@@ -1279,11 +1283,13 @@ h5 {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 3rem;
       row-gap: 3rem;
+      max-height: 230px;
 
       @media (max-width: 1000px) {
         display: flex;
         flex-direction: column;
         row-gap: 1.5rem;
+        max-height: inherit;
       }
 
       .card-container {
@@ -2516,6 +2522,12 @@ h5 {
       color: #15433d !important;
       font-weight: normal !important;
     }
+  }
+}
+
+.section-template--22408752365893__cart-footer-padding {
+  .totals {
+    margin: 1rem 0;
   }
 }
 

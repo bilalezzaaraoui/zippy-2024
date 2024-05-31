@@ -45,13 +45,16 @@
     <div class="card-info" style="background-color: {{ bg_color_second }}">
         {% render 'svg-card-wave',
             color: bg_color_second, %}
-        <div class="title-avis">
-            <h3>{{ card_product.title }}</h3>
-            <div class="review-container only-desktop">
-                <span>4.7</span>
-                {% render 'icon-star-filled' %}
+        <a href="{{ card_product.url }}" class="new-link">  
+            <div class="title-avis">
+                <h3>{{ card_product.title }}</h3>
+                <div class="review-container only-desktop">
+                    <span>{{ card_product.metafields.loox.avg_rating }}</span>
+                    {% render 'icon-star-filled' %}
+                </div>
             </div>
-        </div>
+        </a>
+        
         <ul class="list-container">
             {% for item in tags.value %}
                 <li>{{ item }}</li>

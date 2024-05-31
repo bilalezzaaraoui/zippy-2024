@@ -2298,6 +2298,33 @@ h5 {
   font-weight: normal !important;
 }
 
+.scDiscount__container {
+  width: 100%;
+}
+.scDiscount__container #scDiscountApp {
+  justify-content: center !important;
+  margin-bottom: 0;
+}
+.scDiscount__container #scDiscountApp .sc_simple-info__row {
+  display: none;
+}
+.scDiscount__container #scDiscountApp .sc_code-info {
+  display: flex !important;
+}
+.scDiscount__container #scDiscountApp > div:first-of-type {
+  margin: 2rem 0 0;
+}
+.scDiscount__container #scDiscountApp #code {
+  border-radius: 5px;
+  margin-right: 5px !important;
+  padding: 3px 0 5px 10px;
+}
+.scDiscount__container #scDiscountApp #submit {
+  padding: 0 10px 2px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
 .cart-item__discounted-prices {
   display: none;
 }
@@ -2390,32 +2417,6 @@ h5 {
 }
 #CartDrawer .drawer__inner .complementary-product .layout .card-special-cart .card-info .form-site-style-special select {
   display: none;
-}
-#CartDrawer .drawer__inner .complementary-product .scDiscount__container {
-  width: 100%;
-}
-#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp {
-  justify-content: center !important;
-  margin-bottom: 0;
-}
-#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp .sc_simple-info__row {
-  display: none;
-}
-#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp .sc_code-info {
-  display: flex !important;
-}
-#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp > div:first-of-type {
-  margin: 2rem 0 0;
-}
-#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp #code {
-  border-radius: 5px;
-  margin-right: 5px !important;
-  padding: 3px 0 5px 10px;
-}
-#CartDrawer .drawer__inner .complementary-product .scDiscount__container #scDiscountApp #submit {
-  padding: 0 10px 2px;
-  font-size: 15px;
-  border-radius: 5px;
 }
 #CartDrawer .drawer__inner .carousel {
   background-color: #15433d;
@@ -2536,13 +2537,14 @@ h5 {
 }
 #CartDrawer .drawer__inner .drawer__footer .claim-title {
   color: #15433d;
+  font-size: 12px;
 }
 #CartDrawer .drawer__inner .drawer__footer #cart-progress-wrapper {
   padding: 2rem 0 0;
 }
 #CartDrawer .drawer__inner .drawer__footer .cart-drawer__footer .totals {
   align-items: center;
-  padding: 2rem 1.5rem;
+  padding: 1rem 1rem 1.5rem;
   margin: 0;
 }
 #CartDrawer .drawer__inner .drawer__footer .cart-drawer__footer .totals .totals__total-value {
@@ -2561,7 +2563,7 @@ h5 {
 #CartDrawer .drawer__inner .drawer__footer .cart__checkout-button {
   background-color: #15433d;
   color: #fff !important;
-  margin-bottom: 2rem;
+  margin: 0;
   display: flex;
   column-gap: 5px;
 }

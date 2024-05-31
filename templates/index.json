@@ -7,14 +7,16 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/PinkLadyBanner.png",
-            "image_mobile": "shopify:\/\/shop_images\/PinkLadyHP.png"
+            "image_mobile": "shopify:\/\/shop_images\/PinkLadyHP.png",
+            "product": "pink-lady"
           }
         },
         "slide_FbCAXf": {
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/IceRockBanner_65a70dfb-621a-40f4-8878-c8afa2e68ef4.png"
+            "image": "shopify:\/\/shop_images\/IceRockBanner_65a70dfb-621a-40f4-8878-c8afa2e68ef4.png",
+            "product": ""
           }
         }
       },

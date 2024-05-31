@@ -1628,6 +1628,15 @@ h5 {
   display: none !important;
 }
 
+.mon-compte-special-link {
+  transition: 0.2s;
+
+  &:hover {
+    color: #2d897d;
+    text-decoration: none;
+  }
+}
+
 // Css du Blog
 
 .blog-articles {

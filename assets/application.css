@@ -1752,6 +1752,7 @@ h5 {
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 1.5rem;
   column-gap: 7px;
+  row-gap: 7px;
 }
 .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .info-block .product-form__input--pill .active {
   background-color: #fff7e5;
@@ -1764,14 +1765,19 @@ h5 {
   border: 1px solid #15433d;
   font-weight: bold;
   text-align: left;
-  padding: 13px 10px;
+  padding: 10px;
   text-transform: lowercase;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 7px;
+  margin: 0 !important;
   transition: 0.2s;
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .info-block .product-form__input--pill label {
+    padding: 12px 10px;
+  }
 }
 .section-fp-focus-produit-zippy .zippy-container .focus-produit-layout .info-block .product-form__input--pill label:hover {
   background-color: #fff7e5;

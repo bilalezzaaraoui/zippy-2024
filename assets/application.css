@@ -1536,6 +1536,14 @@ h5 {
   display: none !important;
 }
 
+.blog-articles .article-card .card__heading .full-unstyled-link {
+  transition: 0.2s;
+}
+.blog-articles .article-card .card__heading .full-unstyled-link:hover {
+  color: #a8fff3;
+  text-decoration: none;
+}
+
 .section-fp-focus-produit-zippy .zippy-container {
   max-width: 1150px;
   margin: 0 auto;

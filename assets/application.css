@@ -2568,10 +2568,15 @@ h5 {
 }
 #CartDrawer .drawer__inner .drawer__footer .claim-title {
   color: #15433d;
-  font-size: 12px;
+  font-size: 15px;
 }
 #CartDrawer .drawer__inner .drawer__footer #cart-progress-wrapper {
-  padding: 2rem 0 0;
+  padding: 1.3rem 0 0;
+}
+@media (max-width: 500px) {
+  #CartDrawer .drawer__inner .drawer__footer #cart-progress-wrapper {
+    padding: 1rem 0 1rem;
+  }
 }
 #CartDrawer .drawer__inner .drawer__footer .cart-drawer__footer .totals {
   align-items: center;
@@ -2647,6 +2652,11 @@ h5 {
   font-size: 9px;
   max-width: 100px;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .cart-progress-bar-container .layout .steps .position-container .gift {
+    min-width: 110px;
+  }
 }
 
 .section-template--22408752365893__cart-items-padding .title-wrapper-with-link h1 {

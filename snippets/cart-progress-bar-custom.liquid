@@ -54,11 +54,11 @@
       {% endif %} {% endcomment %}
 
       {% if totalFormated > 150 %}
-        <p class="claim-title" style="text-align: center; line-height: normal; margin-bottom: 2rem">
+        <p class="claim-title" style="text-align: center; line-height: normal; margin-bottom: 1rem">
           Félicitation, vous avez gagné toutes les récompenses
         </p>
       {% else %}
-        <p class="claim-title" style="text-align: center; line-height: normal; margin-bottom: 2rem"><sup><strong>Offre cumulabe</strong></sup><br/>Il reste <strong>{{ difference }}€</strong> pour avoir <strong>{{ shippingOffer }}</strong></p>
+        <p class="claim-title" style="text-align: center; line-height: normal; margin-bottom: 1rem"><sup><strong>Offre cumulabe</strong></sup><br/>Il reste <strong>{{ difference }}€</strong> pour avoir <strong>{{ shippingOffer }}</strong></p>
       {% endif %}
       {% comment %} <p class="claim-offer">🚚 La livraison gratuite Standard + 1g offert</p>
       <p class="claim-offer">😊 5g offert</p>

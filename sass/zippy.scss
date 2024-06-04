@@ -2872,11 +2872,15 @@ h5 {
 
       .claim-title {
         color: #15433d;
-        font-size: 12px;
+        font-size: 15px;
       }
 
       #cart-progress-wrapper {
-        padding: 2rem 0 0;
+        padding: 1.3rem 0 0;
+
+        @media (max-width: 500px) {
+          padding: 1rem 0 1rem;
+        }
       }
 
       .cart-drawer__footer {
@@ -2966,6 +2970,10 @@ h5 {
           font-size: 9px;
           max-width: 100px;
           font-weight: bold;
+
+          @media (max-width: 500px) {
+            min-width: 110px;
+          }
         }
       }
     }
